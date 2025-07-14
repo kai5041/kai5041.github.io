@@ -10,7 +10,8 @@ body {
 }
 
 a {
-  color: #FFFFFF; 
+  color: #FFFFFF;
+  text-underline-offset: 5px;
 }
 
 .tri-container {
