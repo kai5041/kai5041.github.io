@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1vw;
+}
+
+a {
+  color: #FFFFFF; 
+}
+
+
+.tri-container {
+  display: flex;
+  width: 80%;
+}
+
+
+.portion .title {
+  text-align: center;
+}
+
+.portion {
+  flex: 1;
+  padding: 1rem;
+  border-left: #2e2e2e solid 1px;
+  border-right: #2e2e2e solid 1px;
+  text-align: left;
+}
+
+.portion:nth-child(1) {}
+
+.portion:nth-child(2) {}
+
+.portion:nth-child(3) {}
