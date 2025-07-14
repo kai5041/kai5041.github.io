@@ -2,7 +2,7 @@
 
 body {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #C0C0C0;
   font-family: 'Noto Serif JP', serif;
   font-size: 1vw;
   margin: 0;
@@ -10,59 +10,68 @@ body {
 }
 
 a {
-  color: #FFFFFF;
+  color: #C0C0C0;
   text-underline-offset: 5px;
 }
 
-.tri-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
+.container {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.portion .title {
-  text-align: center;
+  padding: 1rem;
+  font-size: 0.9vw;
 }
 
 .portion {
-  flex: 1 1 30%;
-  padding: 1rem;
-  border-left: #2e2e2e solid 1px;
-  border-right: #2e2e2e solid 1px;
-  text-align: left;
-  box-sizing: border-box;
+  border-bottom: #2e2e2e solid 1px;
+  padding-bottom: 1vw;
+  margin-bottom: 1vw;
 }
 
-.portion:first-child {
-  border-left: none;
-}
 .portion:last-child {
-  border-right: none;
+  border-bottom: none;
 }
 
-@media (max-width: 768px) {
+/* --- Responsive Enhancements --- */
+@media screen and (max-width: 1024px) {
   body {
-    font-size: 3vw;
+    font-size: 1.4vw;
   }
 
-  .tri-container {
-    flex-direction: column;
-    width: 95%;
+  .container {
+    font-size: 1.2vw;
+    padding: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 2.5vw;
+  }
+
+  .container {
+    font-size: 2vw;
+    padding: 0.6rem;
   }
 
   .portion {
-    border-left: none;
-    border-right: none;
-    border-top: #2e2e2e solid 1px;
-    border-bottom: #2e2e2e solid 1px;
+    padding-bottom: 2vw;
+    margin-bottom: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 3.5vw;
   }
 
-  .portion:first-child {
-    border-top: none;
+  .container {
+    font-size: 3vw;
+    padding: 0.5rem;
   }
 
-  .portion:last-child {
-    border-bottom: none;
+  .portion {
+    padding-bottom: 3vw;
+    margin-bottom: 3vw;
   }
 }
