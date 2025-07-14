@@ -57,6 +57,10 @@ a {
     padding-bottom: 2vw;
     margin-bottom: 2vw;
   }
+
+  rt {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -72,6 +76,10 @@ a {
   .portion {
     padding-bottom: 3vw;
     margin-bottom: 3vw;
+  }
+
+  rt {
+    font-size: 2.8vw;
   }
 }
 
