@@ -5,7 +5,6 @@ body {
   color: #C0C0C0;
   font-family: 'Noto Serif JP', serif;
   font-size: 1vw;
-  margin: 0;
   padding: 0;
 }
 
@@ -74,4 +73,41 @@ a {
     padding-bottom: 3vw;
     margin-bottom: 3vw;
   }
+}
+
+
+/* STORY STYLES */
+
+rt {
+  font-size: 0.8vw;
+}
+
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-wrapper .side {
+  flex: 1;
+  padding: 0 20px;
+  /* Adds space on left and right sides */
+  box-sizing: border-box;
+  /* Make sure padding doesn't break layout */
+}
+
+.nav-wrapper .side.left {
+  text-align: left;
+}
+
+.nav-wrapper .side.right {
+  text-align: right;
+}
+
+.nav-wrapper .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
