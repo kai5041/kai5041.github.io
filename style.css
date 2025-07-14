@@ -58,9 +58,6 @@ a {
     margin-bottom: 2vw;
   }
 
-  rt {
-    font-size: 2vw;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -78,18 +75,14 @@ a {
     margin-bottom: 3vw;
   }
 
-  rt {
-    font-size: 2.8vw;
-  }
 }
 
 
 /* STORY STYLES */
 
 rt {
-  font-size: 0.8vw;
+  font-size: clamp(0.8vw, 1.5vw, 2.8vw);
 }
-
 
 .nav-wrapper {
   display: flex;
@@ -101,9 +94,8 @@ rt {
 .nav-wrapper .side {
   flex: 1;
   padding: 0 20px;
-  /* Adds space on left and right sides */
   box-sizing: border-box;
-  /* Make sure padding doesn't break layout */
+
 }
 
 .nav-wrapper .side.left {
