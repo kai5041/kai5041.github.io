@@ -6,6 +6,7 @@ body {
   font-family: 'Noto Serif JP', serif;
   font-size: 1vw;
   padding: 0;
+  width: 90%;
 }
 
 a {
@@ -31,7 +32,7 @@ a {
   border-bottom: none;
 }
 
-/* --- Responsive Enhancements --- */
+/* --- Responsiveness */
 @media screen and (max-width: 1024px) {
   body {
     font-size: 1.4vw;
@@ -78,36 +79,3 @@ a {
 }
 
 
-/* STORY STYLES */
-
-rt {
-  font-size: clamp(0.8vw, 1.5vw, 2.8vw);
-}
-
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.nav-wrapper .side {
-  flex: 1;
-  padding: 0 20px;
-  box-sizing: border-box;
-
-}
-
-.nav-wrapper .side.left {
-  text-align: left;
-}
-
-.nav-wrapper .side.right {
-  text-align: right;
-}
-
-.nav-wrapper .center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}

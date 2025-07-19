@@ -1,0 +1,31 @@
+rt {
+  font-size: clamp(0.8vw, 1.5vw, 2.8vw);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-wrapper .side {
+  flex: 1;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+}
+
+.nav-wrapper .side.left {
+  text-align: left;
+}
+
+.nav-wrapper .side.right {
+  text-align: right;
+}
+
+.nav-wrapper .center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
