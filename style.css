@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
-
 body {
   background-color: #000000;
   color: #C0C0C0;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Courier', serif;
   font-size: 1vw;
   padding: 0;
-  width: 90%;
 }
 
 a {
@@ -14,8 +11,14 @@ a {
   text-underline-offset: 5px;
 }
 
+.pfp {
+  border-radius: 50%;
+  width: 10vw;
+  height: auto;
+}
+
 .container {
-  width: 100%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
@@ -77,5 +80,3 @@ a {
   }
 
 }
-
-
