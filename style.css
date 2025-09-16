@@ -10,11 +10,13 @@
 }
 
 .pfp {
-  border-radius: 50%;
-  width: 5vw;
-  height: auto;
-}
-
+	  border-radius: 50%;       /* keeps it circular */
+	    width: 100%;              /* fill the container */
+	      max-width: 150px;         /* limits size on large screens */
+	        height: auto;             /* maintains aspect ratio */
+		  display: block;           /* prevents inline spacing issues */
+		    object-fit: cover;        /* ensures image fills the circle nicely */
+	    }
 body {
   font-family: 'Noto Serif JP', Courier, monospace;
   font-size: clamp(14px, 2vw, 18px);
