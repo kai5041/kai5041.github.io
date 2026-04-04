@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting</title>
+
+  <script>
+    (function () {
+      const supported_languages = ["en", "ja"];
+      const fallback_language = "en";
+
+      const lang = navigator.language || navigator.userLanguage;
+      const short = lang.toLowerCase().split("-")[0];
+
+      const chosen = supported_languages.includes(short) ? short : fallback_language;
+
+      window.location.replace("/" + chosen + "/");
+    })();
+  </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/">
+  </noscript>
+
+</head>
+
+<body>
+  Redirecting…
+</body>
+
+</html>
