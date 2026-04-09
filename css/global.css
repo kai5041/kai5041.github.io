@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('/fonts/woff2/NotoSerifJP-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-optical-sizing: auto;
+}
+
+:root {
+  --bgc: #F0F0F0FF;
+  --fgc: #0F0F0FFF;
+
+  --fgc-soft: #2E2E2EFF;
+  --bgc-soft: #E2E2E2FF;
+
+  --red: #C0392B;
+}
+
+section {
+  margin-bottom: 2vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+body {
+  background-color: var(--bgc);
+  color: var(--fgc);
+  font-family: 'Noto Serif JP', serif;
+  line-height: 1.4;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--fgc-soft);
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Noto Serif JP', serif;
+}
+
+hr {
+  border: 1px solid var(--fgc-soft);
+  opacity: 0.5;
+  margin: 1.5rem 0;
+}
+
+*::selection {
+  color: var(--bgc);
+  background-color: var(--fgc);
+}
+
+main {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.note {
+  border-left: 4px solid var(--fgc);
+  background-color: var(--bgc-soft);
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.note a {
+  color: var(--fgc);
+  text-decoration: underline;
+}
+
+.note strong {
+  font-weight: 900;
+}

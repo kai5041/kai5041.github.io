@@ -1,0 +1,47 @@
+.nav {
+  width: 100%;
+  border-bottom: 1px solid var(--fgc);
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 600;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: var(--fgc);
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav ul li a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 0;
+    margin: 0 auto;
+  }
+
+  .nav ul li a {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+}
