@@ -29,9 +29,8 @@ section {
 
 ul,
 ol {
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
-  padding-left: 1.5rem;
+  margin-top: 1rem;
+  padding-left: 1.25rem;
 }
 
 li {
@@ -72,10 +71,6 @@ main {
   padding: 1rem;
 }
 
-h1 {
-  font-size: 1.5rem;
-}
-
 .note {
   border-left: 4px solid var(--fgc);
   background-color: var(--bgc-soft);
@@ -92,4 +87,62 @@ h1 {
 
 .note strong {
   font-weight: 900;
+}
+
+.cta {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.cta a {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--fgc);
+  color: var(--bgc);
+  border: 1px solid var(--fgc);
+  overflow: hidden;
+  text-decoration: none;
+
+  transition: color 0.5s ease;
+}
+
+.cta a {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+
+  background-color: var(--fgc);
+  color: var(--bgc);
+  border: 1px solid var(--fgc);
+  text-decoration: none;
+
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cta a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-color: var(--bgc);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+
+  z-index: -1;
+}
+
+.cta a:hover {
+  color: var(--fgc);
+}
+
+.cta a:hover::before {
+  transform: scaleX(1);
+}
+
+.cta a:active {
+  transform: translateY(0);
 }

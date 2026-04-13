@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>解 | 主要頁</title>
+  <title>
+    解 | 主要頁
+  </title>
+
+  <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
 
   <link rel="preload" href="/fonts/woff2/NotoSerifJP-VariableFont_wght.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
@@ -21,7 +25,6 @@
       <ul>
         <li><a href="/ja/">主要頁</a></li>
         <li><a href="/ja/services/">業務</a></li>
-        <li><a href="/ja/projects/">計画</a></li>
         <li><a href="/ja/about/">概要</a></li>
         <li><a href="/ja/contact/">連絡</a></li>
       </ul>
@@ -30,12 +33,107 @@
 
 </div>
 
-
   
-<main>
-  <p>近日公開</p>
-</main>
+<style>
+  .hero {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
 
+  .pfp {
+    width: 100%;
+    max-width: 140px;
+    margin: 5vh auto 1.5rem;
+
+    opacity: 0;
+    transform: scale(0.98);
+    animation: fadeIn 0.45s ease forwards;
+
+    will-change: opacity, transform;
+  }
+
+  .pfp img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+
+    border-radius: 50%;
+    border: 1px solid var(--fgc);
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    max-width: 42ch;
+    margin: 0 auto;
+    font-style: italic;
+    letter-spacing: 0.2px;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: 0.2s;
+
+    will-change: opacity, transform;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .services {
+    margin-top: 3rem;
+
+    opacity: 0;
+    animation: fadeIn 0.55s ease forwards;
+    animation-delay: 0.35s;
+
+    will-change: opacity, transform;
+  }
+
+  ul {
+    line-height: 1.6;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+
+<main>
+  <div class="pfp">
+    <img src="/assets/webp/kai_logo_dark.webp" alt="Kai logo">
+  </div>
+  
+  
+  <header class="hero">
+    <p>EN・IT・JA</p>
+    <p class="tagline">Building fast, secure, efficient web and software systems for businesses and indipendent professionals.</p>
+  </header>
+
+  <section class="services">
+    <h3>業務</h3>
+
+    <ul>
+      <li>Websites for content creators</li> <li>Static websites optimized for speed, SEO and low maintenance</li> <li>Server maintenance and support in production</li>
+
+    </ul>
+
+    <p class="cta">
+      <a href="/ja/services">Find the right solution &rarr;</a>
+    </p>
+  </section>
+</main>
 </body>
 
 </html>
