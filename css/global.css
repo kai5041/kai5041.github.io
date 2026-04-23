@@ -21,6 +21,11 @@ section {
   margin-bottom: 2vh;
 }
 
+footer {
+  text-align: center;
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -98,24 +103,12 @@ main {
   position: relative;
   display: inline-block;
   padding: 0.5rem 0.75rem;
-  background-color: var(--fgc);
-  color: var(--bgc);
-  border: 1px solid var(--fgc);
-  overflow: hidden;
-  text-decoration: none;
-
-  transition: color 0.5s ease;
-}
-
-.cta a {
-  position: relative;
-  display: inline-block;
-  padding: 0.5rem 0.75rem;
 
   background-color: var(--fgc);
   color: var(--bgc);
   border: 1px solid var(--fgc);
   text-decoration: none;
+  font-weight: 700;
 
   overflow: hidden;
   z-index: 0;
@@ -126,7 +119,7 @@ main {
   position: absolute;
   inset: 0;
 
-  background-color: var(--bgc);
+  background-color: var(--bgc-soft);
 
   transform: scaleX(0);
   transform-origin: left;

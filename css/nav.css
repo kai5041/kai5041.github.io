@@ -1,6 +1,10 @@
 .nav {
   width: 100%;
+  margin-top: 2vh;
   border-bottom: 1px solid var(--fgc);
+
+  display: flex;
+  justify-content: center;
 }
 
 .nav ul {
@@ -12,7 +16,7 @@
   justify-content: center;
   align-items: center;
 
-  gap: 24px;
+  gap: 0;
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 500;
 }
@@ -20,6 +24,13 @@
 .nav ul li {
   display: flex;
   align-items: center;
+}
+
+.nav ul li:not(:last-child)::after {
+  content: "::";
+  margin: 0 24px;
+  color: var(--fgc);
+  opacity: 0.6;
 }
 
 .nav ul li a {
@@ -32,37 +43,49 @@
 
   padding: 1rem;
   line-height: 1;
-  height: 100%;
-  text-align: center;
+
+  position: relative;
 }
 
-.nav ul li a:hover {
-  opacity: 0.7;
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  width: 0;
+  height: 1px;
+  background: var(--fgc);
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.nav ul li a:hover::after {
+  width: 60%;
 }
 
 @media (max-width: 768px) {
   .nav ul {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
     gap: 12px;
     padding: 16px 0;
-    margin: 0;
-  }
-
-  .nav ul li {
-    flex: 0 0 auto;
   }
 
   .nav ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     padding: 0.75rem 1rem;
-    text-align: center;
     white-space: nowrap;
   }
+
+  .nav ul li:not(:last-child)::after {
+    content: "";
+    margin: 0 0;
+  }
+}
+
+#contact {
+  background-color: var(--fgc);
+  color: var(--bgc);
+}
+
+#contact::after {
+  background: var(--bgc);
 }
