@@ -1,0 +1,23 @@
+<script>
+  (function () {
+    var path = window.location.pathname || "";
+    var parts = path.split("/").filter(Boolean);
+
+    var lang = "en";
+
+    if (parts.length > 0) {
+      var candidate = parts[0];
+
+      var supported = ["en", "it", "ja"];
+      if (supported.indexOf(candidate) !== -1) {
+        lang = candidate;
+      }
+    }
+
+    window.location.replace("/" + lang + "/services/");
+  })();
+</script>
+
+<noscript>
+  <meta http-equiv="refresh" content="0; url=/en/services/">
+</noscript>

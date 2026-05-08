@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default('en') }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script data-goatcounter="https://kai5041.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+  <title>
+    {{ global.company_name | t(lang) }} | {{ global[title] | t(lang) if global[title] else title }}
+  </title>
+
+  <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/nav.css">
+
+</head>
+
+<body>
+  {% include "nav.njk" %}
+
+  {{ content | safe }}
+
+  {% include "footer.njk" %}
+
+</body>
+
+</html>

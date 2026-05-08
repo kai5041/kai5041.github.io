@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="font-variation-settings:'wght' 400;fill:#f0f0f0;fill-opacity:1;stroke-width:0"
+     id="rect1"
+     width="512"
+     height="512"
+     x="0"
+     y="0" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.333px;line-height:1;font-family:'Noto Serif JP';-inkscape-font-specification:'Noto Serif JP, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;writing-mode:lr-tb;direction:ltr;fill:#0f0f0f;fill-opacity:1;stroke-width:0"
+     x="164.16666"
+     y="371.50003"
+     id="text1"><tspan
+       id="tspan1"
+       x="164.16666"
+       y="371.50003">$</tspan></text>
+</svg>

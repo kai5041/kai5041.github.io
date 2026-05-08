@@ -1,0 +1,36 @@
+company_name:
+  en: Kai
+  ja: 解
+
+home:
+  en: Home
+  it: Home
+  ja: 主要頁
+
+services:
+  en: Services
+  it: Servizi
+  ja: 業務
+
+projects:
+  en: Projects
+  it: Progetti
+  ja: 計画
+
+about:
+  en: About me
+  it: Chi sono
+  ja: 概要
+
+contact:
+  en: Contact
+  it: Contattami
+  ja: 連絡
+
+coming_soon:
+  en: Coming soon...
+  it: Prossimamente...
+  ja: 近日公開…
+
+404_err:
+  en: 404 Not found

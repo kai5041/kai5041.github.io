@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('/fonts/ttf/NotoSerifJP-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-optical-sizing: auto;
+}
+
+:root {
+  --bgc: #F0F0F0FF;
+  --fgc: #0F0F0FFF;
+
+  --fgc-soft: #2E2E2EFF;
+  --bgc-soft: #E2E2E2FF;
+
+  --red: #C0392B;
+}
+
+section {
+  margin-bottom: 2vh;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+body {
+  background-color: var(--bgc);
+  color: var(--fgc);
+  font-family: 'Noto Serif JP', serif;
+  line-height: 1.4;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--fgc-soft);
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Noto Serif JP', serif;
+}
+
+hr {
+  border: 1px solid var(--fgc-soft);
+  opacity: 0.5;
+  margin: 1.5rem 0;
+}
+
+*::selection {
+  color: var(--bgc);
+  background-color: var(--fgc);
+}
+
+main {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.note {
+  border-left: 4px solid var(--fgc);
+  background-color: var(--bgc-soft);
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.note a {
+  color: var(--fgc);
+  text-decoration: underline;
+}
+
+.note strong {
+  font-weight: 900;
+}
+
+.cta {
+  margin-top: 1rem;
+}
+
+.cta a {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+
+  background-color: var(--fgc);
+  color: var(--bgc);
+  border: 1px solid var(--fgc);
+  text-decoration: none;
+  font-weight: 700;
+
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cta a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-color: var(--bgc-soft);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+
+  z-index: -1;
+}
+
+.cta a:hover {
+  color: var(--fgc);
+}
+
+.cta a:hover::before {
+  transform: scaleX(1);
+}
+
+.cta a:active {
+  transform: translateY(0);
+}

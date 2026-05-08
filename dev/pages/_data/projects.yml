@@ -1,0 +1,11 @@
+reactor:
+  en: >
+    A C++23 framework for webpage generation and serving over HTTP.
+  
+  links: <a href="https://codeberg.org/rairen-rdd/reactor" target="_blank" rel="noopener noreferrer">Source</a> | <a href="https://github.com/rairen-rdd/reactor target="_blank" rel="noopener noreferrer">Mirror</a>
+
+rensa:
+  en: >
+    A deterministic project orchestrator.
+  
+  links: <a href="https://codeberg.org/rairen-rdd/rensa" target="_blank" rel="noopener noreferrer">Source</a> | <a href="https://github.com/rairen-rdd/rensa target="_blank" rel="noopener noreferrer">Mirror</a>

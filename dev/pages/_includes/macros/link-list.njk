@@ -1,0 +1,11 @@
+{% macro socialItem(name, url, handle, note="") %}
+<li>
+  {{ name }}:
+  <a href="{{ url }}" target="_blank" rel="noopener noreferrer">
+    {{ handle }}
+  </a>
+  {% if note %}
+    - {{ note }}
+  {% endif %}
+</li>
+{% endmacro %}
