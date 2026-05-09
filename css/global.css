@@ -47,8 +47,10 @@ body {
   color: var(--fgc);
   font-family: 'Noto Serif JP', serif;
   line-height: 1.4;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 2vw, 1.1rem);
   overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 a {

@@ -4,66 +4,66 @@ layout: layout.njk
 ---
 
 <style>
-  h1 {
-    text-align: center;
-    margin-bottom: 2vh;
-  }
-
-  section.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .card {
-    background-color: var(--bgc-soft);
-    flex: 1 1 260px;
-    max-width: 320px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    min-height: 260px;
-  }
-
-  .card .container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
   h2 {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
   }
 
-  .card p {
-    opacity: 0.8;
-    margin-bottom: 1rem;
-  }
-
-  .bottom {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .details-trigger {
+  .clickable {
     text-decoration: underline;
-    opacity: 0.6;
     cursor: pointer;
-    transition: opacity 150ms ease;
+    user-select: none;
+    margin-top: 1rem;
   }
 
-  .details-trigger:hover {
-    opacity: 1;
+  .clickable::after {
+    content: "→";
+    margin-left: 0.5em;
+    display: inline-block;
   }
 
-  h1 {
+  .hidden {
+    display: none;
+  }
+
+  .hidden.open {
+    display: block;
+  }
+
+  #services-list,
+  #services-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  #services-list li {
+    max-width: 100%;
+  }
+
+  #services-list ul {
+    padding-left: 1.25rem;
+  }
+
+  #services-list .hidden div p {
+    margin: 0.2rem 0;
+  }
+
+  #services-list .hidden ul {
+    margin: 0 0 0.6rem 1.2rem;
+  }
+
+  #services-list .hidden ul {
+    list-style: disc;
+  }
+
+  #services-list .hidden strong {
+    display: inline-block;
+    margin-top: 0.4rem;
+  }
+
+  .cta {
     text-align: center;
-    margin-bottom: 2vh;
+    margin-top: 1rem;
   }
 </style>
 
@@ -74,81 +74,155 @@ layout: layout.njk
   </section>
 
   <!-- SERVICES GRID -->
-  <section class="cards">
+  <section>
 
-    <div class="card">
-      <div class="container">
-        <h2>Code debugging</h2>
-        <p>Get your code fixed.</p>
+    <ul id="services-list">
 
-        <div class="bottom">
-          <div class="cta">
-            <a href="/{{ lang }}/contact">Contact</a>
-          </div>
-          <p class="details-trigger">Further details</p>
-        </div>
-      </div>
-    </div>
+      <li>
+        <p class="clickable">Websites</p>
+        <ul class="hidden">
+          <li>
+            <p class="clickable">Landing page</p>
 
-    <div class="card">
-      <div class="container">
-        <h2>Automation Scripts</h2>
-        <p>Get your environment automated.</p>
+            <div class="hidden">
+              <p><strong>Description </strong>:</p>
+              <p>A simple website for content creators and freelancers.</p>
+              <p><strong>Includes</strong>:</p>
+              <ul>
+                <li>1 page</li>
+                <li>Basic styling</li>
+                <li>Responsive design</li>
+              </ul>
 
-        <div class="bottom">
-          <div class="cta">
-            <a href="/{{ lang }}/contact">Contact</a>
-          </div>
-          <p class="details-trigger">Further details</p>
-        </div>
-      </div>
-    </div>
+              <p><strong>Excludes</strong>:</p>
+              <ul>
+                <li>Dynamicity</li>
+                <li>Complex styling</li>
+                <li>Integrations</li>
+              </ul>
 
-    <div class="card">
-      <div class="container">
-        <h2>Linux & Environment Fixes</h2>
-        <p>Get your Linux or dev environment fixed.</p>
+              <p><strong>Price</strong>: 50-120 EUR</p>
 
-        <div class="bottom">
-          <div class="cta">
-            <a href="/{{ lang }}/contact">Contact</a>
-          </div>
-          <p class="details-trigger">Further details</p>
-        </div>
-      </div>
-    </div>
+              <div class="cta">
+                <a href="/{{ lang }}/contact">Contact →</a>
+              </div>
+            </div>
+          </li>
 
-    <div class="card">
-      <div class="container">
-        <h2>Quick Debugging & Review</h2>
-        <p>Get a quick review of your code.</p>
+          <li>
+            <p class="clickable">Standard Website</p>
 
-        <div class="bottom">
-          <div class="cta">
-            <a href="/{{ lang }}/contact">Contact</a>
-          </div>
-          <p class="details-trigger">Further details</p>
-        </div>
-      </div>
-    </div>
+            <div class="hidden">
+              <p><strong>Description </strong>:</p>
+              <p>A website for entities who need furhter showcasing.</p>
+              <p><strong>Includes</strong>:</p>
+              <ul>
+                <li>Maximum 5 pages</li>
+                <li>Responsive design</li>
+                <li>Consistent styling</li>
+                <li>Basic interactivity</li>
+              </ul>
+
+              <p><strong>Excludes</strong>:</p>
+              <ul>
+                <li>Complex styling</li>
+                <li>Complex interactivity</li>
+                <li>Integrations</li>
+              </ul>
+
+              <p><strong>Price</strong>: 150-400 EUR</p>
+
+              <div class="cta">
+                <a href="/{{ lang }}/contact">Contact →</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <p class="clickable">Advanced Website</p>
+
+            <div class="hidden">
+              <p><strong>Description </strong>:</p>
+              <p>A dynamic website for system interfacing.</p>
+              <p><strong>Includes</strong>:</p>
+              <ul>
+                <li>Dashboard</li>
+                <li>Authentication</li>
+                <li>API integration</li>
+                <li>JavaScript-heavy dynamicity</li>
+              </ul>
+
+              <p><strong>Excludes</strong>:</p>
+              <ul>
+                <li>Realtime content</li>
+                <li>Back-end development</li>
+              </ul>
+
+              <p><strong>Price</strong>: 400-1500+ EUR</p>
+
+              <div class="cta">
+                <a href="/{{ lang }}/contact">Contact →</a>
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
+      </li>
+
+      <li>
+        <p class="clickable">Maintenance (coming soon)</p>
+      </li>
+
+      <li>
+        <p class="clickable">Support (coming soon)</p>
+      </li>
+
+    </ul>
 
   </section>
 
-  <!-- PAYMENT -->
+  <script>
+    document.querySelectorAll(".clickable").forEach(el => {
+      el.addEventListener("click", () => {
+        const next = el.nextElementSibling;
+
+        if (next && next.classList.contains("hidden")) {
+          next.classList.toggle("open");
+          el.classList.toggle("open");
+        }
+      });
+    });
+  </script>
+
   <section>
     <h2>Payment Methods</h2>
 
     <ul>
-      <li>EUR (SEPA transfer preferred)</li>
-      <li>USD (international wire transfer)</li>
+      <li>EUR (SEPA transfer)</li>
+      <li>USD (SWIFT transfer)</li>
+      <li>RON (SWIFT transfer)</li>
+      <li>JPY (SWIFT transfer)</li>
       <li>
-        USDC on Polygon PoS:
-        <a href="https://polygonscan.com/token/0x3c499c542cef5e3811e1192ce70d8cc03d5c3359" target="_blank"
-          rel="noopener noreferrer">
-          <code>0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359</code>
-        </a>
+        <p>
+          USDC on Polygon PoS:
+          <a href="https://polygonscan.com/token/0x3c499c542cef5e3811e1192ce70d8cc03d5c3359" target="_blank"
+            rel="noopener noreferrer" class="scroll">
+            0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359
+          </a>
+        </p>
       </li>
     </ul>
+
+    <p class="note">
+      <strong>NOTE</strong><br>
+      Fiat currency payments are referenced in EUR using the <a rel="noopener noreferrer"
+        href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECB
+        Reference Rates</a>
+      <br>
+      Cryptocurrency payments are referenced in EUR using the market rate listed on <a rel="noopener noreferrer"
+        href="https://kraken.com/">Kraken</a> stated by the invoice.
+    </p>
   </section>
 
 </main>
