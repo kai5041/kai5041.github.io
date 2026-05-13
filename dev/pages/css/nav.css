@@ -80,12 +80,3 @@
     margin: 0 0;
   }
 }
-
-#contact {
-  background-color: var(--fgc);
-  color: var(--bgc);
-}
-
-#contact::after {
-  background: var(--bgc);
-}
