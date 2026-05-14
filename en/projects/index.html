@@ -39,10 +39,13 @@
 <body>
   <div class="nav" id="nav">
   <div class="nav-menu">
-    <img class="nav-logo" src="/assets/png/kai_banner_light.png">
+    <a href="/en/">
+      <img class="nav-logo" src="/assets/png/kai_banner_light.png">
+    </a>
 
     <header id="nav-header">
       <ul>
+        <li><a href="/en/">Home</a></li>
         <li><a href="/en/services/">Services</a></li>
         <li><a href="/en/projects/">Projects</a></li>
         <li><a href="/en/research/">Research</a></li>
@@ -55,30 +58,63 @@
   
 <main>
   <h1>Projects</h1>
-  
-  <section>
+
+  <section id="reactor">
     <h2>Reactor</h2>
-    <p>A C++23 framework for website and API generation and serving over HTTP/S and WS/S.
-</p>
+    <p>A C++23 framework for website and API generation and serving over HTTP and WebSockets with TLS support.</p>
     <p>Repository: <a href="https://codeberg.org/rairen-rdd/reactor" target="_blank" rel="noopener noreferrer">Source</a> | <a href="https://github.com/rairen-rdd/reactor" target="_blank" rel="noopener noreferrer">Mirror</a></p>
   </section>
 
-  <section>
+  <section id="rensa">
     <h2>Rensa / 連鎖</h2>
-    <p>A deterministic project orchestrator built in C++23.
-</p>
+    <p>A deterministic project orchestrator and version control system built in C++23.</p>
     <p>Repository: <a href="https://codeberg.org/rairen-rdd/rensa" target="_blank" rel="noopener noreferrer">Source</a> | <a href="https://github.com/rairen-rdd/rensa" target="_blank" rel="noopener noreferrer">Mirror</a></p>
   </section>
-
-  
 </main>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
+    const targetId = window.location.hash.slice(1);
+
+    if (!targetId) return;
+
+    const section = document.getElementById(targetId);
+
+    if (!section) return;
+
+    const originalTransition = section.style.transition;
+    const originalOutline = section.style.outline;
+    const originalOutlineOffset = section.style.outlineOffset;
+    const originalBackground = section.style.backgroundColor;
+
+    section.style.transition =
+      "background-color 0.8s ease, outline-color 0.8s ease, outline-offset 0.8s ease";
+
+    section.style.outline = "2px solid var(--fgc)";
+    section.style.outlineOffset = "0.25rem";
+
+    section.style.backgroundColor =
+      "color-mix(in srgb, var(--fgc) 12%, var(--bgc))";
+
+    setTimeout(() => {
+      section.style.outline = originalOutline || "2px solid transparent";
+      section.style.outlineOffset = originalOutlineOffset;
+      section.style.backgroundColor = originalBackground;
+
+      section.style.transition = originalTransition;
+    }, 1400);
+  });
+</script>
 
   <footer>
   <ul>
     <li>
       <p><strong>Legal</strong></p>
-    </li>
     <li>
       <a href="/en/legal-information">Legal information</a>
     </li>
@@ -87,6 +123,7 @@
     </li>
     <li>
       <a href="/en/cookie-policy">Cookie Policy</a>
+    </li>
     </li>
   </ul>
 

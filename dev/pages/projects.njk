@@ -5,18 +5,55 @@ layout: layout.njk
 
 <main>
   <h1>{{ global.projects | t(lang) }}</h1>
-  
-  <section>
+
+  <section id="reactor">
     <h2>Reactor</h2>
     <p>{{ projects.reactor | t(lang) | safe }}</p>
     <p>Repository: {{ projects.reactor.links | safe }}</p>
   </section>
 
-  <section>
+  <section id="rensa">
     <h2>Rensa / 連鎖</h2>
     <p>{{ projects.rensa | t(lang) | safe }}</p>
     <p>Repository: {{ projects.rensa.links | safe }}</p>
   </section>
-
-  
 </main>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
+    const targetId = window.location.hash.slice(1);
+
+    if (!targetId) return;
+
+    const section = document.getElementById(targetId);
+
+    if (!section) return;
+
+    const originalTransition = section.style.transition;
+    const originalOutline = section.style.outline;
+    const originalOutlineOffset = section.style.outlineOffset;
+    const originalBackground = section.style.backgroundColor;
+
+    section.style.transition =
+      "background-color 0.8s ease, outline-color 0.8s ease, outline-offset 0.8s ease";
+
+    section.style.outline = "2px solid var(--fgc)";
+    section.style.outlineOffset = "0.25rem";
+
+    section.style.backgroundColor =
+      "color-mix(in srgb, var(--fgc) 12%, var(--bgc))";
+
+    setTimeout(() => {
+      section.style.outline = originalOutline || "2px solid transparent";
+      section.style.outlineOffset = originalOutlineOffset;
+      section.style.backgroundColor = originalBackground;
+
+      section.style.transition = originalTransition;
+    }, 1400);
+  });
+</script>

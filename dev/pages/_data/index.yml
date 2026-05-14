@@ -1,17 +1,21 @@
-tagline: 
-  en: A multi-domain aspiring researcher focused on problem-solving and systems.
-  it: Un aspirante ricercatore multi dominio focalizzato nella risoluzione di problemi e sui sistemi.
+hero:
+  first:
+    en: An independent infrastructure builder.
+    it: Un realizzatore di infrastrutture indipendente.
+  
+  second:
+    en: >
+      Founder and core maintainer of
+    
+    it: >
+      Fondatore e principale manutentore di
+    
 
-lines: 
-  en: >
-    <li>Websites for content creators</li>
-    <li>Static websites optimized for speed, SEO and low maintenance</li>
-    <li>Server maintenance and support in production</li>
-  it: >
-    <li>Siti web per content creator</li>
-    <li>Sviluppo siti web statici, veloci e leggeri</li>
-    <li>Manutenzione e supporto server</li>
+  third:
+    en: Builder of systems and digital infrastructures.
+    it: Creatore di sistemi e infrastrutture digitali.
 
-explore:
-  en: Find the right solution
-  it: Trova la soluzione giusta
+and:
+  en: and
+  it: e
+  ja: と

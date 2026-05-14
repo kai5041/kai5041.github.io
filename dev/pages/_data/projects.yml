@@ -1,11 +1,11 @@
 reactor:
-  en: >
-    A C++23 framework for website and API generation and serving over HTTP/S and WS/S.
-  
+  en: A C++23 framework for website and API generation and serving over HTTP and WebSockets with TLS support.
+  it: Un framework scritto in C++23 per la generazione di siti web e API, servendoli via HTTP e WebSockets con supporto TLS. 
+
   links: <a href="https://codeberg.org/rairen-rdd/reactor" target="_blank" rel="noopener noreferrer">Source</a> | <a href="https://github.com/rairen-rdd/reactor" target="_blank" rel="noopener noreferrer">Mirror</a>
 
 rensa:
-  en: >
-    A deterministic project orchestrator built in C++23.
-  
+  en: A deterministic project orchestrator and version control system built in C++23.
+  it: Un orchestratore di progetti deterministico e sistema di controllo di versioni scritto in C++23.
+
   links: <a href="https://codeberg.org/rairen-rdd/rensa" target="_blank" rel="noopener noreferrer">Source</a> | <a href="https://github.com/rairen-rdd/rensa" target="_blank" rel="noopener noreferrer">Mirror</a>

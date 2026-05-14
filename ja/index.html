@@ -26,7 +26,7 @@
   <script data-goatcounter="https://kai5041.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 
   <title>
-    解 | Index
+    解 | Home
   </title>
 
   <link rel="icon" type="image/png" href="https://rairen.net/assets/png/kai_logo_light.png">
@@ -39,10 +39,13 @@
 <body>
   <div class="nav" id="nav">
   <div class="nav-menu">
-    <img class="nav-logo" src="/assets/png/kai_banner_light.png">
+    <a href="/ja/">
+      <img class="nav-logo" src="/assets/png/kai_banner_light.png">
+    </a>
 
     <header id="nav-header">
       <ul>
+        <li><a href="/ja/">主要頁</a></li>
         <li><a href="/ja/services/">業務</a></li>
         <li><a href="/ja/projects/">計画</a></li>
         <li><a href="/ja/research/">研究</a></li>
@@ -53,37 +56,136 @@
 </div>
 
   
+<style>
+  :root {
+    --radius: 14px;
+  }
 
-<script>
-  (function () {
-    var path = window.location.pathname || "";
-    var parts = path.split("/").filter(Boolean);
+  main {
+    padding: 3rem 1.5rem;
+  }
 
-    var lang = "en";
+  .guide {
+    font-size: 1.1rem;
+    width: 100%;
+    background: var(--fgc);
+    color: var(--bgc);
+    padding: 3rem 2rem;
+    border-radius: var(--radius);
+  }
 
-    if (parts.length > 0) {
-      var candidate = parts[0];
+  .guide div {
+    margin: 0 auto;
+    max-width: 60ch;
+    text-align: center;
+    line-height: 1.6;
+  }
 
-      var supported = ["en", "it", "ja"];
-      if (supported.indexOf(candidate) !== -1) {
-        lang = candidate;
-      }
+  .guide a {
+    color: var(--bgc);
+    text-underline-offset: 3px;
+  }
+
+  .offer {
+    border: 1px solid var(--fgc);
+    border-radius: var(--radius);
+    padding: 1.75rem 1.5rem;
+    margin-bottom: 2vh;
+  }
+
+  .offer p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+  }
+
+  .offer strong {
+    font-size: 1.15rem;
+  }
+
+  .offer a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+  }
+
+  section a {
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  @media (max-width: 700px) {
+    .guide {
+      padding: 2rem 1.25rem;
     }
 
-    window.location.replace("/" + lang + "/services/");
-  })();
-</script>
+    .offer {
+      padding: 1.25rem;
+    }
+  }
 
-<noscript>
-  <meta http-equiv="refresh" content="0; url=/en/services/">
-</noscript>
+  .guide p {
+    margin: 0.4rem 0;
+  }
+</style>
 
+<main>
+
+  <section class="guide">
+    <div>
+      <p>An independent infrastructure builder.<p>
+
+      <p>
+        Founder and core maintainer of
+
+        <a href="/ja/projects#rensa">Rensa / 連鎖</a>
+        と
+        <a href="/ja/projects#reactor">Reactor</a>.
+      </p>
+
+      <p>Builder of systems and digital infrastructures.</p>
+    </div>
+  </section>
+
+  <section>
+
+    <div class="offer">
+      <p><strong>Systems for growing companies</strong></p>
+
+      <p>
+        Infrastructure, automation, and digital systems
+        for teams that need reliability and room to scale.
+      </p>
+
+      <a href="/ja/services/">Check the rates</a>
+    </div>
+
+    <div class="offer">
+      <p><strong>Websites for freelancers</strong></p>
+
+      <p>
+        Fast, maintainable websites for creators,
+        independent workers, and small online brands.
+      </p>
+
+      <a href="/ja/services/">Get known on the web</a>
+    </div>
+
+  </section>
+
+  <section>
+    <h3>Latest research reports</h3>
+    <p>近日公開</p>
+  </section>
+
+</main>
 
   <footer>
   <ul>
     <li>
       <p><strong>Legal</strong></p>
-    </li>
     <li>
       <a href="/ja/legal-information">Legal information</a>
     </li>
@@ -92,6 +194,7 @@
     </li>
     <li>
       <a href="/ja/cookie-policy">Cookie Policy</a>
+    </li>
     </li>
   </ul>
 

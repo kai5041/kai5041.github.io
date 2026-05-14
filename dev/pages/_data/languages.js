@@ -1,1 +1,1 @@
-module.exports = ["en", "ja", "it"];
+module.exports = ["en", "ja", "it", "ro"];

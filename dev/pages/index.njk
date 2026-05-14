@@ -1,29 +1,129 @@
 ---
-title: Index
+title: Home
 layout: layout.njk
 ---
 
+<style>
+  :root {
+    --radius: 14px;
+  }
 
-<script>
-  (function () {
-    var path = window.location.pathname || "";
-    var parts = path.split("/").filter(Boolean);
+  main {
+    padding: 3rem 1.5rem;
+  }
 
-    var lang = "en";
+  .guide {
+    font-size: 1.1rem;
+    width: 100%;
+    background: var(--fgc);
+    color: var(--bgc);
+    padding: 3rem 2rem;
+    border-radius: var(--radius);
+  }
 
-    if (parts.length > 0) {
-      var candidate = parts[0];
+  .guide div {
+    margin: 0 auto;
+    max-width: 60ch;
+    text-align: center;
+    line-height: 1.6;
+  }
 
-      var supported = ["en", "it", "ja"];
-      if (supported.indexOf(candidate) !== -1) {
-        lang = candidate;
-      }
+  .guide a {
+    color: var(--bgc);
+    text-underline-offset: 3px;
+  }
+
+  .offer {
+    border: 1px solid var(--fgc);
+    border-radius: var(--radius);
+    padding: 1.75rem 1.5rem;
+    margin-bottom: 2vh;
+  }
+
+  .offer p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+  }
+
+  .offer strong {
+    font-size: 1.15rem;
+  }
+
+  .offer a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+  }
+
+  section a {
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  @media (max-width: 700px) {
+    .guide {
+      padding: 2rem 1.25rem;
     }
 
-    window.location.replace("/" + lang + "/services/");
-  })();
-</script>
+    .offer {
+      padding: 1.25rem;
+    }
+  }
 
-<noscript>
-  <meta http-equiv="refresh" content="0; url=/en/services/">
-</noscript>
+  .guide p {
+    margin: 0.4rem 0;
+  }
+</style>
+
+<main>
+
+  <section class="guide">
+    <div>
+      <p>{{ index.hero.first | t(lang) }}<p>
+
+      <p>
+        {{ index.hero.second | t(lang) | safe }}
+        <a href="/{{ lang }}/projects#rensa">Rensa / 連鎖</a>
+        {{ index.and | t(lang) }}
+        <a href="/{{ lang }}/projects#reactor">Reactor</a>.
+      </p>
+
+      <p>{{ index.hero.third | t(lang) }}</p>
+    </div>
+  </section>
+
+  <section>
+
+    <div class="offer">
+      <p><strong>Systems for growing companies</strong></p>
+
+      <p>
+        Infrastructure, automation, and digital systems
+        for teams that need reliability and room to scale.
+      </p>
+
+      <a href="/{{ lang }}/services/">Check the rates</a>
+    </div>
+
+    <div class="offer">
+      <p><strong>Websites for freelancers</strong></p>
+
+      <p>
+        Fast, maintainable websites for creators,
+        independent workers, and small online brands.
+      </p>
+
+      <a href="/{{ lang }}/services/">Get known on the web</a>
+    </div>
+
+  </section>
+
+  <section>
+    <h3>Latest research reports</h3>
+    <p>{{ global.coming_soon | t(lang) }}</p>
+  </section>
+
+</main>

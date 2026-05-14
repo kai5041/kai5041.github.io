@@ -1,22 +1,10 @@
 @font-face {
-  font-family: 'Noto Serif JP';
-  src: url('/fonts/ttf/NotoSerifJP-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-  font-optical-sizing: auto;
-}
-
-@font-face {
   font-family: 'Noto Sans JP';
-  src: url('/fonts/ttf/NotoSansJP-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/woff2/NotoSansJP-VariableFont_wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  font-optical-sizing: auto;
 }
-
-
 
 :root {
   --bgc: #F0F0F0FF;
@@ -35,37 +23,39 @@ section {
 footer {
   color: var(--bgc-soft);
   margin-top: 5vh;
-}
-
-footer li {
-  text-align: left;
   width: 100%;
-  margin-left: 2vw;
+  padding: 1rem 0;
+
+  text-align: center;
 }
 
 footer ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.4rem 1.2rem;
-  padding: 0;
-  margin: 0;
-}
 
-@media (min-width: 768px) {
-  footer ul {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 0.6rem 1rem;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 footer li {
-  display: block;
+  width: 100%;
 }
 
 footer a {
-  text-decoration: none;
-  color: var(--bgc-soft);
   display: block;
+
+  color: var(--bgc-soft);
+  text-decoration: none;
+
+  padding: 0.25rem 0;
+  word-break: break-word;
 }
 
 * {
@@ -101,7 +91,7 @@ a {
 }
 
 button {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', serif;
 }
 
 hr {
@@ -151,49 +141,4 @@ main {
 
 .note p {
   margin: 0.5em 0;
-}
-
-.cta {
-  margin-top: 1rem;
-}
-
-.cta a {
-  position: relative;
-  display: inline-block;
-  padding: 0.5rem 0.75rem;
-
-  background-color: var(--fgc);
-  color: var(--bgc);
-  border: 1px solid var(--fgc);
-  text-decoration: none;
-  font-weight: 700;
-
-  overflow: hidden;
-  z-index: 0;
-}
-
-.cta a::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-color: var(--bgc-soft);
-
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease;
-
-  z-index: -1;
-}
-
-.cta a:hover {
-  color: var(--fgc);
-}
-
-.cta a:hover::before {
-  transform: scaleX(1);
-}
-
-.cta a:active {
-  transform: translateY(0);
 }
