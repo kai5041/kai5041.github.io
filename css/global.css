@@ -7,6 +7,17 @@
   font-optical-sizing: auto;
 }
 
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('/fonts/ttf/NotoSansJP-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-optical-sizing: auto;
+}
+
+
+
 :root {
   --bgc: #F0F0F0FF;
   --fgc: #0F0F0FFF;
@@ -22,8 +33,39 @@ section {
 }
 
 footer {
-  text-align: center;
+  color: var(--bgc-soft);
+  margin-top: 5vh;
+}
+
+footer li {
+  text-align: left;
   width: 100%;
+  margin-left: 2vw;
+}
+
+footer ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  footer ul {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+footer li {
+  display: block;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--bgc-soft);
+  display: block;
 }
 
 * {
@@ -43,9 +85,9 @@ li {
 }
 
 body {
-  background-color: var(--bgc);
+  background-color: var(--fgc);
   color: var(--fgc);
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', serif;
   line-height: 1.4;
   font-size: clamp(1rem, 2vw, 1.1rem);
   overflow-x: hidden;
@@ -76,24 +118,39 @@ hr {
 main {
   margin: 0 auto;
   padding: 1rem;
+  background-color: var(--bgc);
 }
 
 .note {
   border-left: 4px solid var(--fgc);
   background-color: var(--bgc-soft);
-  padding: 1em 1.5em;
-  margin: 1.5em 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
   font-size: 0.95rem;
-  line-height: 1.4;
+  line-height: 1.6;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
 }
 
 .note a {
   color: var(--fgc);
   text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+}
+
+.note a:hover {
+  opacity: 0.85;
 }
 
 .note strong {
-  font-weight: 900;
+  font-weight: 700;
+  color: var(--fgc);
+}
+
+.note p {
+  margin: 0.5em 0;
 }
 
 .cta {

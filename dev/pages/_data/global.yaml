@@ -7,6 +7,11 @@ home:
   it: Home
   ja: 主要頁
 
+research:
+  en: Research
+  it: Ricerca
+  ja: 研究
+
 services:
   en: Services
   it: Servizi
@@ -34,7 +39,6 @@ coming_soon:
 
 404_err:
   en: 404 Not found
-
 
 url_title:
   en: IT Services & Maintenance
