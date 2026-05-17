@@ -1,5 +1,5 @@
 ---
-title: Home
+title: home
 layout: layout.njk
 ---
 
@@ -12,8 +12,8 @@ layout: layout.njk
     padding: 3rem 1.5rem;
   }
 
-  .guide {
-    font-size: 1.1rem;
+  .hero {
+    font-size: 1.5rem;
     width: 100%;
     background: var(--fgc);
     color: var(--bgc);
@@ -21,14 +21,12 @@ layout: layout.njk
     border-radius: var(--radius);
   }
 
-  .guide div {
+  .hero div {
     margin: 0 auto;
-    max-width: 60ch;
     text-align: center;
-    line-height: 1.6;
   }
 
-  .guide a {
+  .hero a {
     color: var(--bgc);
     text-underline-offset: 3px;
   }
@@ -64,7 +62,7 @@ layout: layout.njk
   }
 
   @media (max-width: 700px) {
-    .guide {
+    .hero {
       padding: 2rem 1.25rem;
     }
 
@@ -73,56 +71,42 @@ layout: layout.njk
     }
   }
 
-  .guide p {
+  .hero p {
     margin: 0.4rem 0;
+  }
+
+  .small {
+    font-size: 1rem;
   }
 </style>
 
 <main>
 
-  <section class="guide">
+  <section class="hero">
     <div>
-      <p>{{ index.hero.first | t(lang) }}<p>
-
-      <p>
-        {{ index.hero.second | t(lang) | safe }}
-        <a href="/{{ lang }}/projects#rensa">Rensa / 連鎖</a>
-        {{ index.and | t(lang) }}
-        <a href="/{{ lang }}/projects#reactor">Reactor</a>.
-      </p>
-
-      <p>{{ index.hero.third | t(lang) }}</p>
+      <p>{{ index.hero | t(lang) }}</p>
     </div>
   </section>
 
   <section>
-
+    {% for offer in index.offers | t(lang) %}
     <div class="offer">
-      <p><strong>Systems for growing companies</strong></p>
+      <p>❖ <strong>{{ offer.title }}</strong></p>
 
-      <p>
-        Infrastructure, automation, and digital systems
-        for teams that need reliability and room to scale.
-      </p>
+      <p>{{ offer.description }}</p>
 
-      <a href="/{{ lang }}/services/">Check the rates</a>
+      <p class="small">{{ offer.pricing }}</p>
+
+      <a href="/{{ lang }}/contact/">▸ {{ offer.cta }}</a>
     </div>
-
-    <div class="offer">
-      <p><strong>Websites for freelancers</strong></p>
-
-      <p>
-        Fast, maintainable websites for creators,
-        independent workers, and small online brands.
-      </p>
-
-      <a href="/{{ lang }}/services/">Get known on the web</a>
-    </div>
+    {% endfor %}
 
   </section>
 
+  {% note global.note, lang, index.currency_note %}
+
   <section>
-    <h3>Latest research reports</h3>
+    <h3>{{ index.lr | t(lang) }}</h3>
     <p>{{ global.coming_soon | t(lang) }}</p>
   </section>
 

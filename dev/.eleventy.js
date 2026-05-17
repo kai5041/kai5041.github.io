@@ -30,6 +30,13 @@ module.exports = function (eleventyConfig) {
     return `<strong>${label}</strong>: <a href="${url}" target="_blank" rel="noopener noreferrer">${handle}</a>`;
   });
 
+  eleventyConfig.addNunjucksShortcode("note", (keyObj, lang, text) => {
+    const label = keyObj?.[lang] ?? keyObj?.en ?? "NOTE";
+    const out = text?.[lang] ?? text?.en ?? "⚠️ missing";
+    return `<p class="note">◆ <strong>${label}</strong><br>${out}</p>`;
+  });
+
+
   eleventyConfig.addFilter("t", function (obj, lang) {
     return obj?.[lang] ?? obj?.en ?? `⚠️ missing`;
   });
