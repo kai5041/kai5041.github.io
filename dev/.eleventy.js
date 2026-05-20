@@ -1,9 +1,8 @@
 const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
-  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
-
+  eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   eleventyConfig.addPassthroughCopy("pages/js");
   eleventyConfig.addPassthroughCopy("pages/css");
@@ -21,8 +20,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addGlobalData("eleventyComputed", {
     permalink: (data) => {
-      const name = data.page.fileSlug;
-      return `/${data.lang}/${name === "index" ? "" : name + "/"}index.html`;
+      const stem = data.page.filePathStem;
+
+      const isIndex = stem === "index" || stem.endsWith("/index");
+
+      const path = isIndex ? "" : `${stem}/`;
+
+      return `/${data.lang}/${path}index.html`;
     }
   });
 
@@ -36,9 +40,8 @@ module.exports = function (eleventyConfig) {
     return `<p class="note">◆ <strong>${label}</strong><br>${out}</p>`;
   });
 
-
   eleventyConfig.addFilter("t", function (obj, lang) {
-    return obj?.[lang] ?? obj?.en ?? `⚠️ missing`;
+    return obj?.[lang] ?? obj?.en ?? "⚠️ missing";
   });
 
   return {
