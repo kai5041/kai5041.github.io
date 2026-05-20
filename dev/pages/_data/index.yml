@@ -31,10 +31,10 @@ offers:
   it:
     - title: Strumenti di automazione e operativi
       description: Strumenti CLI personalizzati e sistemi interni leggeri per automazione, interfacciamento con infrastrutture, elaborazione dati e flussi di lavoro ripetitivi.
-      pricing: "Progetti tipici: 150-800 EUR in base alla complessità."
+      pricing: "Prezzo tipico: 150~800 EUR in base alla complessità."
       cta: Analizza il tuo workflow
 
-    - title: Siti web per piccole imprese e freelance
+    - title: Siti web per piccole imprese e liberi professionisti
       description: Siti veloci e mantenibili per creator, professionisti indipendenti e piccole attività che necessitano di una presenza online affidabile.
       pricing: "Siti semplici a partire da 250 EUR."
       cta: Avvia il tuo sito web
@@ -65,7 +65,7 @@ offers:
   ro:
     - title: Instrumente de automatizare și operaționale
       description: Instrumente CLI personalizate și sisteme interne ușoare pentru automatizare, integrare cu infrastructura, procesare de date și fluxuri repetitive de lucru.
-      pricing: "Proiecte tipice: 150-800 EUR în funcție de complexitate."
+      pricing: "Preț tipic: 150-800 EUR în funcție de complexitate."
       cta: Analizează fluxul tău de lucru
 
     - title: Site-uri pentru companii mici și freelanceri
@@ -82,48 +82,48 @@ offers:
 currency_note:
   en: |
     Accepted currencies: EUR, USD, RON, JPY, USDC (Polygon PoS).
+    <br><br>
 
-    Fiat currency payments are referenced in EUR using the ECB Reference Rates:
-    <a rel="noopener noreferrer" target="_blank"
-    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">
-    https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html</a>
+    Fiat currency payments are referenced in EUR using the 
+    <a rel="noopener noreferrer" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECB Reference Rates</a>.
 
+    <br>
     Cryptocurrency payments are referenced in EUR using the market rate listed on Kraken stated by the invoice:
-    <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">
-    https://kraken.com/</a>
+    <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">Kraken's website</a>.
 
   it: |
     Valute accettate: EUR, USD, RON, JPY, USDC (Polygon PoS).
+    <br><br>
 
-    I pagamenti in valuta fiat sono convertiti in EUR utilizzando i tassi di riferimento BCE:
-    <a rel="noopener noreferrer" target="_blank"
-    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">
-    https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html</a>
+    I pagamenti in valuta fiat sono convertiti in EUR utilizzando i 
+    <a rel="noopener noreferrer" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">tassi di riferimento BCE</a>.
+    <br>
 
     I pagamenti in criptovaluta sono convertiti in EUR utilizzando il tasso di mercato di Kraken indicato in fattura:
     <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">
-    https://kraken.com/</a>
+    Sito di Kraken</a>.
 
   ja: |
     対応通貨: EUR、USD、RON、JPY、USDC（Polygon PoS）。
-    <br>
+    <br><br>
+
 
     法定通貨の支払いはEUR換算でECB基準為替レートを使用します：
     <a rel="noopener noreferrer" target="_blank"
-    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECB基準為替レート</a>
-
+    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECB基準為替レート</a>。
     <br>
 
-    暗号資産の支払いは、請求書に記載されるKrakenの市場レートを使用してEUR換算されます： <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">Kraken公式サイト</a>
+    暗号資産の支払いは、請求書に記載されるKrakenの市場レートを使用してEUR換算されます： <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">Kraken公式サイト</a>。
 
   ro: |
     Monede acceptate: EUR, USD, RON, JPY, USDC (Polygon PoS).
+    <br><br>
 
-    Plățile în monedă fiat sunt convertite în EUR folosind cursurile de referință BCE:
+    Plățile în monedă fiat sunt convertite în EUR folosind 
     <a rel="noopener noreferrer" target="_blank"
-    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">
-    https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html</a>
+    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">cursurile de referință BCE</a>.
+    <br>
 
     Plățile în criptomonede sunt convertite în EUR folosind cursul de piață de pe Kraken menționat pe factură:
     <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">
-    https://kraken.com/</a>
+    Site-ul web al lui Kraken</a>.

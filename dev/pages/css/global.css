@@ -10,10 +10,15 @@
   --bgc: #F0F0F0FF;
   --fgc: #0F0F0FFF;
 
-  --fgc-soft: #2E2E2EFF;
   --bgc-soft: #E2E2E2FF;
+  --fgc-soft: #2E2E2EFF;
 
   --red: #C0392B;
+}
+
+a {
+  color: var(--fgc-soft);
+  text-decoration: underline;
 }
 
 section {
@@ -83,11 +88,6 @@ body {
   overflow-x: hidden;
   overflow-wrap: break-word;
   word-break: break-word;
-}
-
-a {
-  color: var(--fgc-soft);
-  text-decoration: underline;
 }
 
 button {
