@@ -31,6 +31,10 @@ layout: layout.njk
     text-underline-offset: 3px;
   }
 
+  .hero p {
+    margin: 0.4rem 0;
+  }
+
   .offer {
     border: 1px solid var(--fgc);
     border-radius: var(--radius);
@@ -38,22 +42,38 @@ layout: layout.njk
     margin-bottom: 2vh;
   }
 
+  .offer-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
   .offer p {
     margin: 0.5rem 0;
     line-height: 1.5;
   }
 
-  .offer strong {
-    font-size: 1.15rem;
-  }
-
   .offer a {
     display: inline-block;
-    margin-top: 0.75rem;
-    font-weight: 500;
+    margin-top: 1rem;
+    font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
+    border: 1px solid var(--fgc);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  .offer a:hover {
+    color: var(--bgc);
+    background-color: var(--fgc);
+  }
+
+  .price {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--fgc);
   }
 
   section a {
@@ -69,10 +89,6 @@ layout: layout.njk
     .offer {
       padding: 1.25rem;
     }
-  }
-
-  .hero p {
-    margin: 0.4rem 0;
   }
 
   .small {
@@ -91,16 +107,21 @@ layout: layout.njk
   <section>
     {% for offer in index.offers | t(lang) %}
     <div class="offer">
-      <p>❖ <strong>{{ offer.title }}</strong></p>
+
+      <h3 class="offer-title">❖ {{ offer.title }}</h3>
 
       <p>{{ offer.description }}</p>
 
-      <p class="small">{{ offer.pricing }}</p>
+      {% if offer.result %}
+      <p><strong>{{ offer.result }}</strong></p>
+      {% endif %}
+
+      <p class="price">{{ offer.pricing }}</p>
 
       <a href="/{{ lang }}/contact/">▸ {{ offer.cta }}</a>
+
     </div>
     {% endfor %}
-
   </section>
 
   {% note global.note, lang, index.currency_note %}

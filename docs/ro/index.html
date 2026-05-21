@@ -85,6 +85,10 @@
     text-underline-offset: 3px;
   }
 
+  .hero p {
+    margin: 0.4rem 0;
+  }
+
   .offer {
     border: 1px solid var(--fgc);
     border-radius: var(--radius);
@@ -92,22 +96,38 @@
     margin-bottom: 2vh;
   }
 
+  .offer-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
   .offer p {
     margin: 0.5rem 0;
     line-height: 1.5;
   }
 
-  .offer strong {
-    font-size: 1.15rem;
-  }
-
   .offer a {
     display: inline-block;
-    margin-top: 0.75rem;
-    font-weight: 500;
+    margin-top: 1rem;
+    font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
+    border: 1px solid var(--fgc);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  .offer a:hover {
+    color: var(--bgc);
+    background-color: var(--fgc);
+  }
+
+  .price {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--fgc);
   }
 
   section a {
@@ -125,10 +145,6 @@
     }
   }
 
-  .hero p {
-    margin: 0.4rem 0;
-  }
-
   .small {
     font-size: 1rem;
   }
@@ -138,43 +154,60 @@
 
   <section class="hero">
     <div>
-      <p>Instrumente de automatizare, sisteme web și infrastructuri backend.</p>
+      <p>Instrumente de automatizare, sisteme web și infrastructuri backend construite pentru a reduce munca operațională.</p>
     </div>
   </section>
 
   <section>
     
     <div class="offer">
-      <p>❖ <strong>Instrumente de automatizare și operaționale</strong></p>
 
-      <p>Instrumente CLI personalizate și sisteme interne ușoare pentru automatizare, integrare cu infrastructura, procesare de date și fluxuri repetitive de lucru.</p>
+      <h3 class="offer-title">❖ Instrumente de automatizare și operaționale</h3>
 
-      <p class="small">Preț tipic: 150-800 EUR în funcție de complexitate.</p>
+      <p>Instrumente CLI personalizate și sisteme interne ușoare concepute pentru eliminarea sarcinilor repetitive, conectarea fluxurilor de lucru fragmentate și optimizarea operațiunilor de infrastructură. Pentru utilizatori care vor viteză fără complexitate suplimentară.</p>
+
+      
+      <p><strong>Înlocuirea proceselor manuale cu automatizări rapide și fiabile.</strong></p>
+      
+
+      <p class="price">Preț tipic: 150-800 EUR în funcție de complexitate.</p>
 
       <a href="/ro/contact/">▸ Analizează fluxul tău de lucru</a>
+
     </div>
     
     <div class="offer">
-      <p>❖ <strong>Site-uri pentru companii mici și freelanceri</strong></p>
 
-      <p>Site-uri rapide și ușor de întreținut pentru creatori, profesioniști independenți și afaceri mici care au nevoie de o prezență online fiabilă.</p>
+      <h3 class="offer-title">❖ Site-uri pentru companii mici și freelanceri</h3>
 
-      <p class="small">Site-uri simple de la 250 EUR.</p>
+      <p>Site-uri rapide și ușor de întreținut concepute pentru a transforma vizitatorii în solicitări reale. Accent pe claritate, performanță și simplitate pe termen lung.</p>
+
+      
+      <p><strong>Prezență online stabilă care generează cereri și rămâne ușor de gestionat.</strong></p>
+      
+
+      <p class="price">Site-uri simple de la 250 EUR.</p>
 
       <a href="/ro/contact/">▸ Lansează site-ul tău</a>
+
     </div>
     
     <div class="offer">
-      <p>❖ <strong>Infrastructură și sisteme backend</strong></p>
 
-      <p>Servicii backend, pipeline-uri de automatizare și suport de infrastructură pentru proiecte care necesită fiabilitate, mentenanță și scalabilitate.</p>
+      <h3 class="offer-title">❖ Infrastructură și sisteme backend</h3>
 
-      <p class="small">Prețuri personalizate în funcție de cerințele proiectului.</p>
+      <p>Servicii backend, pipeline-uri de automatizare și sisteme infrastructurale proiectate pentru fiabilitate, scalabilitate și mentenanță pe termen lung. Pentru proiecte care nu permit compromisuri sau întreruperi.</p>
+
+      
+      <p><strong>O bază backend stabilă care crește odată cu proiectul.</strong></p>
+      
+
+      <p class="price">Prețuri personalizate în funcție de cerințele proiectului.</p>
 
       <a href="/ro/contact/">▸ Solicită o consultație tehnică gratuită</a>
+
     </div>
     
-
   </section>
 
   <p class="note">◆ <strong>NOTE</strong><br>Monede acceptate: EUR, USD, RON, JPY, USDC (Polygon PoS).

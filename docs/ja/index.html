@@ -85,6 +85,10 @@
     text-underline-offset: 3px;
   }
 
+  .hero p {
+    margin: 0.4rem 0;
+  }
+
   .offer {
     border: 1px solid var(--fgc);
     border-radius: var(--radius);
@@ -92,22 +96,38 @@
     margin-bottom: 2vh;
   }
 
+  .offer-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
   .offer p {
     margin: 0.5rem 0;
     line-height: 1.5;
   }
 
-  .offer strong {
-    font-size: 1.15rem;
-  }
-
   .offer a {
     display: inline-block;
-    margin-top: 0.75rem;
-    font-weight: 500;
+    margin-top: 1rem;
+    font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
+    border: 1px solid var(--fgc);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  .offer a:hover {
+    color: var(--bgc);
+    background-color: var(--fgc);
+  }
+
+  .price {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--fgc);
   }
 
   section a {
@@ -125,10 +145,6 @@
     }
   }
 
-  .hero p {
-    margin: 0.4rem 0;
-  }
-
   .small {
     font-size: 1rem;
   }
@@ -138,43 +154,60 @@
 
   <section class="hero">
     <div>
-      <p>自動化ツール、ウェブシステム、バックエンドインフラストラクチャ。</p>
+      <p>業務負荷を減らすための自動化ツール、ウェブシステム、バックエンドインフラ。</p>
     </div>
   </section>
 
   <section>
     
     <div class="offer">
-      <p>❖ <strong>自動化・運用ツール</strong></p>
 
-      <p>自動化、インフラ連携、データ処理、反復作業のためのカスタムCLIツールおよび軽量な社内システム。</p>
+      <h3 class="offer-title">❖ 自動化・運用ツール</h3>
 
-      <p class="small">一般的なプロジェクト: 150〜800 EUR（規模により変動）</p>
+      <p>反復作業の削減、分断されたワークフローの統合、インフラ運用の効率化を目的としたカスタムCLIツールおよび軽量な社内システム。複雑さを増やさずに実行速度を上げる設計。</p>
+
+      
+      <p><strong>手作業のプロセスを高速で信頼性の高い自動化に置き換える。</strong></p>
+      
+
+      <p class="price">一般的なプロジェクト: 150〜800 EUR（規模により変動）</p>
 
       <a href="/ja/contact/">▸ ワークフローについて相談する</a>
+
     </div>
     
     <div class="offer">
-      <p>❖ <strong>小規模企業・フリーランス向けウェブサイト</strong></p>
 
-      <p>クリエイターや個人事業主、小規模ビジネス向けの高速で保守しやすい信頼性の高いウェブサイト。</p>
+      <h3 class="offer-title">❖ 小規模企業・フリーランス向けウェブサイト</h3>
 
-      <p class="small">シンプルなサイトは250 EURから</p>
+      <p>訪問者を実際の問い合わせにつなげるための高速で保守しやすいウェブサイト。明確さ、パフォーマンス、長期的な運用性を重視。</p>
+
+      
+      <p><strong>問い合わせを生み出し続ける安定したオンラインプレゼンス。</strong></p>
+      
+
+      <p class="price">シンプルなサイトは250 EURから</p>
 
       <a href="/ja/contact/">▸ ウェブサイトを公開する</a>
+
     </div>
     
     <div class="offer">
-      <p>❖ <strong>インフラ・バックエンドシステム</strong></p>
 
-      <p>信頼性・保守性・拡張性が求められるプロジェクト向けのバックエンドサービス、自動化パイプライン、インフラ支援。</p>
+      <h3 class="offer-title">❖ インフラ・バックエンドシステム</h3>
 
-      <p class="small">プロジェクト要件に応じた個別見積もり</p>
+      <p>信頼性・拡張性・長期保守性を重視したバックエンドサービス、自動化パイプライン、インフラ設計。停止や設計負債が許されないプロジェクト向け。</p>
+
+      
+      <p><strong>成長に耐える安定したバックエンド基盤。</strong></p>
+      
+
+      <p class="price">プロジェクト要件に応じた個別見積もり</p>
 
       <a href="/ja/contact/">▸ 無料技術相談を依頼する</a>
+
     </div>
     
-
   </section>
 
   <p class="note">◆ <strong>注</strong><br>対応通貨: EUR、USD、RON、JPY、USDC（Polygon PoS）。

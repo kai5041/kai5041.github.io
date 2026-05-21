@@ -85,6 +85,10 @@
     text-underline-offset: 3px;
   }
 
+  .hero p {
+    margin: 0.4rem 0;
+  }
+
   .offer {
     border: 1px solid var(--fgc);
     border-radius: var(--radius);
@@ -92,22 +96,38 @@
     margin-bottom: 2vh;
   }
 
+  .offer-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
   .offer p {
     margin: 0.5rem 0;
     line-height: 1.5;
   }
 
-  .offer strong {
-    font-size: 1.15rem;
-  }
-
   .offer a {
     display: inline-block;
-    margin-top: 0.75rem;
-    font-weight: 500;
+    margin-top: 1rem;
+    font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
+    border: 1px solid var(--fgc);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  .offer a:hover {
+    color: var(--bgc);
+    background-color: var(--fgc);
+  }
+
+  .price {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--fgc);
   }
 
   section a {
@@ -125,10 +145,6 @@
     }
   }
 
-  .hero p {
-    margin: 0.4rem 0;
-  }
-
   .small {
     font-size: 1rem;
   }
@@ -138,43 +154,60 @@
 
   <section class="hero">
     <div>
-      <p>Strumenti di automazione, sistemi web e infrastrutture backend.</p>
+      <p>Strumenti di automazione, sistemi web e infrastrutture backend progettati per ridurre il lavoro operativo.</p>
     </div>
   </section>
 
   <section>
     
     <div class="offer">
-      <p>❖ <strong>Strumenti di automazione e operativi</strong></p>
 
-      <p>Strumenti CLI personalizzati e sistemi interni leggeri per automazione, interfacciamento con infrastrutture, elaborazione dati e flussi di lavoro ripetitivi.</p>
+      <h3 class="offer-title">❖ Strumenti di automazione e operativi</h3>
 
-      <p class="small">Prezzo tipico: 150~800 EUR in base alla complessità.</p>
+      <p>Strumenti CLI personalizzati e sistemi interni leggeri progettati per eliminare attività ripetitive, collegare flussi di lavoro frammentati e semplificare le operazioni infrastrutturali. Pensati per chi vuole più velocità senza aumentare la complessità.</p>
+
+      
+      <p><strong>Sostituzione dei processi manuali con automazioni rapide e affidabili.</strong></p>
+      
+
+      <p class="price">Prezzo tipico: 150~800 EUR in base alla complessità.</p>
 
       <a href="/it/contact/">▸ Analizza il tuo workflow</a>
+
     </div>
     
     <div class="offer">
-      <p>❖ <strong>Siti web per piccole imprese e liberi professionisti</strong></p>
 
-      <p>Siti veloci e mantenibili per creator, professionisti indipendenti e piccole attività che necessitano di una presenza online affidabile.</p>
+      <h3 class="offer-title">❖ Siti web per piccole imprese e liberi professionisti</h3>
 
-      <p class="small">Siti semplici a partire da 250 EUR.</p>
+      <p>Siti veloci e mantenibili progettati per trasformare visitatori in contatti reali. Focalizzati su chiarezza, prestazioni e semplicità a lungo termine.</p>
+
+      
+      <p><strong>Presenza online stabile che genera richieste e resta facile da gestire.</strong></p>
+      
+
+      <p class="price">Siti semplici a partire da 250 EUR.</p>
 
       <a href="/it/contact/">▸ Avvia il tuo sito web</a>
+
     </div>
     
     <div class="offer">
-      <p>❖ <strong>Infrastrutture e sistemi backend</strong></p>
 
-      <p>Servizi backend, pipeline di automazione e supporto infrastrutturale per progetti che richiedono affidabilità, manutenzione e scalabilità.</p>
+      <h3 class="offer-title">❖ Infrastrutture e sistemi backend</h3>
 
-      <p class="small">Prezzi personalizzati in base ai requisiti del progetto.</p>
+      <p>Servizi backend, pipeline di automazione e sistemi infrastrutturali progettati per affidabilità, scalabilità e manutenzione a lungo termine. Ideali per progetti che non possono permettersi interruzioni o compromessi architetturali.</p>
+
+      
+      <p><strong>Una base backend stabile che cresce con il progetto senza rompersi.</strong></p>
+      
+
+      <p class="price">Prezzi personalizzati in base ai requisiti del progetto.</p>
 
       <a href="/it/contact/">▸ Richiedi una consulenza tecnica gratuita</a>
+
     </div>
     
-
   </section>
 
   <p class="note">◆ <strong>NOTA</strong><br>Valute accettate: EUR, USD, RON, JPY, USDC (Polygon PoS).

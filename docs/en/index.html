@@ -85,6 +85,10 @@
     text-underline-offset: 3px;
   }
 
+  .hero p {
+    margin: 0.4rem 0;
+  }
+
   .offer {
     border: 1px solid var(--fgc);
     border-radius: var(--radius);
@@ -92,22 +96,38 @@
     margin-bottom: 2vh;
   }
 
+  .offer-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
   .offer p {
     margin: 0.5rem 0;
     line-height: 1.5;
   }
 
-  .offer strong {
-    font-size: 1.15rem;
-  }
-
   .offer a {
     display: inline-block;
-    margin-top: 0.75rem;
-    font-weight: 500;
+    margin-top: 1rem;
+    font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
+    border: 1px solid var(--fgc);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  .offer a:hover {
+    color: var(--bgc);
+    background-color: var(--fgc);
+  }
+
+  .price {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--fgc);
   }
 
   section a {
@@ -125,10 +145,6 @@
     }
   }
 
-  .hero p {
-    margin: 0.4rem 0;
-  }
-
   .small {
     font-size: 1rem;
   }
@@ -138,43 +154,60 @@
 
   <section class="hero">
     <div>
-      <p>Automation tools, web systems, and backend infrastructures.</p>
+      <p>Automation tools, web systems, and backend infrastructures built to remove operational friction.</p>
     </div>
   </section>
 
   <section>
     
     <div class="offer">
-      <p>❖ <strong>Automation and Operational Tools</strong></p>
 
-      <p>Custom CLI tools and lightweight internal systems for automation, infrastructure interfacing, data processing, and repetitive workflows.</p>
+      <h3 class="offer-title">❖ Automation and Operational Tools</h3>
 
-      <p class="small">Typical projects: 150~800 EUR depending on scope.</p>
+      <p>Custom CLI tools and lightweight internal systems designed to eliminate repetitive manual work, connect fragmented workflows, and streamline infrastructure operations. Built for teams or individuals who want faster execution without scaling overhead.</p>
+
+      
+      <p><strong>Replace repetitive workflows with fast, reliable automation tailored to your environment.</strong></p>
+      
+
+      <p class="price">Typical projects: 150~800 EUR depending on scope.</p>
 
       <a href="/en/contact/">▸ Discuss your workflow</a>
+
     </div>
     
     <div class="offer">
-      <p>❖ <strong>Websites for small companies and freelancers</strong></p>
 
-      <p>Fast, maintainable websites for creators, independent workers, and small businesses that need a reliable online presence.</p>
+      <h3 class="offer-title">❖ Websites for small companies and freelancers</h3>
 
-      <p class="small">Simple websites starting from 250 EUR.</p>
+      <p>Fast, maintainable websites designed to turn visitors into inquiries. Focused on clarity, performance, and long-term simplicity rather than heavy maintenance or complex systems.</p>
+
+      
+      <p><strong>A stable online presence that loads fast, stays maintainable, and supports real client acquisition.</strong></p>
+      
+
+      <p class="price">Simple websites starting from 250 EUR.</p>
 
       <a href="/en/contact/">▸ Launch your website</a>
+
     </div>
     
     <div class="offer">
-      <p>❖ <strong>Infrastructure and Backend Systems</strong></p>
 
-      <p>Backend services, automation pipelines, and infrastructure support for projects that require reliability, maintainability, and room to grow.</p>
+      <h3 class="offer-title">❖ Infrastructure and Backend Systems</h3>
 
-      <p class="small">Custom pricing based on project requirements.</p>
+      <p>Backend services, automation pipelines, and infrastructure systems built for reliability, scalability, and long-term maintainability. Designed for projects that cannot afford downtime or architectural shortcuts.</p>
+
+      
+      <p><strong>A stable backend foundation that scales with your project instead of breaking under growth.</strong></p>
+      
+
+      <p class="price">Custom pricing based on project requirements.</p>
 
       <a href="/en/contact/">▸ Request a free technical consultation</a>
+
     </div>
     
-
   </section>
 
   <p class="note">◆ <strong>NOTE</strong><br>Accepted currencies: EUR, USD, RON, JPY, USDC (Polygon PoS).

@@ -1,8 +1,8 @@
 hero:
-  en: Automation tools, web systems, and backend infrastructures.
-  it: Strumenti di automazione, sistemi web e infrastrutture backend.
-  ja: 自動化ツール、ウェブシステム、バックエンドインフラストラクチャ。
-  ro: Instrumente de automatizare, sisteme web și infrastructuri backend.
+  en: Automation tools, web systems, and backend infrastructures built to remove operational friction.
+  it: Strumenti di automazione, sistemi web e infrastrutture backend progettati per ridurre il lavoro operativo.
+  ja: 業務負荷を減らすための自動化ツール、ウェブシステム、バックエンドインフラ。
+  ro: Instrumente de automatizare, sisteme web și infrastructuri backend construite pentru a reduce munca operațională.
 
 lr:
   en: Latest research reports
@@ -13,71 +13,79 @@ lr:
 offers:
   en:
     - title: Automation and Operational Tools
-      description: Custom CLI tools and lightweight internal systems for automation, infrastructure interfacing, data processing, and repetitive workflows. 
+      description: Custom CLI tools and lightweight internal systems designed to eliminate repetitive manual work, connect fragmented workflows, and streamline infrastructure operations. Built for teams or individuals who want faster execution without scaling overhead.
+      result: Replace repetitive workflows with fast, reliable automation tailored to your environment.
       pricing: "Typical projects: 150~800 EUR depending on scope."
       cta: Discuss your workflow
 
     - title: Websites for small companies and freelancers
-      description: Fast, maintainable websites for creators, independent workers, and small businesses that need a reliable online presence.
+      description: Fast, maintainable websites designed to turn visitors into inquiries. Focused on clarity, performance, and long-term simplicity rather than heavy maintenance or complex systems.
+      result: A stable online presence that loads fast, stays maintainable, and supports real client acquisition.
       pricing: "Simple websites starting from 250 EUR."
-      
       cta: Launch your website
     
     - title: Infrastructure and Backend Systems
-      description: Backend services, automation pipelines, and infrastructure support for projects that require reliability, maintainability, and room to grow.
+      description: Backend services, automation pipelines, and infrastructure systems built for reliability, scalability, and long-term maintainability. Designed for projects that cannot afford downtime or architectural shortcuts.
+      result: A stable backend foundation that scales with your project instead of breaking under growth.
       pricing: "Custom pricing based on project requirements."
       cta: Request a free technical consultation
 
   it:
     - title: Strumenti di automazione e operativi
-      description: Strumenti CLI personalizzati e sistemi interni leggeri per automazione, interfacciamento con infrastrutture, elaborazione dati e flussi di lavoro ripetitivi.
+      description: Strumenti CLI personalizzati e sistemi interni leggeri progettati per eliminare attività ripetitive, collegare flussi di lavoro frammentati e semplificare le operazioni infrastrutturali. Pensati per chi vuole più velocità senza aumentare la complessità.
+      result: Sostituzione dei processi manuali con automazioni rapide e affidabili.
       pricing: "Prezzo tipico: 150~800 EUR in base alla complessità."
       cta: Analizza il tuo workflow
 
     - title: Siti web per piccole imprese e liberi professionisti
-      description: Siti veloci e mantenibili per creator, professionisti indipendenti e piccole attività che necessitano di una presenza online affidabile.
+      description: Siti veloci e mantenibili progettati per trasformare visitatori in contatti reali. Focalizzati su chiarezza, prestazioni e semplicità a lungo termine.
+      result: Presenza online stabile che genera richieste e resta facile da gestire.
       pricing: "Siti semplici a partire da 250 EUR."
       cta: Avvia il tuo sito web
 
     - title: Infrastrutture e sistemi backend
-      description: Servizi backend, pipeline di automazione e supporto infrastrutturale per progetti che richiedono affidabilità, manutenzione e scalabilità.
+      description: Servizi backend, pipeline di automazione e sistemi infrastrutturali progettati per affidabilità, scalabilità e manutenzione a lungo termine. Ideali per progetti che non possono permettersi interruzioni o compromessi architetturali.
+      result: Una base backend stabile che cresce con il progetto senza rompersi.
       pricing: "Prezzi personalizzati in base ai requisiti del progetto."
       cta: Richiedi una consulenza tecnica gratuita
 
-
   ja:
     - title: 自動化・運用ツール
-      description: 自動化、インフラ連携、データ処理、反復作業のためのカスタムCLIツールおよび軽量な社内システム。
+      description: 反復作業の削減、分断されたワークフローの統合、インフラ運用の効率化を目的としたカスタムCLIツールおよび軽量な社内システム。複雑さを増やさずに実行速度を上げる設計。
+      result: 手作業のプロセスを高速で信頼性の高い自動化に置き換える。
       pricing: "一般的なプロジェクト: 150〜800 EUR（規模により変動）"
       cta: ワークフローについて相談する
 
     - title: 小規模企業・フリーランス向けウェブサイト
-      description: クリエイターや個人事業主、小規模ビジネス向けの高速で保守しやすい信頼性の高いウェブサイト。
+      description: 訪問者を実際の問い合わせにつなげるための高速で保守しやすいウェブサイト。明確さ、パフォーマンス、長期的な運用性を重視。
+      result: 問い合わせを生み出し続ける安定したオンラインプレゼンス。
       pricing: "シンプルなサイトは250 EURから"
       cta: ウェブサイトを公開する
 
     - title: インフラ・バックエンドシステム
-      description: 信頼性・保守性・拡張性が求められるプロジェクト向けのバックエンドサービス、自動化パイプライン、インフラ支援。
+      description: 信頼性・拡張性・長期保守性を重視したバックエンドサービス、自動化パイプライン、インフラ設計。停止や設計負債が許されないプロジェクト向け。
+      result: 成長に耐える安定したバックエンド基盤。
       pricing: "プロジェクト要件に応じた個別見積もり"
       cta: 無料技術相談を依頼する
 
-
   ro:
     - title: Instrumente de automatizare și operaționale
-      description: Instrumente CLI personalizate și sisteme interne ușoare pentru automatizare, integrare cu infrastructura, procesare de date și fluxuri repetitive de lucru.
+      description: Instrumente CLI personalizate și sisteme interne ușoare concepute pentru eliminarea sarcinilor repetitive, conectarea fluxurilor de lucru fragmentate și optimizarea operațiunilor de infrastructură. Pentru utilizatori care vor viteză fără complexitate suplimentară.
+      result: Înlocuirea proceselor manuale cu automatizări rapide și fiabile.
       pricing: "Preț tipic: 150-800 EUR în funcție de complexitate."
       cta: Analizează fluxul tău de lucru
 
     - title: Site-uri pentru companii mici și freelanceri
-      description: Site-uri rapide și ușor de întreținut pentru creatori, profesioniști independenți și afaceri mici care au nevoie de o prezență online fiabilă.
+      description: Site-uri rapide și ușor de întreținut concepute pentru a transforma vizitatorii în solicitări reale. Accent pe claritate, performanță și simplitate pe termen lung.
+      result: Prezență online stabilă care generează cereri și rămâne ușor de gestionat.
       pricing: "Site-uri simple de la 250 EUR."
       cta: Lansează site-ul tău
 
     - title: Infrastructură și sisteme backend
-      description: Servicii backend, pipeline-uri de automatizare și suport de infrastructură pentru proiecte care necesită fiabilitate, mentenanță și scalabilitate.
+      description: Servicii backend, pipeline-uri de automatizare și sisteme infrastructurale proiectate pentru fiabilitate, scalabilitate și mentenanță pe termen lung. Pentru proiecte care nu permit compromisuri sau întreruperi.
+      result: O bază backend stabilă care crește odată cu proiectul.
       pricing: "Prețuri personalizate în funcție de cerințele proiectului."
       cta: Solicită o consultație tehnică gratuită
-
 
 currency_note:
   en: |
