@@ -12,80 +12,36 @@ lr:
 
 offers:
   en:
-    - title: Automation and Operational Tools
-      description: Custom CLI tools and lightweight internal systems designed to eliminate repetitive manual work, connect fragmented workflows, and streamline infrastructure operations. Built for teams or individuals who want faster execution without scaling overhead.
-      result: Replace repetitive workflows with fast, reliable automation tailored to your environment.
-      pricing: "Typical projects: 150~800 EUR depending on scope."
-      cta: Discuss your workflow
-
-    - title: Websites for small companies and freelancers
-      description: Fast, maintainable websites designed to turn visitors into inquiries. Focused on clarity, performance, and long-term simplicity rather than heavy maintenance or complex systems.
-      result: A stable online presence that loads fast, stays maintainable, and supports real client acquisition.
-      pricing: "Simple websites starting from 250 EUR."
-      cta: Launch your website
-    
-    - title: Infrastructure and Backend Systems
-      description: Backend services, automation pipelines, and infrastructure systems built for reliability, scalability, and long-term maintainability. Designed for projects that cannot afford downtime or architectural shortcuts.
-      result: A stable backend foundation that scales with your project instead of breaking under growth.
-      pricing: "Custom pricing based on project requirements."
-      cta: Request a free technical consultation
+    - title: Workflow Automation
+      description: Custom CLI tools and lightweight integrations that remove repetitive work and connect your tools.<br>
+                   Built primarily in C++ for performance and control, with TypeScript, Python, and Node.js used when appropriate for integrations and automation layers.
+      result: Faster workflows with less manual effort.
+      pricing: "150~800 EUR depending on scope."
+      cta: Discuss about your workflow
 
   it:
-    - title: Strumenti di automazione e operativi
-      description: Strumenti CLI personalizzati e sistemi interni leggeri progettati per eliminare attività ripetitive, collegare flussi di lavoro frammentati e semplificare le operazioni infrastrutturali. Pensati per chi vuole più velocità senza aumentare la complessità.
-      result: Sostituzione dei processi manuali con automazioni rapide e affidabili.
-      pricing: "Prezzo tipico: 150~800 EUR in base alla complessità."
-      cta: Analizza il tuo workflow
-
-    - title: Siti web per piccole imprese e liberi professionisti
-      description: Siti veloci e mantenibili progettati per trasformare visitatori in contatti reali. Focalizzati su chiarezza, prestazioni e semplicità a lungo termine.
-      result: Presenza online stabile che genera richieste e resta facile da gestire.
-      pricing: "Siti semplici a partire da 250 EUR."
-      cta: Avvia il tuo sito web
-
-    - title: Infrastrutture e sistemi backend
-      description: Servizi backend, pipeline di automazione e sistemi infrastrutturali progettati per affidabilità, scalabilità e manutenzione a lungo termine. Ideali per progetti che non possono permettersi interruzioni o compromessi architetturali.
-      result: Una base backend stabile che cresce con il progetto senza rompersi.
-      pricing: "Prezzi personalizzati in base ai requisiti del progetto."
-      cta: Richiedi una consulenza tecnica gratuita
+    - title: Automazione di workflow
+      description: Strumenti CLI personalizzati e integrazioni leggere che eliminano il lavoro ripetitivo e collegano i tuoi strumenti.<br>
+                   Realizzati principalmente in C++ per prestazioni e controllo, con TypeScript, Python e Node.js utilizzati quando appropriato per integrazioni e livelli di automazione.
+      result: Flussi di lavoro più veloci con meno sforzo manuale.
+      pricing: "150~800 EUR a seconda dell’ambito."
+      cta: Discutiamo sul tuo workflow
 
   ja:
-    - title: 自動化・運用ツール
-      description: 反復作業の削減、分断されたワークフローの統合、インフラ運用の効率化を目的としたカスタムCLIツールおよび軽量な社内システム。複雑さを増やさずに実行速度を上げる設計。
-      result: 手作業のプロセスを高速で信頼性の高い自動化に置き換える。
-      pricing: "一般的なプロジェクト: 150〜800 EUR（規模により変動）"
-      cta: ワークフローについて相談する
-
-    - title: 小規模企業・フリーランス向けウェブサイト
-      description: 訪問者を実際の問い合わせにつなげるための高速で保守しやすいウェブサイト。明確さ、パフォーマンス、長期的な運用性を重視。
-      result: 問い合わせを生み出し続ける安定したオンラインプレゼンス。
-      pricing: "シンプルなサイトは250 EURから"
-      cta: ウェブサイトを公開する
-
-    - title: インフラ・バックエンドシステム
-      description: 信頼性・拡張性・長期保守性を重視したバックエンドサービス、自動化パイプライン、インフラ設計。停止や設計負債が許されないプロジェクト向け。
-      result: 成長に耐える安定したバックエンド基盤。
-      pricing: "プロジェクト要件に応じた個別見積もり"
-      cta: 無料技術相談を依頼する
+    - title: ワークフロー自動化
+      description: カスタムCLIツールと軽量な連携により、反復作業を削減し、ツール同士を接続します。<br>
+                   主にC++で高性能と制御性を重視して構築し、必要に応じてTypeScript、Python、Node.jsを統合レイヤーや自動化層に使用します。
+      result: 手作業を減らし、より速いワークフローを実現。
+      pricing: "150〜800 EUR（規模により変動）"
+      cta: 貴方のワークフローを相談する
 
   ro:
-    - title: Instrumente de automatizare și operaționale
-      description: Instrumente CLI personalizate și sisteme interne ușoare concepute pentru eliminarea sarcinilor repetitive, conectarea fluxurilor de lucru fragmentate și optimizarea operațiunilor de infrastructură. Pentru utilizatori care vor viteză fără complexitate suplimentară.
-      result: Înlocuirea proceselor manuale cu automatizări rapide și fiabile.
-      pricing: "Preț tipic: 150-800 EUR în funcție de complexitate."
-      cta: Analizează fluxul tău de lucru
-
-    - title: Site-uri pentru companii mici și freelanceri
-      description: Site-uri rapide și ușor de întreținut concepute pentru a transforma vizitatorii în solicitări reale. Accent pe claritate, performanță și simplitate pe termen lung.
-      result: Prezență online stabilă care generează cereri și rămâne ușor de gestionat.
-      pricing: "Site-uri simple de la 250 EUR."
-      cta: Lansează site-ul tău
-
-    - title: Infrastructură și sisteme backend
-      description: Servicii backend, pipeline-uri de automatizare și sisteme infrastructurale proiectate pentru fiabilitate, scalabilitate și mentenanță pe termen lung. Pentru proiecte care nu permit compromisuri sau întreruperi.
-      result: O bază backend stabilă care crește odată cu proiectul.
-      pricing: "Prețuri personalizate în funcție de cerințele proiectului."
-      cta: Solicită o consultație tehnică gratuită
+    - title: Automatizarea fluxurilor de lucru
+      description: Instrumente CLI personalizate și integrări ușoare care elimină munca repetitivă și conectează instrumentele tale.<br>
+                   Construite în principal în C++ pentru performanță și control, cu TypeScript, Python și Node.js utilizate atunci când este potrivit pentru integrări și straturi de automatizare.
+      result: Fluxuri de lucru mai rapide cu mai puțin efort manual.
+      pricing: "150~800 EUR în funcție de complexitate."
+      cta: Discută fluxul tău de lucru
 
 currency_note:
   en: |

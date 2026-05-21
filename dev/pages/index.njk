@@ -98,19 +98,21 @@ layout: layout.njk
 
 <main>
 
-  <section class="hero">
-    <div>
-      <p>{{ index.hero | t(lang) }}</p>
-    </div>
-  </section>
-
+  <!--
+    <section class="hero">
+      <div>
+        <p>{{ index.hero | t(lang) }}</p>
+      </div>
+    </section>
+    -->
+    
   <section>
     {% for offer in index.offers | t(lang) %}
     <div class="offer">
 
       <h3 class="offer-title">❖ {{ offer.title }}</h3>
 
-      <p>{{ offer.description }}</p>
+      <p>{{ offer.description | safe }}</p>
 
       {% if offer.result %}
       <p><strong>{{ offer.result }}</strong></p>
