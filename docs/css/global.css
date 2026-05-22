@@ -26,11 +26,14 @@ section {
 }
 
 footer {
-  color: var(--bgc-soft);
-  margin-top: 5vh;
-  width: 100%;
-  padding: 1rem 0;
+  bottom: 0;
+  left: 0;
 
+  width: 100%;
+  background-color: var(--fgc);
+  color: var(--bgc-soft);
+
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -80,7 +83,7 @@ li {
 }
 
 body {
-  background-color: var(--fgc);
+  background-color: var(--bgc);
   color: var(--fgc);
   font-family: 'Noto Sans JP', serif;
   line-height: 1.4;

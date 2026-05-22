@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  
   <div class="nav" id="nav">
   <div class="nav-menu">
     <a href="/ro/">
@@ -49,13 +50,15 @@
       <ul>
         <li><a href="/ro/">Home</a></li>
         <li><a href="/ro/projects/">Projects</a></li>
+        <!--
         <li><a href="/ro/research/">Research</a></li>
+        -->
         <li><a href="/ro/contact/" id="contact">Contact</a></li>
       </ul>
     </header>
   </div>
 </div>
-
+  
   
 <style>
   :root {
@@ -111,6 +114,8 @@
     margin-top: 1rem;
     font-weight: 600;
     text-decoration: none;
+    color: var(--bgc);
+    background-color: var(--fgc);
     border: 1px solid var(--fgc);
     border-radius: 8px;
     padding: 0.4rem 0.75rem;
@@ -118,8 +123,8 @@
   }
 
   .offer a:hover {
-    color: var(--bgc);
-    background-color: var(--fgc);
+    color: var(--fgc);
+    background-color: var(--bgc);
   }
 
   .price {
@@ -152,29 +157,47 @@
 
 <main>
 
-  <!--
-    <section class="hero">
-      <div>
-        <p>Instrumente de automatizare, sisteme web și infrastructuri backend construite pentru a reduce munca operațională.</p>
-      </div>
-    </section>
-    -->
-    
+  <section class="hero">
+    <div>
+      <p><strong>Instrumente de automatizare, sisteme web și infrastructuri backend construite pentru a reduce munca operațională.</strong></p>
+      <p>Solving technical problems and building software.</p>
+    </div>
+  </section>
+
   <section>
+    <hr>
+    <h2>What I can help with</h2>
+    <br>
     
     <div class="offer">
 
-      <h3 class="offer-title">❖ Automatizarea fluxurilor de lucru</h3>
+      <h3 class="offer-title">❖ Workflow Automation</h3>
 
-      <p>Instrumente CLI personalizate și integrări ușoare care elimină munca repetitivă și conectează instrumentele tale.<br> Construite în principal în C++ pentru performanță și control, cu TypeScript, Python și Node.js utilizate atunci când este potrivit pentru integrări și straturi de automatizare.</p>
+      <p>Custom CLI tools and lightweight integrations that remove repetitive work and connect your tools.<br> Supported programming languages: C++, Python, Bash, Typescript and Node.js</p>
 
       
-      <p><strong>Fluxuri de lucru mai rapide cu mai puțin efort manual.</strong></p>
+      <p><strong>Faster workflows with less manual effort.</strong></p>
       
 
-      <p class="price">150~800 EUR în funcție de complexitate.</p>
+      <p class="price">300~1500 EUR depending on scope.</p>
 
-      <a href="/ro/contact/">▸ Discută fluxul tău de lucru</a>
+      <a href="/ro/contact/">▸ Let&#39;s discuss</a>
+
+    </div>
+    
+    <div class="offer">
+
+      <h3 class="offer-title">❖ Websites</h3>
+
+      <p>Custom  websites for freelancers and small companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead.</p>
+
+      
+      <p><strong>A stable and maintainable web presence for your business.</strong></p>
+      
+
+      <p class="price">Starting from 300 EUR for static websites.<br> Starting from 800 EUR for dynamic websites.</p>
+
+      <a href="/ro/contact/">▸ Let&#39;s discuss</a>
 
     </div>
     
@@ -193,12 +216,15 @@ Plățile în criptomonede sunt convertite în EUR folosind cursul de piață de
 Site-ul web al lui Kraken</a>.
 </p>
 
-  <section>
-    <h3>Ultimele rapoarte de cercetare</h3>
-    <p>Coming soon</p>
-  </section>
+  <!--
+    <section>
+      <h3>Ultimele rapoarte de cercetare</h3>
+      <p>Coming soon</p>
+    </section>
+  -->
 
 </main>
+
 
   <footer>
   <ul>

@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  
   <div class="nav" id="nav">
   <div class="nav-menu">
     <a href="/en/">
@@ -49,13 +50,15 @@
       <ul>
         <li><a href="/en/">Home</a></li>
         <li><a href="/en/projects/">Projects</a></li>
+        <!--
         <li><a href="/en/research/">Research</a></li>
+        -->
         <li><a href="/en/contact/" id="contact">Contact</a></li>
       </ul>
     </header>
   </div>
 </div>
-
+  
   
 <style>
   :root {
@@ -111,6 +114,8 @@
     margin-top: 1rem;
     font-weight: 600;
     text-decoration: none;
+    color: var(--bgc);
+    background-color: var(--fgc);
     border: 1px solid var(--fgc);
     border-radius: 8px;
     padding: 0.4rem 0.75rem;
@@ -118,8 +123,8 @@
   }
 
   .offer a:hover {
-    color: var(--bgc);
-    background-color: var(--fgc);
+    color: var(--fgc);
+    background-color: var(--bgc);
   }
 
   .price {
@@ -152,29 +157,47 @@
 
 <main>
 
-  <!--
-    <section class="hero">
-      <div>
-        <p>Automation tools, web systems, and backend infrastructures built to remove operational friction.</p>
-      </div>
-    </section>
-    -->
-    
+  <section class="hero">
+    <div>
+      <p><strong>Software and Systems</strong></p>
+      <p>Solving technical problems and building software.</p>
+    </div>
+  </section>
+
   <section>
+    <hr>
+    <h2>What I can help with</h2>
+    <br>
     
     <div class="offer">
 
       <h3 class="offer-title">❖ Workflow Automation</h3>
 
-      <p>Custom CLI tools and lightweight integrations that remove repetitive work and connect your tools.<br> Built primarily in C++ for performance and control, with TypeScript, Python, and Node.js used when appropriate for integrations and automation layers.</p>
+      <p>Custom CLI tools and lightweight integrations that remove repetitive work and connect your tools.<br> Supported programming languages: C++, Python, Bash, Typescript and Node.js</p>
 
       
       <p><strong>Faster workflows with less manual effort.</strong></p>
       
 
-      <p class="price">150~800 EUR depending on scope.</p>
+      <p class="price">300~1500 EUR depending on scope.</p>
 
-      <a href="/en/contact/">▸ Discuss about your workflow</a>
+      <a href="/en/contact/">▸ Let&#39;s discuss</a>
+
+    </div>
+    
+    <div class="offer">
+
+      <h3 class="offer-title">❖ Websites</h3>
+
+      <p>Custom  websites for freelancers and small companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead.</p>
+
+      
+      <p><strong>A stable and maintainable web presence for your business.</strong></p>
+      
+
+      <p class="price">Starting from 300 EUR for static websites.<br> Starting from 800 EUR for dynamic websites.</p>
+
+      <a href="/en/contact/">▸ Let&#39;s discuss</a>
 
     </div>
     
@@ -182,21 +205,23 @@
 
   <p class="note">◆ <strong>NOTE</strong><br>Accepted currencies: EUR, USD, RON, JPY, USDC (Polygon PoS).
 <br><br>
-
-Fiat currency payments are referenced in EUR using the 
+Fiat currency payments are referenced in EUR using the
 <a rel="noopener noreferrer" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECB Reference Rates</a>.
-
 <br>
-Cryptocurrency payments are referenced in EUR using the market rate listed on Kraken stated by the invoice:
-<a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">Kraken's website</a>.
+Cryptocurrency payments are converted to EUR using Kraken market rates at the time of invoicing.
+Source:
+<a rel="noopener noreferrer" target="_blank" href="https://www.kraken.com/">Kraken's website</a>.
 </p>
 
-  <section>
-    <h3>Latest research reports</h3>
-    <p>Coming soon</p>
-  </section>
+  <!--
+    <section>
+      <h3>Latest research reports</h3>
+      <p>Coming soon</p>
+    </section>
+  -->
 
 </main>
+
 
   <footer>
   <ul>

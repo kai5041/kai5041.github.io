@@ -39,6 +39,7 @@
 </head>
 
 <body>
+  
   <div class="nav" id="nav">
   <div class="nav-menu">
     <a href="/ja/">
@@ -49,13 +50,15 @@
       <ul>
         <li><a href="/ja/">主要頁</a></li>
         <li><a href="/ja/projects/">計画</a></li>
+        <!--
         <li><a href="/ja/research/">研究</a></li>
+        -->
         <li><a href="/ja/contact/" id="contact">連絡</a></li>
       </ul>
     </header>
   </div>
 </div>
-
+  
   
 <style>
   :root {
@@ -111,6 +114,8 @@
     margin-top: 1rem;
     font-weight: 600;
     text-decoration: none;
+    color: var(--bgc);
+    background-color: var(--fgc);
     border: 1px solid var(--fgc);
     border-radius: 8px;
     padding: 0.4rem 0.75rem;
@@ -118,8 +123,8 @@
   }
 
   .offer a:hover {
-    color: var(--bgc);
-    background-color: var(--fgc);
+    color: var(--fgc);
+    background-color: var(--bgc);
   }
 
   .price {
@@ -152,29 +157,47 @@
 
 <main>
 
-  <!--
-    <section class="hero">
-      <div>
-        <p>業務負荷を減らすための自動化ツール、ウェブシステム、バックエンドインフラ。</p>
-      </div>
-    </section>
-    -->
-    
+  <section class="hero">
+    <div>
+      <p><strong>業務負荷を減らすための自動化ツール、ウェブシステム、バックエンドインフラ。</strong></p>
+      <p>Solving technical problems and building software.</p>
+    </div>
+  </section>
+
   <section>
+    <hr>
+    <h2>What I can help with</h2>
+    <br>
     
     <div class="offer">
 
-      <h3 class="offer-title">❖ ワークフロー自動化</h3>
+      <h3 class="offer-title">❖ Workflow Automation</h3>
 
-      <p>カスタムCLIツールと軽量な連携により、反復作業を削減し、ツール同士を接続します。<br> 主にC++で高性能と制御性を重視して構築し、必要に応じてTypeScript、Python、Node.jsを統合レイヤーや自動化層に使用します。</p>
+      <p>Custom CLI tools and lightweight integrations that remove repetitive work and connect your tools.<br> Supported programming languages: C++, Python, Bash, Typescript and Node.js</p>
 
       
-      <p><strong>手作業を減らし、より速いワークフローを実現。</strong></p>
+      <p><strong>Faster workflows with less manual effort.</strong></p>
       
 
-      <p class="price">150〜800 EUR（規模により変動）</p>
+      <p class="price">300~1500 EUR depending on scope.</p>
 
-      <a href="/ja/contact/">▸ 貴方のワークフローを相談する</a>
+      <a href="/ja/contact/">▸ Let&#39;s discuss</a>
+
+    </div>
+    
+    <div class="offer">
+
+      <h3 class="offer-title">❖ Websites</h3>
+
+      <p>Custom  websites for freelancers and small companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead.</p>
+
+      
+      <p><strong>A stable and maintainable web presence for your business.</strong></p>
+      
+
+      <p class="price">Starting from 300 EUR for static websites.<br> Starting from 800 EUR for dynamic websites.</p>
+
+      <a href="/ja/contact/">▸ Let&#39;s discuss</a>
 
     </div>
     
@@ -192,12 +215,15 @@ href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_e
 暗号資産の支払いは、請求書に記載されるKrakenの市場レートを使用してEUR換算されます： <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">Kraken公式サイト</a>。
 </p>
 
-  <section>
-    <h3>最新の研究レポート</h3>
-    <p>近日公開</p>
-  </section>
+  <!--
+    <section>
+      <h3>最新の研究レポート</h3>
+      <p>近日公開</p>
+    </section>
+  -->
 
 </main>
+
 
   <footer>
   <ul>

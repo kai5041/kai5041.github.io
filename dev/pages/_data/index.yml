@@ -1,5 +1,5 @@
 hero:
-  en: Automation tools, web systems, and backend infrastructures built to remove operational friction.
+  en: Software and Systems
   it: Strumenti di automazione, sistemi web e infrastrutture backend progettati per ridurre il lavoro operativo.
   ja: 業務負荷を減らすための自動化ツール、ウェブシステム、バックエンドインフラ。
   ro: Instrumente de automatizare, sisteme web și infrastructuri backend construite pentru a reduce munca operațională.
@@ -13,47 +13,30 @@ lr:
 offers:
   en:
     - title: Workflow Automation
-      description: Custom CLI tools and lightweight integrations that remove repetitive work and connect your tools.<br>
-                   Built primarily in C++ for performance and control, with TypeScript, Python, and Node.js used when appropriate for integrations and automation layers.
+      description: "Custom CLI tools and lightweight integrations that remove repetitive work and connect your tools.<br>
+                   Supported programming languages: C++, Python, Bash, Typescript and Node.js"
       result: Faster workflows with less manual effort.
-      pricing: "150~800 EUR depending on scope."
-      cta: Discuss about your workflow
+      pricing: "300~1500 EUR depending on scope."
+      cta: Let's discuss
+    
+    - title: Websites
+      description: "Custom  websites for freelancers and small companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
+      result: "A stable and maintainable web presence for your business."
 
-  it:
-    - title: Automazione di workflow
-      description: Strumenti CLI personalizzati e integrazioni leggere che eliminano il lavoro ripetitivo e collegano i tuoi strumenti.<br>
-                   Realizzati principalmente in C++ per prestazioni e controllo, con TypeScript, Python e Node.js utilizzati quando appropriato per integrazioni e livelli di automazione.
-      result: Flussi di lavoro più veloci con meno sforzo manuale.
-      pricing: "150~800 EUR a seconda dell’ambito."
-      cta: Discutiamo sul tuo workflow
-
-  ja:
-    - title: ワークフロー自動化
-      description: カスタムCLIツールと軽量な連携により、反復作業を削減し、ツール同士を接続します。<br>
-                   主にC++で高性能と制御性を重視して構築し、必要に応じてTypeScript、Python、Node.jsを統合レイヤーや自動化層に使用します。
-      result: 手作業を減らし、より速いワークフローを実現。
-      pricing: "150〜800 EUR（規模により変動）"
-      cta: 貴方のワークフローを相談する
-
-  ro:
-    - title: Automatizarea fluxurilor de lucru
-      description: Instrumente CLI personalizate și integrări ușoare care elimină munca repetitivă și conectează instrumentele tale.<br>
-                   Construite în principal în C++ pentru performanță și control, cu TypeScript, Python și Node.js utilizate atunci când este potrivit pentru integrări și straturi de automatizare.
-      result: Fluxuri de lucru mai rapide cu mai puțin efort manual.
-      pricing: "150~800 EUR în funcție de complexitate."
-      cta: Discută fluxul tău de lucru
+      pricing: "Starting from 300 EUR for static websites.<br>
+                Starting from 800 EUR for dynamic websites."
+      cta: "Let's discuss"
 
 currency_note:
   en: |
     Accepted currencies: EUR, USD, RON, JPY, USDC (Polygon PoS).
     <br><br>
-
-    Fiat currency payments are referenced in EUR using the 
+    Fiat currency payments are referenced in EUR using the
     <a rel="noopener noreferrer" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECB Reference Rates</a>.
-
     <br>
-    Cryptocurrency payments are referenced in EUR using the market rate listed on Kraken stated by the invoice:
-    <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">Kraken's website</a>.
+    Cryptocurrency payments are converted to EUR using Kraken market rates at the time of invoicing.
+    Source:
+    <a rel="noopener noreferrer" target="_blank" href="https://www.kraken.com/">Kraken's website</a>.
 
   it: |
     Valute accettate: EUR, USD, RON, JPY, USDC (Polygon PoS).

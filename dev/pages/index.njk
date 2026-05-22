@@ -57,6 +57,8 @@ layout: layout.njk
     margin-top: 1rem;
     font-weight: 600;
     text-decoration: none;
+    color: var(--bgc);
+    background-color: var(--fgc);
     border: 1px solid var(--fgc);
     border-radius: 8px;
     padding: 0.4rem 0.75rem;
@@ -64,8 +66,8 @@ layout: layout.njk
   }
 
   .offer a:hover {
-    color: var(--bgc);
-    background-color: var(--fgc);
+    color: var(--fgc);
+    background-color: var(--bgc);
   }
 
   .price {
@@ -98,15 +100,17 @@ layout: layout.njk
 
 <main>
 
-  <!--
-    <section class="hero">
-      <div>
-        <p>{{ index.hero | t(lang) }}</p>
-      </div>
-    </section>
-    -->
-    
+  <section class="hero">
+    <div>
+      <p><strong>{{ index.hero | t(lang) }}</strong></p>
+      <p>Solving technical problems and building software.</p>
+    </div>
+  </section>
+
   <section>
+    <hr>
+    <h2>What I can help with</h2>
+    <br>
     {% for offer in index.offers | t(lang) %}
     <div class="offer">
 
@@ -118,7 +122,7 @@ layout: layout.njk
       <p><strong>{{ offer.result }}</strong></p>
       {% endif %}
 
-      <p class="price">{{ offer.pricing }}</p>
+      <p class="price">{{ offer.pricing | safe }}</p>
 
       <a href="/{{ lang }}/contact/">▸ {{ offer.cta }}</a>
 
@@ -128,9 +132,11 @@ layout: layout.njk
 
   {% note global.note, lang, index.currency_note %}
 
-  <section>
-    <h3>{{ index.lr | t(lang) }}</h3>
-    <p>{{ global.coming_soon | t(lang) }}</p>
-  </section>
+  <!--
+    <section>
+      <h3>{{ index.lr | t(lang) }}</h3>
+      <p>{{ global.coming_soon | t(lang) }}</p>
+    </section>
+  -->
 
 </main>
