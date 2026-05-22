@@ -102,15 +102,11 @@ layout: layout.njk
 
   <section class="hero">
     <div>
-      <p><strong>{{ index.hero | t(lang) }}</strong></p>
-      <p>Solving technical problems and building software.</p>
+      <p><strong>{{ index.hero | t(lang) | safe }}</strong></p>
     </div>
   </section>
 
   <section>
-    <hr>
-    <h2>What I can help with</h2>
-    <br>
     {% for offer in index.offers | t(lang) %}
     <div class="offer">
 

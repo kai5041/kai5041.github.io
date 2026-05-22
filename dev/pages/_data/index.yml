@@ -1,8 +1,8 @@
 hero:
-  en: Software and Systems
-  it: Strumenti di automazione, sistemi web e infrastrutture backend progettati per ridurre il lavoro operativo.
-  ja: 業務負荷を減らすための自動化ツール、ウェブシステム、バックエンドインフラ。
-  ro: Instrumente de automatizare, sisteme web și infrastructuri backend construite pentru a reduce munca operațională.
+  en: Software and Systems.<br>Solving technical problems and building software.
+  it: Software e sistemi.<br>Soluzioni a problemi tecnici e sviluppo software.
+  ja: ソフトウェアとシステム<br>技術的な課題を解決し、ソフトウェアを構築します。
+  ro: Software și sisteme<br>Rezolv probleme tehnice și dezvolt software.
 
 lr:
   en: Latest research reports
@@ -20,12 +20,56 @@ offers:
       cta: Let's discuss
     
     - title: Websites
-      description: "Custom  websites for freelancers and small companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
+      description: "Custom websites for freelancers and small companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
       result: "A stable and maintainable web presence for your business."
-
       pricing: "Starting from 300 EUR for static websites.<br>
                 Starting from 800 EUR for dynamic websites."
       cta: "Let's discuss"
+
+  ja:
+    - title: ワークフロー自動化
+      description: "繰り返し作業を削減し、ツール同士を接続するためのカスタムCLIツールおよび軽量な統合機能。<br>
+                   対応言語: C++, Python, Bash, Typescript, Node.js"
+      result: 手作業を減らし、より高速なワークフローを実現。
+      pricing: "300~1500 EUR（規模により変動）"
+      cta: 相談する
+
+    - title: ウェブサイト制作
+      description: "フリーランスおよび中小企業向けのカスタムウェブサイト制作。ホスティング、保守、インフラなどの運用コスト（OPEX）削減を目的とした無料相談を提供。"
+      result: "安定し、長期運用可能なウェブプレゼンスを構築。"
+      pricing: "静的サイト: 300 EUR〜<br>
+                動的サイト: 800 EUR〜"
+      cta: "相談する"
+
+  ro:
+    - title: Automatizare fluxuri de lucru
+      description: "Instrumente CLI personalizate și integrări ușoare care elimină munca repetitivă și conectează uneltele tale.<br>
+                   Limbaje suportate: C++, Python, Bash, Typescript și Node.js"
+      result: Fluxuri de lucru mai rapide cu efort manual redus.
+      pricing: "300~1500 EUR în funcție de complexitate."
+      cta: Hai să discutăm
+
+    - title: Site-uri web
+      description: "Site-uri web personalizate pentru freelanceri și companii mici. Consultanță gratuită axată pe reducerea costurilor operaționale (OPEX), precum hosting, mentenanță și infrastructură."
+      result: "O prezență web stabilă și ușor de întreținut pentru afacerea ta."
+      pricing: "De la 300 EUR pentru site-uri statice.<br>
+                De la 800 EUR pentru site-uri dinamice."
+      cta: Hai să discutăm
+
+  it:
+    - title: Automazione dei flussi di lavoro
+      description: "Strumenti CLI personalizzati e integrazioni leggere che eliminano il lavoro ripetitivo e collegano i tuoi strumenti.<br>
+                   Linguaggi supportati: C++, Python, Bash, Typescript e Node.js"
+      result: Flussi di lavoro più veloci con meno sforzo manuale.
+      pricing: "300~1500 EUR in base alla complessità."
+      cta: Parliamone
+
+    - title: Siti web
+      description: "Siti web personalizzati per liberi professionisti e piccole imprese. Consulenza gratuita focalizzata sulla riduzione dei costi operativi (OPEX), come hosting, manutenzione e infrastruttura."
+      result: "Una presenza web stabile e mantenibile per la tua attività."
+      pricing: "A partire da 300 EUR per siti statici.<br>
+                A partire da 800 EUR per siti dinamici."
+      cta: Parliamone"
 
 currency_note:
   en: |
@@ -38,39 +82,23 @@ currency_note:
     Source:
     <a rel="noopener noreferrer" target="_blank" href="https://www.kraken.com/">Kraken's website</a>.
 
-  it: |
-    Valute accettate: EUR, USD, RON, JPY, USDC (Polygon PoS).
-    <br><br>
-
-    I pagamenti in valuta fiat sono convertiti in EUR utilizzando i 
-    <a rel="noopener noreferrer" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">tassi di riferimento BCE</a>.
-    <br>
-
-    I pagamenti in criptovaluta sono convertiti in EUR utilizzando il tasso di mercato di Kraken indicato in fattura:
-    <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">
-    Sito di Kraken</a>.
-
   ja: |
-    対応通貨: EUR、USD、RON、JPY、USDC（Polygon PoS）。
+    対応通貨: EUR, USD, RON, JPY, USDC (Polygon PoS)。
     <br><br>
-
-
-    法定通貨の支払いはEUR換算でECB基準為替レートを使用します：
-    <a rel="noopener noreferrer" target="_blank"
-    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECB基準為替レート</a>。
+    法定通貨の支払いはEUR基準で換算されます。
+    参照:
+    <a rel="noopener noreferrer" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECBレート</a>。
     <br>
-
-    暗号資産の支払いは、請求書に記載されるKrakenの市場レートを使用してEUR換算されます： <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">Kraken公式サイト</a>。
+    暗号資産の支払いは請求時点のKraken市場レートでEUR換算されます。
+    参照:
+    <a rel="noopener noreferrer" target="_blank" href="https://www.kraken.com/">Kraken公式サイト</a>。
 
   ro: |
     Monede acceptate: EUR, USD, RON, JPY, USDC (Polygon PoS).
     <br><br>
-
-    Plățile în monedă fiat sunt convertite în EUR folosind 
-    <a rel="noopener noreferrer" target="_blank"
-    href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">cursurile de referință BCE</a>.
+    Plățile în monedă fiat sunt raportate în EUR folosind
+    <a rel="noopener noreferrer" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ratele de referință ECB</a>.
     <br>
-
-    Plățile în criptomonede sunt convertite în EUR folosind cursul de piață de pe Kraken menționat pe factură:
-    <a rel="noopener noreferrer" target="_blank" href="https://kraken.com/">
-    Site-ul web al lui Kraken</a>.
+    Plățile în criptomonede sunt convertite în EUR folosind ratele de piață Kraken la momentul facturării.
+    Sursă:
+    <a rel="noopener noreferrer" target="_blank" href="https://www.kraken.com/">site-ul Kraken</a>.
