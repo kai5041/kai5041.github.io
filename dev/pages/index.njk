@@ -9,20 +9,23 @@ layout: layout.njk
   }
 
   main {
+    max-width: 80rem;
+    margin-inline: auto;
     padding: 3rem 1.5rem;
   }
 
   .hero {
-    font-size: 1.5rem;
     width: 100%;
-    background: var(--fgc);
-    color: var(--bgc);
     padding: 3rem 2rem;
+    font-size: 1.5rem;
+    color: var(--bgc);
+    background: var(--fgc);
     border-radius: var(--radius);
   }
 
   .hero div {
-    margin: 0 auto;
+    max-width: 70rem;
+    margin-inline: auto;
     text-align: center;
   }
 
@@ -35,15 +38,19 @@ layout: layout.njk
     margin: 0.4rem 0;
   }
 
+  section:last-of-type {
+    display: grid;
+    gap: 1.5rem;
+  }
+
   .offer {
     border: 1px solid var(--fgc);
     border-radius: var(--radius);
     padding: 1.75rem 1.5rem;
-    margin-bottom: 2vh;
   }
 
   .offer-title {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem;
     font-size: 1.2rem;
   }
 
@@ -52,49 +59,64 @@ layout: layout.njk
     line-height: 1.5;
   }
 
-  .offer a {
+  .offer > a {
     display: inline-block;
     margin-top: 1rem;
+    padding: 0.4rem 0.75rem;
+
     font-weight: 600;
     text-decoration: none;
+
     color: var(--bgc);
     background-color: var(--fgc);
+
     border: 1px solid var(--fgc);
+    border-bottom: 6px solid var(--neon-green);
     border-radius: 8px;
-    padding: 0.4rem 0.75rem;
-    transition: 0.2s ease-in-out;
+
+    transition:
+      color 0.2s ease-in-out,
+      background-color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
   }
 
-  .offer a:hover {
+  .offer > a:hover {
     color: var(--fgc);
     background-color: var(--bgc);
   }
 
   .price {
-    font-size: 0.95rem;
-    opacity: 0.85;
     margin-top: 0.75rem;
     padding-top: 0.75rem;
+
+    font-size: 0.95rem;
+    opacity: 0.85;
+
     border-top: 1px solid var(--fgc);
   }
 
-  section a {
+  section p a {
     text-decoration: none;
     border-bottom: 1px solid currentColor;
   }
 
+  .small {
+    font-size: 1rem;
+  }
+
   @media (max-width: 700px) {
+    main {
+      padding: 2rem 1rem;
+    }
+
     .hero {
       padding: 2rem 1.25rem;
+      font-size: 1.25rem;
     }
 
     .offer {
       padding: 1.25rem;
     }
-  }
-
-  .small {
-    font-size: 1rem;
   }
 </style>
 
@@ -102,7 +124,7 @@ layout: layout.njk
 
   <section class="hero">
     <div>
-      <p><strong>{{ index.hero | t(lang) | safe }}</strong></p>
+      <p><strong><em>{{ index.hero | t(lang) | safe }}</em></strong></p>
     </div>
   </section>
 
@@ -129,10 +151,10 @@ layout: layout.njk
   {% note global.note, lang, index.currency_note %}
 
   <!--
-    <section>
-      <h3>{{ index.lr | t(lang) }}</h3>
-      <p>{{ global.coming_soon | t(lang) }}</p>
-    </section>
+  <section>
+    <h3>{{ index.lr | t(lang) }}</h3>
+    <p>{{ global.coming_soon | t(lang) }}</p>
+  </section>
   -->
 
 </main>

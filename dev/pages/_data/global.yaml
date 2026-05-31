@@ -22,10 +22,8 @@ projects:
   it: Progetti
   ja: 計画
 
-about:
-  en: About me
-  it: Chi sono
-  ja: 概要
+transparency:
+  en: Transparency
 
 contact:
   en: Contact
