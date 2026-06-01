@@ -88,8 +88,8 @@
   top: 6px;
   left: 6px;
 
-  border-top: 4px solid var(--neon-green);
-  border-left: 4px solid var(--neon-green);
+  border-top: 2px solid var(--fgc);
+  border-left: 2px solid var(--fgc);
 
   transform: translate(-4px, -4px);
 }
@@ -98,8 +98,8 @@
   bottom: 6px;
   right: 6px;
 
-  border-bottom: 4px solid var(--neon-green);
-  border-right: 4px solid var(--neon-green);
+  border-bottom: 2px solid var(--fgc);
+  border-right: 2px solid var(--fgc);
 
   transform: translate(4px, 4px);
 }
@@ -119,18 +119,13 @@
 }
 
 .nav #contact::before {
-  border-top: 2px solid var(--fgc);
-  border-left: 2px solid var(--fgc);
+  border-top: 2px solid var(--bgc);
+  border-left: 2px solid var(--bgc);
 }
 
 .nav #contact::after {
-  border-bottom: 2px solid var(--fgc);
-  border-right: 2px solid var(--fgc);
-}
-
-.nav #contact:hover {
-  color: var(--fgc);
-  background-color: var(--neon-green);
+  border-bottom: 2px solid var(--bgc);
+  border-right: 2px solid var(--bgc);
 }
 
 @media (max-width: 768px) {
