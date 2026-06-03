@@ -1,5 +1,4 @@
 rensa:
-  en: A deterministic project orchestrator and version control system built in C++23.
-  it: Un orchestratore di progetti deterministico e sistema di controllo di versioni scritto in C++23.
+  en: A deterministic project orchestrator and build system built in C++23.
 
   links: <a href="https://github.com/rairen-rdd/rensa" target="_blank" rel="noopener noreferrer">Source</a> | <a href="https://github.com/rairen-rdd/rensa" target="_blank" rel="noopener noreferrer">Mirror</a>
