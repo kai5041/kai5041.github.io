@@ -145,3 +145,29 @@ main {
 .note p {
   margin: 0.5em 0;
 }
+
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem 0.75rem;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  color: var(--bgc);
+  background-color: var(--fgc);
+
+  border: 1px solid var(--fgc);
+  border-radius: 8px;
+
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+
+.cta:hover {
+  color: var(--fgc);
+  background-color: var(--bgc);
+}

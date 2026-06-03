@@ -59,36 +59,12 @@ layout: layout.njk
     line-height: 1.5;
   }
 
-  .offer > a {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.4rem 0.75rem;
-
-    font-weight: 600;
-    text-decoration: none;
-
-    color: var(--bgc);
-    background-color: var(--fgc);
-
-    border: 1px solid var(--fgc);
-    border-radius: 8px;
-
-    transition:
-      color 0.2s ease-in-out,
-      background-color 0.2s ease-in-out,
-      border-color 0.2s ease-in-out;
-  }
-
-  .offer > a:hover {
-    color: var(--fgc);
-    background-color: var(--bgc);
-  }
 
   .price {
     margin-top: 0.75rem;
     padding-top: 0.75rem;
 
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     opacity: 0.85;
 
     border-top: 1px solid var(--fgc);
@@ -135,13 +111,9 @@ layout: layout.njk
 
       <p>{{ offer.description | safe }}</p>
 
-      {% if offer.result %}
-      <p><strong>{{ offer.result }}</strong></p>
-      {% endif %}
-
       <p class="price">{{ offer.pricing | safe }}</p>
 
-      <a href="/{{ lang }}/contact/">▸ {{ offer.cta }}</a>
+      <a class="cta" href="/{{ lang }}/services/{{ offer.link }}/">▸ {{ index.learn_more | t(lang) }}</a>
 
     </div>
     {% endfor %}

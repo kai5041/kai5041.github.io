@@ -1,75 +1,39 @@
 hero:
-  en: Automation and web infrastructure for people who care about operational cost.
-  it: Software e sistemi.<br>Soluzioni a problemi tecnici e sviluppo software.
-  ja: ソフトウェアとシステム<br>技術的な課題を解決し、ソフトウェアを構築します。
-  ro: Software și sisteme<br>Rezolv probleme tehnice și dezvolt software.
+  en: Built for the work. No bloat. No lock-in. 
 
-lr:
-  en: Latest research reports
-  it: Ultimi rapporti di ricerca
-  ja: 最新の研究レポート
-  ro: Ultimele rapoarte de cercetare  
+learn_more:
+  en: Learn more
 
 offers:
   en:
-    - title: Workflow Automation
-      description: "Custom CLI tools and lightweight integrations that remove repetitive work and connect your tools.<br>
+    - title: Custom Software and Automation
+      description: "Tailor-made tools and automation workflows.<br>
                    Supported programming languages: C++, Python, Typescript"
-      result: Faster workflows with less manual effort.
-      pricing: "500~3000 EUR depending on scope."
-      cta: Let's discuss
+      pricing: "Starting from &euro;500"
+      link: custom-software-automation
     
-    - title: Websites
+    - title: Static Websites
       description: "Custom websites for freelancers and small companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
-      result: "A stable and maintainable web presence for your business."
-      pricing: "For static websites, starting from 500 EUR.<br>
-                For dynamic websites, starting from 800 EUR."
-      cta: "Let's discuss"
+      pricing: "Starting from &euro;500"
+      link: static-websites
 
-  ja:
-    - title: ワークフロー自動化
-      description: "繰り返し作業を削減し、ツール同士を接続するためのカスタムCLIツールおよび軽量な統合機能。<br>
-                   対応言語: C++, Python, Typescript"
-      result: 手作業を減らし、より高速なワークフローを実現。
-      pricing: "500~3000 EUR（規模により変動）"
-      cta: 相談する
 
-    - title: ウェブサイト制作
-      description: "フリーランスおよび中小企業向けのカスタムウェブサイト制作。ホスティング、保守、インフラなどの運用コスト（OPEX）削減を目的とした無料相談を提供。"
-      result: "安定し、長期運用可能なウェブプレゼンスを構築。"
-      pricing: "静的サイト: 500 EUR〜<br>
-                動的サイト: 800 EUR〜"
-      cta: "相談する"
+    - title: Dynamic Websites
+      description: "Public and private websites for small to medium companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
+      pricing: "Starting from &euro;800"
+      link: dynamic-websites
 
-  ro:
-    - title: Automatizare fluxuri de lucru
-      description: "Instrumente CLI personalizate și integrări ușoare care elimină munca repetitivă și conectează uneltele tale.<br>
-                   Limbaje suportate: C++, Python, Typescript"
-      result: Fluxuri de lucru mai rapide cu efort manual redus.
-      pricing: "500~3000 EUR în funcție de complexitate."
-      cta: Hai să discutăm
+    - title: API Development
+      description: "HTTPS and WSS APIs for online tools, games and app integrations with database interfacing."
+      pricing: "Starting from &euro;500"
+      link: api-development
 
-    - title: Site-uri web
-      description: "Site-uri web personalizate pentru freelanceri și companii mici. Consultanță gratuită axată pe reducerea costurilor operaționale (OPEX), precum hosting, mentenanță și infrastructură."
-      result: "O prezență web stabilă și ușor de întreținut pentru afacerea ta."
-      pricing: "De la 500 EUR pentru site-uri statice.<br>
-                De la 800 EUR pentru site-uri dinamice."
-      cta: Hai să discutăm
+    - title: Linux Scripting
+      description: "Automation of Linux environment, server-side scripts, sysadmin tooling"
+      pricing: "Starting from &euro;300"
+      link: linux-scripting
 
-  it:
-    - title: Automazione dei flussi di lavoro
-      description: "Strumenti CLI personalizzati e integrazioni leggere che eliminano il lavoro ripetitivo e collegano i tuoi strumenti.<br>
-                   Linguaggi supportati: C++, Python, Typescript"
-      result: Flussi di lavoro più veloci con meno sforzo manuale.
-      pricing: "500~3000 EUR in base alla complessità."
-      cta: Parliamone
 
-    - title: Siti web
-      description: "Siti web personalizzati per liberi professionisti e piccole imprese. Consulenza gratuita focalizzata sulla riduzione dei costi operativi (OPEX), come hosting, manutenzione e infrastruttura."
-      result: "Una presenza web stabile e mantenibile per la tua attività."
-      pricing: "A partire da 500 EUR per siti statici.<br>
-                A partire da 800 EUR per siti dinamici."
-      cta: Parliamone"
 
 currency_note:
   en: |
