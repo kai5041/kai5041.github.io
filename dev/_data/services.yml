@@ -9,12 +9,12 @@ offers:
     - title: Static Websites
       description: "Custom websites for freelancers and small companies. Includes a free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
       pricing: "Starting from &euro;500"
-      link: static-websites
+      link: static-website
 
     - title: Dynamic Websites
       description: "Public and private websites for small to medium companies. Includes a free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
       pricing: "Starting from &euro;800"
-      link: dynamic-websites
+      link: dynamic-website
 
     - title: API Development
       description: "HTTPS and WSS APIs for online tools, games and app integrations with database interfacing."
@@ -36,12 +36,12 @@ offers:
     - title: Siti Web Statici
       description: "Siti web personalizzati per liberi professionisti e piccole imprese. Include una consulenza gratuita focalizzata sulla riduzione dei costi operativi (OPEX), come hosting, manutenzione e infrastruttura."
       pricing: "A partire da &euro;500"
-      link: static-websites
+      link: static-website
 
     - title: Siti Web Dinamici
       description: "Siti web pubblici e privati per piccole e medie imprese. Include una consulenza gratuita focalizzata sulla riduzione dei costi operativi (OPEX), come hosting, manutenzione e infrastruttura."
       pricing: "A partire da &euro;800"
-      link: dynamic-websites
+      link: dynamic-website
 
     - title: Sviluppo API
       description: "API HTTPS e WSS per strumenti online, giochi e integrazioni applicative con interfacciamento database."

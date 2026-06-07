@@ -1,0 +1,72 @@
+---
+layout: base.njk
+title_id: static_website 
+---
+
+
+<style>
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0px;
+}
+
+section li::before {
+  content: "▸";
+  margin-right: 8px;
+}
+
+section:not(:last-child) {
+  border-bottom: 2px solid var(--fgc);
+}
+
+
+.price {
+  font-size: 1.4rem;
+}
+
+</style>
+
+
+<main>
+  <h1>{{ global[title_id] | t(lang) }}</h1>
+  <p class="note"><strong>NOTE</strong>: All prices are VAT-exempt (Regime Forfettario)</p>
+  
+  <section>
+    <h2>Tier 0</h2>
+
+
+    <h3>Includes</h3>
+    <ul>
+      <li>Deployment setup</li>
+      <li>Consistent design</li>
+      <li>Basic Search Engine Optimization (SEO)</li>
+      <li>Responsive styling (desktop + mobile)</li>
+      <li>Light Javascript interactivity</li>
+      <li>GDPR compliance</li>
+      <li>Content writing</li>
+      <li>Maximum 20 pages</li>
+      <li>Basic telemetry</li>
+      <li>Cookie consent management</li>
+    </ul>
+
+    <br>
+
+    <h3>Excludes</h3>
+    <ul>
+      <li>Forms</li>
+      <li>Heavy Javascript</li>
+      <li>Authentication (refer to <a href="/{{ lang }}/services/dynamic-website">Dynamic Websites</a>)</li>
+      <li>Post-delivery ongoing support</li>
+    </ul>
+
+    <br>
+    <p>Price increases with page count beyond 10, complex styling, or social media metadata integration.</p>
+    <p class="price"><strong>Price</strong>: &euro;500〜&euro;1,000</p>
+
+    <a class="cta" href="/{{ lang }}/contact">Contact</a>
+  </section>
+  
+
+</main>
