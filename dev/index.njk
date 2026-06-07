@@ -1,7 +1,10 @@
-<html>
-  <head>
+---
+layout: base.njk
+title: Coming soon
+title_id: home
+---
 
-<script>
+  <script>
     (function () {
       const supported_languages = ["en", "ja", "it", "ro"];
       const fallback_language = "en";
@@ -11,17 +14,13 @@
 
       const chosen = supported_languages.includes(short) ? short : fallback_language;
 
-      window.location.replace("/" + chosen + "/");
+      window.location.replace("/" + chosen + "/services");
     })();
   </script>
 
   <noscript>
-    <meta http-equiv="refresh" content="0; url=/en/">
+    <meta http-equiv="refresh" content="0; url=/en/services">
   </noscript>
 
-</head>
+<h1>Coming soon</h1>
 
-<body>
-  Redirecting...
-</body>
-</html>

@@ -1,0 +1,55 @@
+offers:
+  en:
+    - title: Custom Software and Automation
+      description: "Tailor-made tools and automation workflows.<br>
+                   Supported programming languages: C++, Python, Typescript"
+      pricing: "Starting from &euro;500"
+      link: custom-software-automation
+    
+    - title: Static Websites
+      description: "Custom websites for freelancers and small companies. Includes a free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
+      pricing: "Starting from &euro;500"
+      link: static-websites
+
+    - title: Dynamic Websites
+      description: "Public and private websites for small to medium companies. Includes a free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead."
+      pricing: "Starting from &euro;800"
+      link: dynamic-websites
+
+    - title: API Development
+      description: "HTTPS and WSS APIs for online tools, games and app integrations with database interfacing."
+      pricing: "Starting from &euro;500"
+      link: api-development
+
+    - title: Linux Scripting
+      description: "Automation of Linux environment, server-side scripts, sysadmin tooling"
+      pricing: "Starting from &euro;300"
+      link: linux-scripting
+
+  it:
+    - title: Sviluppo Software Personalizzato e Automazione
+      description: "Strumenti su misura e flussi di automazione.<br>
+                   Linguaggi supportati: C++, Python, Typescript"
+      pricing: "A partire da &euro;500"
+      link: custom-software-automation
+
+    - title: Siti Web Statici
+      description: "Siti web personalizzati per liberi professionisti e piccole imprese. Include una consulenza gratuita focalizzata sulla riduzione dei costi operativi (OPEX), come hosting, manutenzione e infrastruttura."
+      pricing: "A partire da &euro;500"
+      link: static-websites
+
+    - title: Siti Web Dinamici
+      description: "Siti web pubblici e privati per piccole e medie imprese. Include una consulenza gratuita focalizzata sulla riduzione dei costi operativi (OPEX), come hosting, manutenzione e infrastruttura."
+      pricing: "A partire da &euro;800"
+      link: dynamic-websites
+
+    - title: Sviluppo API
+      description: "API HTTPS e WSS per strumenti online, giochi e integrazioni applicative con interfacciamento database."
+      pricing: "A partire da &euro;500"
+      link: api-development
+
+    - title: Scripting Linux
+      description: "Automazione di ambienti Linux, script server-side, strumenti di amministrazione di sistema"
+      pricing: "A partire da &euro;300"
+      link: linux-scripting
+

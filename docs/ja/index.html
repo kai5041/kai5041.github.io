@@ -1,295 +1,115 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:title" content="Kai / 解 ー 情報技術支援と維持管理">
-  <meta name="description" content="網頁、電子制式と自動化。">
-  <meta property="og:description" content="網頁、電子制式と自動化。">
-  <meta property="og:image" content="https://rairen.net/assets/png/kai_banner_light.png">
-  <meta property="og:url" content="https://rairen.net/ja/">
-  <link rel="canonical" href="https://rairen.net/ja/">
-  <meta property="og:type" content="website">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kai / 解 ー 情報技術支援と維持管理">
-  <meta name="twitter:description" content="網頁、電子制式と自動化。">
-  <meta name="twitter:image" content="https://rairen.net/assets/png/kai_banner_light.png">
-
-  <meta name="theme-color" content="#F0F0F0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <meta name="author" content="Kai / 解">
-
-  <script data-goatcounter="https://kai5041.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-
-  <link rel="preload" href="/fonts/woff2/NotoSansJP-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="/js/consent.js" defer></script>
 
   <title>
-    解 ❖ 主要頁
+    解 | 主要頁
   </title>
 
-  <link rel="icon" type="image/png" href="https://rairen.net/assets/png/kai_logo_light.png">
+  <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
 
-  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/banner.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/nav.css">
-
 </head>
 
 <body>
-  
-  <div class="nav" id="nav">
-  <div class="nav-menu">
-    <a href="/ja/">
-      <img class="nav-logo" src="/assets/png/kai_banner_light.png">
-    </a>
 
-    <header id="nav-header">
-      <ul>
-        <li><a href="/ja/">主要頁</a></li>
-        <li><a href="/ja/projects/">計画</a></li>
-        <!--
-        <li><a href="/ja/research/">研究</a></li>
-        -->
-        <li><a href="/ja/contact/" id="contact">連絡</a></li>
-      </ul>
-    </header>
+<div class="consent-overlay" id="consent-overlay">
+  <div class="consent-banner">
+
+    <p>
+      We collect aggregated, non-identifying usage data to understand performance and improve features.
+    </p>
+
+    <p>This website uses essential-only cookies.</p>
+
+    <div class="btn-group">
+      <button id="enable-analytics" type="button">
+        Enable anonymous analytics
+      </button>
+
+      <button id="disable-analytics" type="button">
+        Disable analytics
+      </button>
+    </div>
+
   </div>
 </div>
-  
-  
-<style>
-  :root {
-    --radius: 14px;
-  }
 
-  main {
-    max-width: 80rem;
-    margin-inline: auto;
-    padding: 3rem 1.5rem;
-  }
+<div class="nav">
 
-  .hero {
-    width: 100%;
-    padding: 3rem 2rem;
-    font-size: 1.5rem;
-    color: var(--bgc);
-    background: var(--fgc);
-    border-radius: var(--radius);
-  }
+  <div class="logo">
+    <a href="/ja/">
+      <img src="/assets/png/kai_logo_light.png" alt="Kai logo">
+    </a>
+  </div>
 
-  .hero div {
-    max-width: 70rem;
-    margin-inline: auto;
-    text-align: center;
-  }
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
-  .hero a {
-    color: var(--bgc);
-    text-underline-offset: 3px;
-  }
+  <label for="nav-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
 
-  .hero p {
-    margin: 0.4rem 0;
-  }
+  <div class="right">
 
-  section:last-of-type {
-    display: grid;
-    gap: 1.5rem;
-  }
+    <nav class="links">
+      <a href="/ja/">主要頁</a>
+      <a href="/ja/services">業務内容</a>
+      <a href="/ja/projects">計画</a>
+      <a href="/ja/about">概要</a>
+      <a href="/ja/contact" class="contact">連絡</a>
+    </nav>
 
-  .offer {
-    border: 1px solid var(--fgc);
-    border-radius: var(--radius);
-    padding: 1.75rem 1.5rem;
-  }
+    <svg class="lang-selector" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <g id="Language_Setting">
+         <path fill="currentColor" d="M380.9709,224.59H312.5155a74.4857,74.4857,0,0,0,.8793-11.415V139.9966a74.32,74.32,0,0,0-74.2359-74.2359H131.03a74.32,74.32,0,0,0-74.2358,74.2359v73.1782A74.32,74.32,0,0,0,131.03,287.4106h68.4724a73.82,73.82,0,0,0-.8962,11.4146v73.1787a74.3194,74.3194,0,0,0,74.2354,74.2354h108.13a74.3194,74.3194,0,0,0,74.2354-74.2354V298.8252A74.3194,74.3194,0,0,0,380.9709,224.59ZM72.7937,213.1748V139.9966A58.3019,58.3019,0,0,1,131.03,81.7607H239.1589a58.3016,58.3016,0,0,1,58.2359,58.2359v73.1782a58.3015,58.3015,0,0,1-58.2359,58.2358H131.03A58.3018,58.3018,0,0,1,72.7937,213.1748ZM386.9709,316.8091h-19.5a120.7225,120.7225,0,0,1-28.8229,50.6914,124.5227,124.5227,0,0,0,22.0022,14.08l10.8838,5.4648a8,8,0,1,1-7.18,14.2989l-10.8838-5.4649A140.1428,140.1428,0,0,1,326.87,378.5714a139.3809,139.3809,0,0,1-26.5289,17.3075l-10.8828,5.4649a8,8,0,0,1-7.18-14.2989l10.8828-5.4648a123.73,123.73,0,0,0,21.943-14.0639,123.9571,123.9571,0,0,1-20.2018-28.6436,8,8,0,1,1,14.2558-7.2647,107.9829,107.9829,0,0,0,17.714,25.062,105.445,105.445,0,0,0,23.8949-39.8608H266.8411a8,8,0,0,1,0-16h52.0654V276.6348a8,8,0,0,1,16,0v24.1743h52.0644a8,8,0,0,1,0,16Z"/>
+         <path fill="currentColor" d="M199.4075,133.6084c-2.6123-6.4614-8.0967-10.4756-14.313-10.4756s-11.7012,4.0142-14.3135,10.4761l-34.5347,85.4316a8,8,0,1,0,14.834,5.9961l12.9473-32.0288H206.161l12.9472,32.0288a8,8,0,1,0,14.8339-5.9961Zm-28.912,43.3994,14.599-36.1147,14.5988,36.1147Z"/>
+       </g>
+    </svg>
 
-  .offer-title {
-    margin: 0 0 0.5rem;
-    font-size: 1.2rem;
-  }
+  </div>
 
-  .offer p {
-    margin: 0.5rem 0;
-    line-height: 1.5;
-  }
+  <div class="nav-overlay"></div>
+
+</div>
 
 
-  .price {
-    margin-top: 0.75rem;
-    padding-top: 0.75rem;
-
-    font-size: 1.2rem;
-    opacity: 0.85;
-
-    border-top: 1px solid var(--fgc);
-  }
-
-  section p a {
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
-  }
-
-  .small {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 700px) {
-    main {
-      padding: 2rem 1rem;
-    }
-
-    .hero {
-      padding: 2rem 1.25rem;
-      font-size: 1.25rem;
-    }
-
-    .offer {
-      padding: 1.25rem;
-    }
-  }
-</style>
-
-<main>
-
-  <section class="hero">
-    <div>
-      <p><strong><em>Built for the work. No bloat. No lock-in.</em></strong></p>
-    </div>
-  </section>
-
-  <section>
-    
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Custom Software and Automation</h3>
-
-      <p>Tailor-made tools and automation workflows.<br> Supported programming languages: C++, Python, Typescript</p>
-
-      <p class="price">Starting from &euro;500</p>
-
-      <a class="cta" href="/ja/services/custom-software-automation/">▸ Learn more</a>
-
-    </div>
-    
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Static Websites</h3>
-
-      <p>Custom websites for freelancers and small companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead.</p>
-
-      <p class="price">Starting from &euro;500</p>
-
-      <a class="cta" href="/ja/services/static-websites/">▸ Learn more</a>
-
-    </div>
-    
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Dynamic Websites</h3>
-
-      <p>Public and private websites for small to medium companies. Free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead.</p>
-
-      <p class="price">Starting from &euro;800</p>
-
-      <a class="cta" href="/ja/services/dynamic-websites/">▸ Learn more</a>
-
-    </div>
-    
-    <div class="offer">
-
-      <h3 class="offer-title">❖ API Development</h3>
-
-      <p>HTTPS and WSS APIs for online tools, games and app integrations with database interfacing.</p>
-
-      <p class="price">Starting from &euro;500</p>
-
-      <a class="cta" href="/ja/services/api-development/">▸ Learn more</a>
-
-    </div>
-    
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Linux Scripting</h3>
-
-      <p>Automation of Linux environment, server-side scripts, sysadmin tooling</p>
-
-      <p class="price">Starting from &euro;300</p>
-
-      <a class="cta" href="/ja/services/linux-scripting/">▸ Learn more</a>
-
-    </div>
-    
-  </section>
-
-  <p class="note">◆ <strong>注</strong><br>対応通貨: EUR, USD, RON, JPY, USDC (Polygon PoS)。
-<br><br>
-法定通貨の支払いはEUR基準で換算されます。
-参照:
-<a rel="noopener noreferrer" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">ECBレート</a>。
-<br>
-暗号資産の支払いは請求時点のKraken市場レートでEUR換算されます。
-参照:
-<a rel="noopener noreferrer" target="_blank" href="https://www.kraken.com/">Kraken公式サイト</a>。
-</p>
-
-  <!--
-  <section>
-    <h3>⚠️ missing</h3>
-    <p>近日公開</p>
-  </section>
-  -->
-
-</main>
 
 
-  <footer>
-  <ul>
-    <li>
-      <p><strong>Legal</strong></p>
-    <li>
-      <a href="/ja/legal-information">Legal information</a>
-    </li>
-    <li>
-      <a href="/ja/privacy-policy">Privacy Policy</a>
-    </li>
-    <li>
-      <a href="/ja/cookie-policy">Cookie Policy</a>
-    </li>
-    </li>
-  </ul>
+  <script>
+    (function () {
+      const supported_languages = ["en", "ja", "it", "ro"];
+      const fallback_language = "en";
 
-  <ul>
-    <li>
-      <p><strong>Development</strong></p>
-    </li>
-    <li>
-      <a href="https://codeberg.org/kai5041" target="_blank" rel="nofollow noreferrer">Codeberg</a>
-    </li>
-    <li>
-      <a href="https://github.com/kai5041" target="_blank" rel="nofollow noreferrer">GitHub</a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <p><strong>Media</strong></p>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/@kai_5041" target="_blank" rel="nofollow noreferrer">YouTube</a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/kai5041._/" target="_blank" rel="nofollow noreferrer">Instagram</a>
-    </li>
-    <li>
-      <a href="https://www.twitch.tv/kai5041" target="_blank" rel="nofollow noreferrer">Twitch</a>
-    </li>
+      const lang = navigator.language || navigator.userLanguage;
+      const short = lang.toLowerCase().split("-")[0];
 
-  </ul>
+      const chosen = supported_languages.includes(short) ? short : fallback_language;
 
+      window.location.replace("/" + chosen + "/services");
+    })();
+  </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/services">
+  </noscript>
+
+<h1>Coming soon</h1>
+
+
+
+<footer>
+  <a href="/ja/legal-information">法務情報</a>
 </footer>
 
-</body>
 
+</body>
 </html>
+

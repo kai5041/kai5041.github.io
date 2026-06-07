@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default('en') }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="/js/consent.js" defer></script>
+
+  <title>
+    {{ '解' if lang == 'ja' else 'Kai' }} | {{ global[title_id] | t(lang) }}
+  </title>
+
+  <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
+
+  <link rel="stylesheet" href="/css/banner.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/nav.css">
+</head>
+
+<body>
+
+<div class="consent-overlay" id="consent-overlay">
+  <div class="consent-banner">
+
+    <p>
+      We collect aggregated, non-identifying usage data to understand performance and improve features.
+    </p>
+
+    <p>This website uses essential-only cookies.</p>
+
+    <div class="btn-group">
+      <button id="enable-analytics" type="button">
+        Enable anonymous analytics
+      </button>
+
+      <button id="disable-analytics" type="button">
+        Disable analytics
+      </button>
+    </div>
+
+  </div>
+</div>
+
+{% include "nav.njk" %}
+
+{{ content | safe }}
+
+{% include "footer.njk" %}
+
+</body>
+</html>
+

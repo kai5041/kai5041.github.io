@@ -6,11 +6,17 @@
   "scripts": {
     "start": "npx eleventy --serve"
   },
-"keywords": [],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "js-yaml": "^4.1.1",
+    "terser": "^5.46.1"
   }
 }

@@ -1,0 +1,120 @@
+---
+layout: base.njk
+title: Kai | Services
+title_id: services
+---
+
+<style>
+.offers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 2.5rem);
+  padding: clamp(1rem, 3vw, 2rem);
+  align-items: stretch;
+}
+
+.offer {
+  background-color: var(--grey);
+  border-radius: 15px;
+  padding: clamp(1rem, 2.5vw, 2rem);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  min-height: 100%;
+}
+
+.offer-title {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+  line-height: 1.2;
+}
+
+.offer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.offer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.offer-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.price {
+  margin: 0;
+  font-weight: 600;
+}
+
+.offer .cta {
+  display: inline-flex;
+  align-self: flex-start;
+
+  background-color: var(--white);
+  color: var(--black);
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  padding: 0.8rem 1.2rem;
+  border: 2px solid var(--white);
+  border-radius: 12px;
+
+  transition: 0.15s ease;
+}
+
+.offer .cta:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+@media (max-width: 1100px) {
+  .offers {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 539px) {
+  .offers {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .offer {
+    padding: 1rem;
+  }
+}
+</style>
+
+<section class="offers">
+  {% for offer in services.offers | t(lang) %}
+    <div class="offer">
+
+      <h3 class="offer-title">❖ {{ offer.title }}</h3>
+
+      <div class="offer-content">
+        <p>{{ offer.description | safe }}</p>
+
+        <div class="offer-footer">
+          <p class="price">{{ offer.pricing | safe }}</p>
+
+          <a class="cta" href="/services/{{ offer.link }}/">
+            ▸ Learn more
+          </a>
+        </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</section>

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('/fonts/woff2/NotoSansJP-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white: #F0F0F0;
+  --black: #0F0F0F;
+  --grey: #2E2E2E;
+
+}
+
+* {
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+
+  font-family: "Noto Sans JP", sans;
+}
+
+a {
+  color: var(--white);
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+hr {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: var(--white);
+}
+
+footer {
+  width: 100%;
+  min-height: 10vh;
+
+  margin-top: 2vh;
+
+  background-color: var(--grey);
+
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  display: block;
+}
+

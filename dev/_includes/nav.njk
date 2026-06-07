@@ -1,50 +1,7 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <script src="/js/consent.js" defer></script>
-
-  <title>
-    Kai | Legal Information
-  </title>
-
-  <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
-
-  <link rel="stylesheet" href="/css/banner.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/nav.css">
-</head>
-
-<body>
-
-<div class="consent-overlay" id="consent-overlay">
-  <div class="consent-banner">
-
-    <p>
-      We collect aggregated, non-identifying usage data to understand performance and improve features.
-    </p>
-
-    <p>This website uses essential-only cookies.</p>
-
-    <div class="btn-group">
-      <button id="enable-analytics" type="button">
-        Enable anonymous analytics
-      </button>
-
-      <button id="disable-analytics" type="button">
-        Disable analytics
-      </button>
-    </div>
-
-  </div>
-</div>
-
 <div class="nav">
 
   <div class="logo">
-    <a href="/ro/">
+    <a href="/{{ lang }}/">
       <img src="/assets/png/kai_logo_light.png" alt="Kai logo">
     </a>
   </div>
@@ -60,11 +17,11 @@
   <div class="right">
 
     <nav class="links">
-      <a href="/ro/">Home</a>
-      <a href="/ro/services">Services</a>
-      <a href="/ro/projects">Projects</a>
-      <a href="/ro/about">About</a>
-      <a href="/ro/contact" class="contact">Contact</a>
+      <a href="/{{ lang }}/">{{ global.home | t(lang) }}</a>
+      <a href="/{{ lang }}/services">{{ global.services | t(lang) }}</a>
+      <a href="/{{ lang }}/projects">{{ global.projects | t(lang) }}</a>
+      <a href="/{{ lang }}/about">{{ global.about | t(lang) }}</a>
+      <a href="/{{ lang }}/contact" class="contact">{{ global.contact | t(lang) }}</a>
     </nav>
 
     <svg class="lang-selector" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -79,28 +36,4 @@
   <div class="nav-overlay"></div>
 
 </div>
-
-
-
-
-<main>
-  <h1>Legal Information</h1>
-
-  <h2>Legal Representative</h2>
-  <p><strong>Ditta</strong>: MURASAN ANDREA</p>
-  <p><strong>Codice Fiscale</strong>: MRSNDR06P28H501F</p>
-  <p><strong>Partita IVA</strong>: 18553221005</p>
-  <p><strong>Sede</strong>: Via Anchise 29, 00133, Roma, RM</p>
-  <p><strong>PEC</strong>: rairen@pec.it</p>
-  <p><strong>Contatto</strong>: rdd.contact@rairen.net</p>
-</main>
-
-
-<footer>
-  <a href="/ro/legal-information">Legal Information</a>
-</footer>
-
-
-</body>
-</html>
 

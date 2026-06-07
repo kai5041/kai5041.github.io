@@ -1,149 +1,132 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:title" content="Kai / 解 ー 情報技術支援と維持管理">
-  <meta name="description" content="網頁、電子制式と自動化。">
-  <meta property="og:description" content="網頁、電子制式と自動化。">
-  <meta property="og:image" content="https://rairen.net/assets/png/kai_banner_light.png">
-  <meta property="og:url" content="https://rairen.net/ja/contact/">
-  <link rel="canonical" href="https://rairen.net/ja/contact/">
-  <meta property="og:type" content="website">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kai / 解 ー 情報技術支援と維持管理">
-  <meta name="twitter:description" content="網頁、電子制式と自動化。">
-  <meta name="twitter:image" content="https://rairen.net/assets/png/kai_banner_light.png">
-
-  <meta name="theme-color" content="#F0F0F0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <meta name="author" content="Kai / 解">
-
-  <script data-goatcounter="https://kai5041.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-
-  <link rel="preload" href="/fonts/woff2/NotoSansJP-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="/js/consent.js" defer></script>
 
   <title>
-    解 ❖ 連絡
+    解 | 連絡
   </title>
 
-  <link rel="icon" type="image/png" href="https://rairen.net/assets/png/kai_logo_light.png">
+  <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
 
-  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/banner.css">
+  <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/nav.css">
-
 </head>
 
 <body>
-  
-  <div class="nav" id="nav">
-  <div class="nav-menu">
-    <a href="/ja/">
-      <img class="nav-logo" src="/assets/png/kai_banner_light.png">
-    </a>
 
-    <header id="nav-header">
-      <ul>
-        <li><a href="/ja/">主要頁</a></li>
-        <li><a href="/ja/projects/">計画</a></li>
-        <!--
-        <li><a href="/ja/research/">研究</a></li>
-        -->
-        <li><a href="/ja/contact/" id="contact">連絡</a></li>
-      </ul>
-    </header>
+<div class="consent-overlay" id="consent-overlay">
+  <div class="consent-banner">
+
+    <p>
+      We collect aggregated, non-identifying usage data to understand performance and improve features.
+    </p>
+
+    <p>This website uses essential-only cookies.</p>
+
+    <div class="btn-group">
+      <button id="enable-analytics" type="button">
+        Enable anonymous analytics
+      </button>
+
+      <button id="disable-analytics" type="button">
+        Disable analytics
+      </button>
+    </div>
+
   </div>
 </div>
-  
-  
+
+<div class="nav">
+
+  <div class="logo">
+    <a href="/ja/">
+      <img src="/assets/png/kai_logo_light.png" alt="Kai logo">
+    </a>
+  </div>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <label for="nav-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div class="right">
+
+    <nav class="links">
+      <a href="/ja/">主要頁</a>
+      <a href="/ja/services">業務内容</a>
+      <a href="/ja/projects">計画</a>
+      <a href="/ja/about">概要</a>
+      <a href="/ja/contact" class="contact">連絡</a>
+    </nav>
+
+    <svg class="lang-selector" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <g id="Language_Setting">
+         <path fill="currentColor" d="M380.9709,224.59H312.5155a74.4857,74.4857,0,0,0,.8793-11.415V139.9966a74.32,74.32,0,0,0-74.2359-74.2359H131.03a74.32,74.32,0,0,0-74.2358,74.2359v73.1782A74.32,74.32,0,0,0,131.03,287.4106h68.4724a73.82,73.82,0,0,0-.8962,11.4146v73.1787a74.3194,74.3194,0,0,0,74.2354,74.2354h108.13a74.3194,74.3194,0,0,0,74.2354-74.2354V298.8252A74.3194,74.3194,0,0,0,380.9709,224.59ZM72.7937,213.1748V139.9966A58.3019,58.3019,0,0,1,131.03,81.7607H239.1589a58.3016,58.3016,0,0,1,58.2359,58.2359v73.1782a58.3015,58.3015,0,0,1-58.2359,58.2358H131.03A58.3018,58.3018,0,0,1,72.7937,213.1748ZM386.9709,316.8091h-19.5a120.7225,120.7225,0,0,1-28.8229,50.6914,124.5227,124.5227,0,0,0,22.0022,14.08l10.8838,5.4648a8,8,0,1,1-7.18,14.2989l-10.8838-5.4649A140.1428,140.1428,0,0,1,326.87,378.5714a139.3809,139.3809,0,0,1-26.5289,17.3075l-10.8828,5.4649a8,8,0,0,1-7.18-14.2989l10.8828-5.4648a123.73,123.73,0,0,0,21.943-14.0639,123.9571,123.9571,0,0,1-20.2018-28.6436,8,8,0,1,1,14.2558-7.2647,107.9829,107.9829,0,0,0,17.714,25.062,105.445,105.445,0,0,0,23.8949-39.8608H266.8411a8,8,0,0,1,0-16h52.0654V276.6348a8,8,0,0,1,16,0v24.1743h52.0644a8,8,0,0,1,0,16Z"/>
+         <path fill="currentColor" d="M199.4075,133.6084c-2.6123-6.4614-8.0967-10.4756-14.313-10.4756s-11.7012,4.0142-14.3135,10.4761l-34.5347,85.4316a8,8,0,1,0,14.834,5.9961l12.9473-32.0288H206.161l12.9472,32.0288a8,8,0,1,0,14.8339-5.9961Zm-28.912,43.3994,14.599-36.1147,14.5988,36.1147Z"/>
+       </g>
+    </svg>
+
+  </div>
+
+  <div class="nav-overlay"></div>
+
+</div>
+
+
+
+
 <main>
   <h1>❖ 連絡</h1>
 
   <section>
-    <p><strong>Telegram</strong>: <a href="https://t.me/kai5041" target="_blank" rel="noopener noreferrer">@kai5041</a></p>
-    <p><strong>Instagram</strong>: <a href="https://instagram.com/kai5041._" target="_blank" rel="noopener noreferrer">@kai5041._</a></p>
-    <p><strong>電子郵便</strong>: <a href="mailto:rdd.contact@rairen.net" target="_blank" rel="noopener noreferrer">rdd.contact@rairen.net</a></p>
+    <p><strong>Telegram</strong>: <a href="https://t.me/kai5041">@kai5041</a></p>
+    <p><strong>Instagram</strong>: <a href="https://instagram.com/kai5041._">@kai5041._</a></p>
+
+    <br>   
+    <p><strong>Email</strong>: <a href="mailto:rdd.contact@rairen.net">rdd.contact@rairen.net</a></p>
     <p><em>Response time: up to 7 days</em></p>
   </section>
 
   <hr>
-
-  <h3>◆ Process</h3>
-
-  <p><strong>1. Contact</strong><br>
+  <h2>General workflow</h2>
+  <p><strong>◆ 1. Contact</strong><br>
     Send a message with a short description of what you need.</p>
 
   <br>
 
-  <p><strong>2. Scope</strong><br>
+  <p><strong>◆ 2. Scope</strong><br>
     We define what will be built, constraints, and expected outcome.</p>
 
   <br>
 
-  <p><strong>3. Agreement</strong><br>
+  <p><strong>◆ 3. Agreement</strong><br>
     Contract is issued and work begins after upfront payment.</p>
-
   <br>
 
-  <p><strong>4. Build</strong><br>
+  <p><strong>◆ 4. Build</strong><br>
     Development phase with periodic updates based on progress.</p>
-
   <br>
 
-  <p><strong>5. Delivery</strong><br>
+  <p><strong>◆ 5. Delivery</strong><br>
     Final version is delivered and deployed. Project is considered complete.</p>
 
 </main>
 
-  <footer>
-  <ul>
-    <li>
-      <p><strong>Legal</strong></p>
-    <li>
-      <a href="/ja/legal-information">Legal information</a>
-    </li>
-    <li>
-      <a href="/ja/privacy-policy">Privacy Policy</a>
-    </li>
-    <li>
-      <a href="/ja/cookie-policy">Cookie Policy</a>
-    </li>
-    </li>
-  </ul>
 
-  <ul>
-    <li>
-      <p><strong>Development</strong></p>
-    </li>
-    <li>
-      <a href="https://codeberg.org/kai5041" target="_blank" rel="nofollow noreferrer">Codeberg</a>
-    </li>
-    <li>
-      <a href="https://github.com/kai5041" target="_blank" rel="nofollow noreferrer">GitHub</a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <p><strong>Media</strong></p>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/@kai_5041" target="_blank" rel="nofollow noreferrer">YouTube</a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/kai5041._/" target="_blank" rel="nofollow noreferrer">Instagram</a>
-    </li>
-    <li>
-      <a href="https://www.twitch.tv/kai5041" target="_blank" rel="nofollow noreferrer">Twitch</a>
-    </li>
 
-  </ul>
-
+<footer>
+  <a href="/ja/legal-information">法務情報</a>
 </footer>
 
-</body>
 
+</body>
 </html>
+

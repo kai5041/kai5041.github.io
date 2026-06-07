@@ -4,15 +4,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
-  eleventyConfig.addPassthroughCopy("pages/js");
-  eleventyConfig.addPassthroughCopy("pages/css");
-  eleventyConfig.addPassthroughCopy("pages/fonts");
-  eleventyConfig.addPassthroughCopy("pages/assets");
-  eleventyConfig.addPassthroughCopy("pages/static");
+  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("assets");
 
-  eleventyConfig.addGlobalData("founder", "Kai (解)");
-
-  eleventyConfig.addGlobalData("pagination", {
+    eleventyConfig.addGlobalData("pagination", {
     data: "languages",
     size: 1,
     alias: "lang"
@@ -30,10 +27,6 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addNunjucksGlobal("link", (label, url, handle) => {
-    return `<strong>${label}</strong>: <a href="${url}" target="_blank" rel="noopener noreferrer">${handle}</a>`;
-  });
-
   eleventyConfig.addNunjucksShortcode("note", (keyObj, lang, text) => {
     const label = keyObj?.[lang] ?? keyObj?.en ?? "NOTE";
     const out = text?.[lang] ?? text?.en ?? "⚠️ missing";
@@ -44,9 +37,9 @@ module.exports = function (eleventyConfig) {
     return obj?.[lang] ?? obj?.en ?? "⚠️ missing";
   });
 
-  return {
+ return {
     dir: {
-      input: "pages",
+      input: ".",
       output: "../docs"
     }
   };
