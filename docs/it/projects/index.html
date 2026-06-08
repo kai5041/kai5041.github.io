@@ -7,7 +7,7 @@
   <script src="/js/consent.js" defer></script>
 
   <title>
-    Kai | Servizi
+    Kai | Progetti
   </title>
 
   <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
@@ -23,8 +23,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="https://rairen.net/assets/png/kai_logo_light.png">
 
-  <meta property="og:url" content="https://rairen.net/it/services/">
-  <link rel="canonical" href="https://rairen.net/it/services/">
+  <meta property="og:url" content="https://rairen.net/it/projects/">
+  <link rel="canonical" href="https://rairen.net/it/projects/">
   <meta property="og:type" content="website">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -97,191 +97,35 @@
 
 
 <style>
-.offers {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1rem, 2.5vw, 2.5rem);
-  padding: clamp(1rem, 3vw, 2rem);
-  align-items: stretch;
-}
-
-.offer {
-  background-color: var(--grey);
-  border-radius: 15px;
-  padding: clamp(1rem, 2.5vw, 2rem);
-
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  min-height: 100%;
-}
-
-.offer-title {
-  margin: 0;
-  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
-  line-height: 1.2;
-}
-
-.offer p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-.offer-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex: 1;
-}
-
-.offer-footer {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.price {
-  margin: 0;
-  font-weight: 600;
-}
-
-.offer .cta {
-  display: inline-flex;
-  align-self: flex-start;
-
-  background-color: var(--white);
-  color: var(--black);
-
-  text-decoration: none;
-
-  font-weight: 700;
-
-  padding: 0.8rem 1.2rem;
-  border: 2px solid var(--white);
-  border-radius: 12px;
-
-  transition: 0.15s ease;
-}
-
-.offer .cta:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-@media (max-width: 1100px) {
-  .offers {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 539px) {
-  .offers {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .offer {
-    padding: 1rem;
-  }
+section {
+  margin-bottom: 2vh;
 }
 </style>
 
-<section class="offers">
-  
-    <div class="offer">
+<main>
 
-      <h3 class="offer-title">❖ Sviluppo Software Personalizzato e Automazione</h3>
-
-      <div class="offer-content">
-        <p>Strumenti su misura e flussi di automazione.<br> Linguaggi supportati: C++, Python, Typescript</p>
-
-        <div class="offer-footer">
-          <p class="price">A partire da &euro;500</p>
-
-          <a class="cta" href="/it/services/custom-software-automation/">
-            ▸ Learn more
-          </a>
-        </div>
-      </div>
-
-    </div>
-  
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Siti Web Statici</h3>
-
-      <div class="offer-content">
-        <p>Siti web personalizzati per liberi professionisti e piccole imprese. Include una consulenza gratuita focalizzata sulla riduzione dei costi operativi (OPEX), come hosting, manutenzione e infrastruttura.</p>
-
-        <div class="offer-footer">
-          <p class="price">A partire da &euro;500</p>
-
-          <a class="cta" href="/it/services/static-website/">
-            ▸ Learn more
-          </a>
-        </div>
-      </div>
-
-    </div>
-  
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Siti Web Dinamici</h3>
-
-      <div class="offer-content">
-        <p>Siti web pubblici e privati per piccole e medie imprese. Include una consulenza gratuita focalizzata sulla riduzione dei costi operativi (OPEX), come hosting, manutenzione e infrastruttura.</p>
-
-        <div class="offer-footer">
-          <p class="price">A partire da &euro;800</p>
-
-          <a class="cta" href="/it/services/dynamic-website/">
-            ▸ Learn more
-          </a>
-        </div>
-      </div>
-
-    </div>
-  
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Sviluppo API</h3>
-
-      <div class="offer-content">
-        <p>API HTTPS e WSS per strumenti online, giochi e integrazioni applicative con interfacciamento database.</p>
-
-        <div class="offer-footer">
-          <p class="price">A partire da &euro;500</p>
-
-          <a class="cta" href="/it/services/api-development/">
-            ▸ Learn more
-          </a>
-        </div>
-      </div>
-
-    </div>
-  
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Scripting Linux</h3>
-
-      <div class="offer-content">
-        <p>Automazione di ambienti Linux, script server-side, strumenti di amministrazione di sistema</p>
-
-        <div class="offer-footer">
-          <p class="price">A partire da &euro;300</p>
-
-          <a class="cta" href="/it/services/linux-scripting/">
-            ▸ Learn more
-          </a>
-        </div>
-      </div>
-
-    </div>
-  
+<section>
+  <h2>Rensa / 連鎖</h2>
+  <p>An open-source project orchestrator and builder built with templating capabilities.</p>
+  <p>Sources:
+    <a href="https://github.com/rairen-rdd/rensa" target="_blank" rel="noopener">GitHub</a> |
+    <a href="https://codeberg.com/rairen-rdd/rensa" target="_blank" rel="noopener">Codeberg</a>
+ </p>
 </section>
+
+
+<section>
+  <h2>Nintei / 認定</h2>
+  <p>An open-source identity and authorization backend leveraging Classical and Post Quantum Cryptography for secure communication and authorization.</p>
+  <p>Sources:
+    <a href="https://github.com/rairen-rdd/nintei" target="_blank" rel="noopener">GitHub</a> |
+    <a href="https://codeberg.com/rairen-rdd/nintei" target="_blank" rel="noopener">Codeberg</a>
+ </p>
+</section>
+
+
+
+</main>
 
 
 <footer>
