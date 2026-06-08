@@ -1,0 +1,45 @@
+section {
+  padding-bottom: 2vh;
+  border-bottom: 2px solid var(--white);
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0px;
+}
+
+section li::before {
+  content: "▸";
+  margin-right: 8px;
+}
+
+section:not(:last-child) {
+  border-bottom: 2px solid var(--fgc);
+}
+
+
+.price {
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin-top: 2vh;
+}
+
+.cta {
+  background-color: var(--white);
+  color: var(--black);
+
+  text-decoration: none;
+
+  display: inline-block;
+  
+  padding: 2vh 3vw;
+  margin-top: 2vh;
+
+  border-radius: 15px;
+
+}
+
+
