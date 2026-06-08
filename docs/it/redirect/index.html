@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
   <script src="/js/consent.js" defer></script>
 
   <title>
-    Kai | Legal Information
+    Kai | ⚠️ missing
   </title>
 
   <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
@@ -20,8 +20,8 @@
   <meta name="description" content="Discover more about the ambitions of this operator, founder of the projects Rensa and Nintei, sharing contents of their studies on Instagram.">
   <meta property="og:description" content="Discover more about the ambitions of this operator, founder of the projects Rensa and Nintei, sharing contents of their studies on Instagram.">
 
-  <meta property="og:url" content="https://rairen.net/en/legal-information/">
-  <link rel="canonical" href="https://rairen.net/en/legal-information/">
+  <meta property="og:url" content="https://rairen.net/it/redirect/">
+  <link rel="canonical" href="https://rairen.net/it/redirect/">
   <meta property="og:type" content="website">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -54,7 +54,7 @@
 <div class="nav">
 
   <div class="logo">
-    <a href="/en/">
+    <a href="/it/">
       <img src="/assets/png/kai_logo_light.png" alt="Kai logo">
     </a>
   </div>
@@ -70,11 +70,11 @@
   <div class="right">
 
     <nav class="links">
-      <a href="/en/">Home</a>
-      <a href="/en/services">Services</a>
-      <a href="/en/projects">Projects</a>
-      <a href="/en/about">About</a>
-      <a href="/en/contact" class="contact">Contact</a>
+      <a href="/it/">Home</a>
+      <a href="/it/services">Servizi</a>
+      <a href="/it/projects">Progetti</a>
+      <a href="/it/about">Profilo</a>
+      <a href="/it/contact" class="contact">Contatti</a>
     </nav>
 
     <svg class="lang-selector" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -93,21 +93,31 @@
 
 
 
-<main>
-  <h1>Legal Information</h1>
+<script>
+    (function () {
+      const supported_languages = ["en", "ja", "it", "ro"];
+      const fallback_language = "en";
 
-  <h2>Legal Representative</h2>
-  <p><strong>Ditta</strong>: MURASAN ANDREA</p>
-  <p><strong>Codice Fiscale</strong>: MRSNDR06P28H501F</p>
-  <p><strong>Partita IVA</strong>: 18553221005</p>
-  <p><strong>Sede</strong>: Via Anchise 29, 00133, Roma, RM</p>
-  <p><strong>PEC</strong>: rairen@pec.it</p>
-  <p><strong>Contatto</strong>: rdd.contact@rairen.net</p>
-</main>
+      const lang = navigator.language || navigator.userLanguage;
+      const short = lang.toLowerCase().split("-")[0];
+
+      const chosen = supported_languages.includes(short) ? short : fallback_language;
+
+      window.location.replace("/" + chosen + "/");
+    })();
+  </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/">
+  </noscript>
+
+  <p>If you see this page, it's because it either got indexed or you're getting redirected</p>
+</body>
+</html>
 
 
 <footer>
-  <a href="/en/legal-information">Legal Information</a>
+  <a href="/it/legal-information">Informazioni Legali</a>
   <a href="https://instagram.com/kai5041._">Instagram</a>
   <a href="https://github.com/kai5041">GitHub</a>
   <a href="https://codeberg.org/kai5041">Codeberg</a>
