@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="/js/consent.js" defer></script>
+  <script type="module" src="/js/lang.js" defer></script>
+  <script type="module" src="/js/consent.js" defer></script>
 
   <title>
     {{ '解' if lang == 'ja' else 'Kai' }} | {{ global[title_id] | t(lang) }}
@@ -19,6 +20,9 @@
   <meta property="og:title" content="Kai: Open-source projects and Freelancing">
   <meta name="description" content="{{ description or site.description | t(lang) }}">
   <meta property="og:description" content="{{ description or site.description | t(lang) }}">
+
+  <meta name="robots" content="noimageindex">
+  <meta property="og:image" content="">
 
   <meta property="og:url" content="https://rairen.net{{ page.url }}">
   <link rel="canonical" href="https://rairen.net{{ page.url }}">

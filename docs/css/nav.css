@@ -1,6 +1,6 @@
 .nav {
   width: 100%;
-  margin: 2vh auto 0;
+  margin: 2vh auto 2vh;
   height: 8vh;
 
   font-size: 1.2rem;
@@ -14,8 +14,6 @@
 
   position: relative;
   z-index: 10;
-
-  margin-bottom: 2vh;
 }
 
 .logo {
@@ -89,15 +87,16 @@
   cursor: pointer;
 }
 
-.nav-toggle {
+.nav-toggle,
+.lang-toggle {
   display: none;
 }
 
+/* Hamburger */
 .hamburger {
   display: none;
   width: 30px;
   height: 25px;
-
   cursor: pointer;
 
   position: relative;
@@ -124,10 +123,61 @@
 }
 .hamburger span:nth-child(3) { bottom: 0; }
 
-.nav-overlay {
+/* Overlays default */
+.nav-overlay,
+.lang-overlay {
   display: none;
 }
 
+/* Language overlay base */
+.lang-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+  background-color: var(--black);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease;
+}
+
+.lang-overlay .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.lang-overlay .text p {
+  font-size: 1.5rem;
+
+  width: clamp(200px, 30vw, 280px);
+  height: 3.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--white);
+  border-radius: 15px;
+
+  cursor: pointer;
+}
+
+.lang-overlay .text p:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
 
   .hamburger {
@@ -153,6 +203,7 @@
     z-index: 1100;
   }
 
+  /* FIXED: removed comma bug */
   .nav-toggle:checked ~ .right {
     transform: translate3d(0, 0, 0);
   }
@@ -191,6 +242,7 @@
     visibility: visible;
   }
 
+  /* hamburger animation */
   .nav-toggle:checked + .hamburger span:nth-child(1) {
     top: 50%;
     transform: rotate(45deg);
@@ -204,5 +256,16 @@
     top: 50%;
     transform: rotate(-45deg);
   }
+
+  /* LANGUAGE OVERLAY FIX */
+  .lang-toggle:checked ~ .lang-overlay {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
+/* utility */
+.open {
+  display: flex;
+}
