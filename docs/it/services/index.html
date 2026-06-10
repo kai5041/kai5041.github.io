@@ -58,9 +58,7 @@
 <div class="nav">
 
   <div class="logo">
-    <a href="/it/">
-      <img src="/assets/png/kai_logo_light.png" alt="Kai logo">
-    </a>
+    <a href="/en/" id="logo-link"></a>
   </div>
 
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -102,6 +100,18 @@
 
   <div class="nav-overlay"></div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const link = document.getElementById("logo-link");
+
+    const img = document.createElement("img");
+    img.src = "/assets/png/kai_logo_light.png";
+    img.alt = "Kai logo";
+
+    link.appendChild(img);
+  });
+</script>
 
 
 
