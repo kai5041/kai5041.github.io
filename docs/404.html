@@ -7,7 +7,7 @@
   <script src="/js/consent.js" defer></script>
 
   <title>
-    Kai | ⚠️ missing
+    Kai | 404 Not Found
   </title>
 
   <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.png">
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/nav.css">
 
-  <meta name="twitter:image" content="https://rairen.net/assets/png/kai_banner_light.png">
 
   <meta name="theme-color" content="#F0F0F0">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -49,9 +48,7 @@
 <div class="nav">
 
   <div class="logo">
-    <a href="/en/">
-      <img src="/assets/png/kai_logo_light.png" alt="Kai logo">
-    </a>
+    <a href="/en/" id="logo-link"></a>
   </div>
 
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -85,7 +82,17 @@
 
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const link = document.getElementById("logo-link");
 
+    const img = document.createElement("img");
+    img.src = "/assets/png/kai_logo_light.png";
+    img.alt = "Kai logo";
+
+    link.appendChild(img);
+  });
+</script>
 
 
 <main>
