@@ -9,8 +9,9 @@
 :root {
   --white: #F0F0F0;
   --black: #0F0F0F;
-  --grey: #2E2E2E;
+  --grey: #202020;
 
+  --warn: #D6A21E;
 }
 
 * {
@@ -23,6 +24,8 @@
 body {
   background-color: var(--black);
   color: var(--white);
+
+  line-height: 1.6;
 
   font-family: "Noto Sans JP", sans;
 }
@@ -61,5 +64,31 @@ footer {
 footer a {
   text-decoration: none;
   display: block;
+}
+
+.note {
+  margin-top: 2vh;
+
+  border: 1px solid var(--white);
+
+  border-left: 6px solid var(--white);
+
+  background-color: var(--grey);
+}
+
+.note {
+  padding: 2vh 2vw;
+}
+
+.note.warn {
+  border-color: var(--warn);
+}
+
+.note.warn p:first-child:before {
+  content: "WARNING";
+  font-weight: 600;
+  display: block;
+
+  color: var(--warn);
 }
 

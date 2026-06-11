@@ -55,18 +55,12 @@
 .links a {
   text-decoration: none;
   font-weight: 700;
-
   color: var(--white);
-  background: var(--black);
-
-  border: 2px solid var(--white);
+  background: var(--grey);
   border-radius: 12px;
-
   padding: 0.8rem 1.2rem;
-
   display: flex;
   align-items: center;
-
   transition: 0.15s ease;
 }
 
@@ -92,13 +86,11 @@
   display: none;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   width: 30px;
   height: 25px;
   cursor: pointer;
-
   position: relative;
   z-index: 9999;
 }
@@ -106,12 +98,9 @@
 .hamburger span {
   position: absolute;
   left: 0;
-
   width: 100%;
   height: 2px;
-
   background: var(--white);
-
   transition: 0.3s ease;
   transform-origin: center;
 }
@@ -123,26 +112,21 @@
 }
 .hamburger span:nth-child(3) { bottom: 0; }
 
-/* Overlays default */
 .nav-overlay,
 .lang-overlay {
   display: none;
 }
 
-/* Language overlay base */
 .lang-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-
   align-items: center;
   justify-content: center;
-
   z-index: 9999;
   background-color: var(--black);
-
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.25s ease;
@@ -158,17 +142,13 @@
 
 .lang-overlay .text p {
   font-size: 1.5rem;
-
   width: clamp(200px, 30vw, 280px);
   height: 3.5rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 2px solid var(--white);
   border-radius: 15px;
-
   cursor: pointer;
 }
 
@@ -177,7 +157,6 @@
   color: var(--black);
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
 
   .hamburger {
@@ -187,23 +166,17 @@
   .right {
     position: fixed;
     inset: 0;
-
     width: 100%;
     height: 100vh;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background: var(--black);
-
     transform: translate3d(100%, 0, 0);
     transition: transform 0.35s ease;
-
     z-index: 1100;
   }
 
-  /* FIXED: removed comma bug */
   .nav-toggle:checked ~ .right {
     transform: translate3d(0, 0, 0);
   }
@@ -226,11 +199,8 @@
   .nav-overlay {
     position: fixed;
     inset: 0;
-
     background: rgba(0, 0, 0, 0.4);
-
     z-index: 1099;
-
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.25s ease;
@@ -242,7 +212,6 @@
     visibility: visible;
   }
 
-  /* hamburger animation */
   .nav-toggle:checked + .hamburger span:nth-child(1) {
     top: 50%;
     transform: rotate(45deg);
@@ -257,7 +226,6 @@
     transform: rotate(-45deg);
   }
 
-  /* LANGUAGE OVERLAY FIX */
   .lang-toggle:checked ~ .lang-overlay {
     display: flex;
     opacity: 1;
@@ -265,7 +233,7 @@
   }
 }
 
-/* utility */
 .open {
   display: flex;
 }
+

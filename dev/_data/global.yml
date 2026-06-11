@@ -31,4 +31,15 @@ legal_information:
 
 static_website:
   en: Static Website
-  it: Sito Statico
+  it: Sito Web Statico
+
+web_system:
+  en: Web System
+  it: Sistema Web
+
+custom_software_automation:
+  en: Custom Software and Automation
+  it: Software e Automazioni Personalizzate
+
+linux_scripting:
+  en: Linux Scripting

@@ -1,16 +1,15 @@
 ---
 layout: base.njk
-title_id: static_website
+title_id: web_system
 ---
 
 <link rel="stylesheet" href="/css/services.css">
 
 <main>
+  <h1>{{ global[title_id] | t(lang) }}</h1>
   
   <section class="offer">
 
-    <h2>{{ global[title_id] | t(lang) }}</h2>
-    
     <div>
       <h3 class="includes">Includes</h3>
       <ul>
@@ -18,11 +17,12 @@ title_id: static_website
         <li>Consistent design</li>
         <li>Basic Search Engine Optimization (SEO)</li>
         <li>Responsive styling (desktop + mobile)</li>
-        <li>Light Javascripty</li>
+        <li>Javascript interactivity</li>
         <li>Showcase text (clear presentation of business or project content)</li>
         <li>Basic telemetry</li>
         <li>Cookie consent management</li>
-        <li>Maximum 10 pages.</li>
+        <li>Forms</li>
+        <li>Authentication</li>
       </ul>
     </div>
 
@@ -32,8 +32,6 @@ title_id: static_website
     <ul>
       <li>Post-delivery ongoing support</li>
       <li>Per-page custom layouts beyond shared design system</li>
-      <li>Forms</li>
-      <li>Authentication</li>
     </ul>
 
     <hr>
@@ -47,4 +45,3 @@ title_id: static_website
 
 
 </main>
-

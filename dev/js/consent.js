@@ -20,9 +20,18 @@ function loadAnalytics() {
     document.head.appendChild(script);
 }
 
+function getOverlay() {
+    return document.getElementById("consent-overlay");
+}
+
+function showBanner() {
+    const overlay = getOverlay();
+    overlay?.classList.add("is-visible");
+}
+
 function hideBanner() {
-    const overlay = document.getElementById("consent-overlay");
-    if (overlay) overlay.style.display = "none";
+    const overlay = getOverlay();
+    overlay?.classList.remove("is-visible");
 }
 
 function applyConsent(accepted) {
@@ -42,24 +51,25 @@ function initConsent() {
     const enableBtn = document.getElementById("enable-analytics");
     const disableBtn = document.getElementById("disable-analytics");
 
-    if (enableBtn) {
-        enableBtn.addEventListener("click", () => {
-            setAnonymousMetricsConsent(true);
-        });
+    enableBtn?.addEventListener("click", () => {
+        setAnonymousMetricsConsent(true);
+    });
+
+    disableBtn?.addEventListener("click", () => {
+        setAnonymousMetricsConsent(false);
+    });
+
+    const consent = getCookie(COOKIE_NAME);
+
+    if (!consent) {
+        showBanner();
+        return;
     }
 
-    if (disableBtn) {
-        disableBtn.addEventListener("click", () => {
-            setAnonymousMetricsConsent(false);
-        });
-    }
+    hideBanner();
 
-    if (getCookie(COOKIE_NAME)) {
-        hideBanner();
-
-        if (hasAnonymousMetricsConsent()) {
-            loadAnalytics();
-        }
+    if (hasAnonymousMetricsConsent()) {
+        loadAnalytics();
     }
 }
 
