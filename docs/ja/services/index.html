@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script type="module" src="/js/lang.js" defer></script>
   <script type="module" src="/js/consent.js" defer></script>
 
   <title>
@@ -116,128 +115,28 @@
 
 
 
-<style>
-.offers {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1rem, 2.5vw, 2.5rem);
-  padding: clamp(1rem, 3vw, 2rem);
-  align-items: stretch;
-}
+<link rel="stylesheet" href="/css/services.css">
 
-.offer {
-  background-color: var(--grey);
-  border-radius: 15px;
-  padding: clamp(1rem, 2.5vw, 2rem);
+<main>
+<div class="note warn">
+  <p>Operator availability is currently suspended due to academic obligations.</p>
+  <p>Services will resume operations at the end of July.</p>
+</div>
+</main>
 
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+<section class="offers-grid">
 
-  min-height: 100%;
-}
-
-.offer-title {
-  margin: 0;
-  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
-  line-height: 1.2;
-}
-
-.offer p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-.offer-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex: 1;
-}
-
-.offer-footer {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.price {
-  margin: 0;
-  font-weight: 600;
-}
-
-.offer .cta {
-  display: inline-flex;
-  align-self: flex-start;
-
-  background-color: var(--white);
-  color: var(--black);
-
-  text-decoration: none;
-
-  font-weight: 700;
-
-  padding: 0.8rem 1.2rem;
-  border: 2px solid var(--white);
-  border-radius: 12px;
-
-  transition: 0.15s ease;
-}
-
-.offer .cta:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-@media (max-width: 1100px) {
-  .offers {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 539px) {
-  .offers {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .offer {
-    padding: 1rem;
-  }
-}
-</style>
-
-<section class="offers">
   
     <div class="offer">
 
-      <h3 class="offer-title">❖ Custom Software and Automation</h3>
+      <h3 class="offer-title">Static Websites</h3>
 
       <div class="offer-content">
-        <p>Tailor-made tools and automation workflows.<br> Supported programming languages: C++, Python, Typescript</p>
+        <p>Fast, low-maintenance websites for freelancers and small businesses.
+</p>
 
         <div class="offer-footer">
-          <p class="price">Starting from &euro;500</p>
-
-          <a class="cta" href="/ja/services/custom-software-automation/">
-            ▸ Learn more
-          </a>
-        </div>
-      </div>
-
-    </div>
-  
-    <div class="offer">
-
-      <h3 class="offer-title">❖ Static Websites</h3>
-
-      <div class="offer-content">
-        <p>Custom websites for freelancers and small companies. Includes a free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead.</p>
-
-        <div class="offer-footer">
-          <p class="price">Starting from &euro;500</p>
+          <p class="price">Starting from &euro;800</p>
 
           <a class="cta" href="/ja/services/static-website/">
             ▸ Learn more
@@ -249,15 +148,16 @@
   
     <div class="offer">
 
-      <h3 class="offer-title">❖ Dynamic Websites</h3>
+      <h3 class="offer-title">Linux Scripting</h3>
 
       <div class="offer-content">
-        <p>Public and private websites for small to medium companies. Includes a free consultation focused on reducing ongoing operational costs (OPEX), such as hosting, maintenance, and infrastructure overhead.</p>
+        <p>Automation, deployment, and system administration for Linux environments.
+</p>
 
         <div class="offer-footer">
-          <p class="price">Starting from &euro;800</p>
+          <p class="price">Starting from &euro;400</p>
 
-          <a class="cta" href="/ja/services/dynamic-website/">
+          <a class="cta" href="/ja/services/linux-scripting/">
             ▸ Learn more
           </a>
         </div>
@@ -267,13 +167,33 @@
   
     <div class="offer">
 
-      <h3 class="offer-title">❖ API Development</h3>
+      <h3 class="offer-title">Custom Software and Automation</h3>
 
       <div class="offer-content">
-        <p>HTTPS and WSS APIs for online tools, games and app integrations with database interfacing.</p>
+        <p>Tailor-made applications and automation workflows built in C++23 and Python.
+</p>
 
         <div class="offer-footer">
-          <p class="price">Starting from &euro;500</p>
+          <p class="price">Starting from &euro;800</p>
+
+          <a class="cta" href="/ja/services/custom-software-automation/">
+            ▸ Learn more
+          </a>
+        </div>
+      </div>
+
+    </div>
+  
+    <div class="offer">
+
+      <h3 class="offer-title">API Development (C++23)</h3>
+
+      <div class="offer-content">
+        <p>High-performance HTTP and WebSocket APIs for real-time systems, online platforms, games, and software integrations.
+</p>
+
+        <div class="offer-footer">
+          <p class="price">Starting from &euro;1500</p>
 
           <a class="cta" href="/ja/services/api-development/">
             ▸ Learn more
@@ -285,15 +205,16 @@
   
     <div class="offer">
 
-      <h3 class="offer-title">❖ Linux Scripting</h3>
+      <h3 class="offer-title">Web Systems (C++23)</h3>
 
       <div class="offer-content">
-        <p>Automation of Linux environment, server-side scripts, sysadmin tooling</p>
+        <p>Full-stack web applications with databases, authentication, dashboards, and business logic. Ideal for internal tools, customer portals, and business platforms.
+</p>
 
         <div class="offer-footer">
-          <p class="price">Starting from &euro;300</p>
+          <p class="price">Starting from &euro;2000</p>
 
-          <a class="cta" href="/ja/services/linux-scripting/">
+          <a class="cta" href="/ja/services/web-system/">
             ▸ Learn more
           </a>
         </div>
@@ -301,6 +222,7 @@
 
     </div>
   
+
 </section>
 
 

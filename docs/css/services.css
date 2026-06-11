@@ -1,6 +1,5 @@
 section {
-  padding-bottom: 2vh;
-  border-bottom: 2px solid var(--white);
+  padding: 2vh 4vw;
 }
 
 section ul {
@@ -18,28 +17,72 @@ section:not(:last-child) {
   border-bottom: 2px solid var(--fgc);
 }
 
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4vh 3vw;
+  align-items: stretch;
+}
 
-.price {
-  font-size: 1.4rem;
+.offer {
+  margin: 0;
+  padding: 2vh 4vw;
+  background-color: var(--grey);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
   margin-top: 2vh;
 }
 
-.cta {
-  background-color: var(--white);
-  color: var(--black);
-
-  text-decoration: none;
-
-  display: inline-block;
-  
-  padding: 2vh 3vw;
-  margin-top: 2vh;
-
-  border-radius: 15px;
-
+h3:before {
+  content: "❖ ";
 }
 
+.price {
+  font-size: 1.2rem;
+  margin-top: 2vh;
+}
 
+.price .small {
+  font-size: 1rem;
+}
+
+.cta {
+  color: var(--white);
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 2vh;
+}
+
+.offer-footer {
+  margin-top: auto;
+}
+
+.offer hr {
+  margin: 2vh auto;
+  width: 90%;
+  border: none;
+  border-top: 1px solid var(--white);
+  opacity: 0.6;
+}
+
+.includes {
+  color: #7FB7D6;
+}
+
+.excludes {
+  color: #C85A5A;
+}
+
+@media (max-width: 900px) {
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.offer {
+  margin-bottom: 2vh;
+}
