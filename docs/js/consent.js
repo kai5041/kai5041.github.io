@@ -4,13 +4,25 @@ const COOKIE_NAME = "anon_metrics_consent";
 const GOATCOUNTER_SRC = "https://gc.zgo.at/count.js";
 const GOATCOUNTER_ID = "https://kai5041.goatcounter.com/count";
 
-function hasAnonymousMetricsConsent() {
-    return getCookie(COOKIE_NAME) === "true";
+let analyticsLoaded = false;
+
+function getOverlay() {
+    return document.getElementById("consent-overlay");
+}
+
+function showBanner() {
+    const overlay = getOverlay();
+    if (overlay) overlay.classList.add("is-visible");
+}
+
+function hideBanner() {
+    const overlay = getOverlay();
+    if (overlay) overlay.classList.remove("is-visible");
 }
 
 function loadAnalytics() {
-    if (window.__goatcounter_loaded) return;
-    window.__goatcounter_loaded = true;
+    if (analyticsLoaded) return;
+    analyticsLoaded = true;
 
     const script = document.createElement("script");
     script.async = true;
@@ -20,21 +32,12 @@ function loadAnalytics() {
     document.head.appendChild(script);
 }
 
-function getOverlay() {
-    return document.getElementById("consent-overlay");
+function saveConsent(value) {
+    setCookie(COOKIE_NAME, value ? "true" : "false");
 }
 
-function showBanner() {
-    const overlay = getOverlay();
-    overlay?.classList.add("is-visible");
-}
-
-function hideBanner() {
-    const overlay = getOverlay();
-    overlay?.classList.remove("is-visible");
-}
-
-function applyConsent(accepted) {
+function handleChoice(accepted) {
+    saveConsent(accepted);
     hideBanner();
 
     if (accepted) {
@@ -42,33 +45,23 @@ function applyConsent(accepted) {
     }
 }
 
-function setAnonymousMetricsConsent(accepted) {
-    setCookie(COOKIE_NAME, accepted ? "true" : "false");
-    applyConsent(accepted);
-}
-
 function initConsent() {
     const enableBtn = document.getElementById("enable-analytics");
     const disableBtn = document.getElementById("disable-analytics");
 
-    enableBtn?.addEventListener("click", () => {
-        setAnonymousMetricsConsent(true);
-    });
-
-    disableBtn?.addEventListener("click", () => {
-        setAnonymousMetricsConsent(false);
-    });
+    enableBtn?.addEventListener("click", () => handleChoice(true));
+    disableBtn?.addEventListener("click", () => handleChoice(false));
 
     const consent = getCookie(COOKIE_NAME);
 
-    if (!consent) {
+    if (consent === null || consent === undefined || consent === "") {
         showBanner();
         return;
     }
 
     hideBanner();
 
-    if (hasAnonymousMetricsConsent()) {
+    if (consent === "true") {
         loadAnalytics();
     }
 }

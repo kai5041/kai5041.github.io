@@ -37,9 +37,9 @@ web_system:
   en: Web System
   it: Sistema Web
 
-custom_software_automation:
-  en: Custom Software and Automation
-  it: Software e Automazioni Personalizzate
+custom_software:
+  en: Custom Software
+  it: Software Personalizzati
 
 linux_scripting:
   en: Linux Scripting

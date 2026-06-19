@@ -42,7 +42,7 @@
     <p>This website uses essential-only cookies.</p>
 
     <div class="btn-group">
-      <button id="enable-analytics" type="button">
+      <button id="enable-analytics" class="accept-btn" type="button">
         Enable anonymous analytics
       </button>
 
@@ -53,75 +53,62 @@
 
   </div>
 </div>
-
-<div class="nav">
-
-  <div class="logo">
-    <a href="/en/" id="logo-link"></a>
-  </div>
-
-  <input type="checkbox" id="nav-toggle" class="nav-toggle">
-
-  <label for="nav-toggle" class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-
-  <div class="right">
-
-    <nav class="links">
-      <a href="/it/">Home</a>
-      <a href="/it/services">Servizi</a>
-      <a href="/it/projects">Progetti</a>
-      <a href="/it/about">Profilo</a>
-      <a href="/it/contact" class="contact">Contatti</a>
-    </nav>
-
-    <!--
-    <svg class="lang-selector" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-       <g id="Language_Setting">
-         <path fill="currentColor" d="M380.9709,224.59H312.5155a74.4857,74.4857,0,0,0,.8793-11.415V139.9966a74.32,74.32,0,0,0-74.2359-74.2359H131.03a74.32,74.32,0,0,0-74.2358,74.2359v73.1782A74.32,74.32,0,0,0,131.03,287.4106h68.4724a73.82,73.82,0,0,0-.8962,11.4146v73.1787a74.3194,74.3194,0,0,0,74.2354,74.2354h108.13a74.3194,74.3194,0,0,0,74.2354-74.2354V298.8252A74.3194,74.3194,0,0,0,380.9709,224.59ZM72.7937,213.1748V139.9966A58.3019,58.3019,0,0,1,131.03,81.7607H239.1589a58.3016,58.3016,0,0,1,58.2359,58.2359v73.1782a58.3015,58.3015,0,0,1-58.2359,58.2358H131.03A58.3018,58.3018,0,0,1,72.7937,213.1748ZM386.9709,316.8091h-19.5a120.7225,120.7225,0,0,1-28.8229,50.6914,124.5227,124.5227,0,0,0,22.0022,14.08l10.8838,5.4648a8,8,0,1,1-7.18,14.2989l-10.8838-5.4649A140.1428,140.1428,0,0,1,326.87,378.5714a139.3809,139.3809,0,0,1-26.5289,17.3075l-10.8828,5.4649a8,8,0,0,1-7.18-14.2989l10.8828-5.4648a123.73,123.73,0,0,0,21.943-14.0639,123.9571,123.9571,0,0,1-20.2018-28.6436,8,8,0,1,1,14.2558-7.2647,107.9829,107.9829,0,0,0,17.714,25.062,105.445,105.445,0,0,0,23.8949-39.8608H266.8411a8,8,0,0,1,0-16h52.0654V276.6348a8,8,0,0,1,16,0v24.1743h52.0644a8,8,0,0,1,0,16Z"/>
-         <path fill="currentColor" d="M199.4075,133.6084c-2.6123-6.4614-8.0967-10.4756-14.313-10.4756s-11.7012,4.0142-14.3135,10.4761l-34.5347,85.4316a8,8,0,1,0,14.834,5.9961l12.9473-32.0288H206.161l12.9472,32.0288a8,8,0,1,0,14.8339-5.9961Zm-28.912,43.3994,14.599-36.1147,14.5988,36.1147Z"/>
-       </g>
-    </svg>
-
-    <div class="lang-overlay">
-      <div class="text">
-        <p data-lang="en">English</p>
-        <p data-lang="it">Italiano</p>
-        <p data-lang="ja">日本語</p>
-        <p data-lang="ro">Română</p>
-      </div>
-    </div>
-    -->
-    </div>
-
-  <div class="nav-overlay"></div>
-</div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const link = document.getElementById("logo-link");
-
-    const img = document.createElement("img");
-    img.src = "/assets/png/kai_logo_light.png";
-    img.alt = "Kai logo";
-
-    link.appendChild(img);
-  });
-</script>
+  
+<nav class="nav">
+  <a href="/it/">Home</a>
+  <a href="/it/services">Servizi</a>
+  <a href="/it/projects">Progetti</a>
+  <a href="/it/contact" class="contact">Contatti</a>
+</nav>
 
 
 
+<style>
 
-<link rel="stylesheet" href="/css/services.css">
+.offer {
+  background-color: var(--grey);
+  margin: 2vh 2vw;
+  padding: 2vh 2vw;
+
+  border-radius: 15px;
+}
+
+.offer-title::before {
+  content: "❖";
+  margin-right: 0.5em;
+}
+
+.offer-middle {
+  margin-top: 2vh;
+}
+
+.price {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+.offer {
+    padding: 4vh 6vw;
+  }
+}
+
+</style>
 
 <main>
-<div class="note warn">
-  <p>Operator availability is currently suspended due to academic obligations.</p>
-  <p>Services will resume operations at the end of July.</p>
-</div>
+  <h1>Services</h1>
 </main>
 
 <section class="offers-grid">
@@ -129,11 +116,19 @@
   
     <div class="offer">
 
-      <h3 class="offer-title">Static Websites</h3>
+      <h3 class="offer-title">Websites</h3>
 
       <div class="offer-content">
-        <p>Fast, low-maintenance websites for freelancers and small businesses.
-</p>
+        <p>Fast, low-maintenance websites designed for simple public presence.</p>
+
+        <div class="offer-middle">
+        <p><strong>Optimal for:</strong></p>
+        
+          <li>Personal portfolios requiring professional presentation</li>
+        
+          <li>Small business pages with static content needs</li>
+        
+        </div>
 
         <div class="offer-footer">
           <p class="price">Starting from &euro;800</p>
@@ -148,35 +143,26 @@
   
     <div class="offer">
 
-      <h3 class="offer-title">Linux Scripting</h3>
+      <h3 class="offer-title">Custom Software</h3>
 
       <div class="offer-content">
-        <p>Automation, deployment, and system administration for Linux environments.
-</p>
+        <p>Tailor-made tools designed to automate and optimize specific workflows.</p>
 
-        <div class="offer-footer">
-          <p class="price">Starting from &euro;400</p>
-
-          <a class="cta" href="/it/services/linux-scripting/">
-            ▸ Learn more
-          </a>
+        <div class="offer-middle">
+        <p><strong>Optimal for:</strong></p>
+        
+          <li>Repetitive task automation</li>
+        
+          <li>Lightweight internal tooling</li>
+        
+          <li>Problem-specific standalone applications</li>
+        
         </div>
-      </div>
-
-    </div>
-  
-    <div class="offer">
-
-      <h3 class="offer-title">Custom Software and Automation</h3>
-
-      <div class="offer-content">
-        <p>Tailor-made applications and automation workflows built in C++23 and Python.
-</p>
 
         <div class="offer-footer">
           <p class="price">Starting from &euro;800</p>
 
-          <a class="cta" href="/it/services/custom-software-automation/">
+          <a class="cta" href="/it/services/custom-software/">
             ▸ Learn more
           </a>
         </div>
@@ -186,35 +172,26 @@
   
     <div class="offer">
 
-      <h3 class="offer-title">API Development (C++23)</h3>
+      <h3 class="offer-title">Web Systems</h3>
 
       <div class="offer-content">
-        <p>High-performance HTTP and WebSocket APIs for real-time systems, online platforms, games, and software integrations.
-</p>
+        <p>Structured, deployable systems for data-driven and multi-user applications.</p>
 
-        <div class="offer-footer">
-          <p class="price">Starting from &euro;1500</p>
-
-          <a class="cta" href="/it/services/api-development/">
-            ▸ Learn more
-          </a>
+        <div class="offer-middle">
+        <p><strong>Optimal for:</strong></p>
+        
+          <li>Internal dashboards with authentication</li>
+        
+          <li>Role-based management systems</li>
+        
+          <li>API-driven or integration-heavy platforms</li>
+        
         </div>
-      </div>
-
-    </div>
-  
-    <div class="offer">
-
-      <h3 class="offer-title">Web Systems (C++23)</h3>
-
-      <div class="offer-content">
-        <p>Full-stack web applications with databases, authentication, dashboards, and business logic. Ideal for internal tools, customer portals, and business platforms.
-</p>
 
         <div class="offer-footer">
           <p class="price">Starting from &euro;2000</p>
 
-          <a class="cta" href="/it/services/web-system/">
+          <a class="cta" href="/it/services/web-systems/">
             ▸ Learn more
           </a>
         </div>
@@ -226,11 +203,13 @@
 </section>
 
 
+
+
+
 <footer>
   <a href="/it/legal-information">Informazioni Legali</a>
   <a href="https://instagram.com/kai5041._">Instagram</a>
   <a href="https://github.com/kai5041">GitHub</a>
-  <a href="https://codeberg.org/kai5041">Codeberg</a>
 </footer>
 
 

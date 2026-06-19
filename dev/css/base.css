@@ -6,89 +6,89 @@
   font-display: swap;
 }
 
-:root {
-  --white: #F0F0F0;
-  --black: #0F0F0F;
-  --grey: #202020;
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('/fonts/woff2/NotoSerifJP-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
-  --warn: #D6A21E;
+:root {
+  --black: #0F0F0FFF; 
+  --grey:  #2A2A2AFF;
+
+  --white: #F0F0F0FF;
+
+  --warn: #D6A21EFF;
 }
 
 * {
-  box-sizing: border-box;
-  
   margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: var(--black);
-  color: var(--white);
-
-  line-height: 1.6;
-
-  font-family: "Noto Sans JP", sans;
+  border: 0;
 }
 
 a {
   color: var(--white);
 }
 
-main {
-  width: 90%;
-  margin: 0 auto;
-}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
 
-hr {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  background-color: var(--black);
   color: var(--white);
 }
 
 footer {
-  width: 100%;
-  min-height: 10vh;
-
-  margin-top: 2vh;
-
-  background-color: var(--grey);
+  margin-top: 4vh;
 
   text-align: center;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  align-items: center;
 }
 
 footer a {
-  text-decoration: none;
-  display: block;
+  color: var(--white);
+
+  margin: 1vh 1vw;
 }
 
-.note {
-  margin-top: 2vh;
-
-  border: 1px solid var(--white);
-
-  border-left: 6px solid var(--white);
-
-  background-color: var(--grey);
+main {
+  width: 90vw;
+  margin: 0 auto;
 }
 
-.note {
+.msg {
+  width: 90%;
+
+  border: 1px solid white;
+  border-left: 4px solid white;
   padding: 2vh 2vw;
+
+  font-weight: 500;
 }
 
-.note.warn {
+.msg.warning {
   border-color: var(--warn);
 }
 
-.note.warn p:first-child:before {
+.msg.warning::before {
   content: "WARNING";
-  font-weight: 600;
-  display: block;
-
   color: var(--warn);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+}
+
+li::before {
+  content: "▸";
+  margin-right: 0.5em;
+  flex-shrink: 0;
 }
 

@@ -1,16 +1,54 @@
 ---
 layout: base.njk
-title: Kai | Services
 title_id: services
 ---
 
-<link rel="stylesheet" href="/css/services.css">
+<style>
+
+.offer {
+  background-color: var(--grey);
+  margin: 2vh 2vw;
+  padding: 2vh 2vw;
+
+  border-radius: 15px;
+}
+
+.offer-title::before {
+  content: "❖";
+  margin-right: 0.5em;
+}
+
+.offer-middle {
+  margin-top: 2vh;
+}
+
+.price {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+.offer {
+    padding: 4vh 6vw;
+  }
+}
+
+</style>
 
 <main>
-<div class="note warn">
-  <p>Operator availability is currently suspended due to academic obligations.</p>
-  <p>Services will resume operations at the end of July.</p>
-</div>
+  <h1>Services</h1>
 </main>
 
 <section class="offers-grid">
@@ -23,8 +61,15 @@ title_id: services
       <div class="offer-content">
         <p>{{ offer.description | safe }}</p>
 
+        <div class="offer-middle">
+        <p><strong>Optimal for:</strong></p>
+        {% for element in offer.optimal_for %}
+          <li>{{ element }}</li>
+        {% endfor %}
+        </div>
+
         <div class="offer-footer">
-          <p class="price">{{ offer.pricing | safe }}</p>
+          <p class="price">Starting from &euro;{{ offer.pricing | safe }}</p>
 
           <a class="cta" href="/{{ lang }}/services/{{ offer.link }}/">
             ▸ Learn more
@@ -36,3 +81,6 @@ title_id: services
   {% endfor %}
 
 </section>
+
+
+

@@ -4,44 +4,63 @@ title_id: projects
 ---
 
 <style>
-section {
-  margin-bottom: 2vh;
+.active {
+  color: #66FF00;
 }
 
+.paused {
+  color: var(--warn);
+}
 </style>
 
 <main>
+  <h1>Projects</h1>
+  
 
-<section>
-  <h2>Rensa / 連鎖</h2>
-  <p>An open-source project orchestrator and builder built with templating capabilities.</p>
-  <p>Sources:
-    <a href="https://github.com/rairen-rdd/rensa" target="_blank" rel="noopener">GitHub</a> |
-    <a href="https://codeberg.com/rairen-rdd/rensa" target="_blank" rel="noopener">Codeberg</a>
- </p>
+  {% macro create_project(project_name, description, repositories = {}, status = "active") %}
+<section class="project">
+
+  <h2>{{ project_name }}</h2>
+
+  <p>{{ description | safe }}</p>
+
+  {# REPOSITORIES #}
+  {% if repositories and repositories | length %}
+  <p class="repos">
+    <strong>Repositories:</strong>
+
+    {% set first = true %}
+
+    {% for name, url in repositories %}
+      {% if not first %} | {% endif %}
+      <a href="{{ url }}" target="_blank">{{ name }}</a>
+      {% set first = false %}
+    {% endfor %}
+  </p>
+
+
+  {# STATUS BADGE #}
+  <p class="status"><strong>Status:
+    {% if status == "active" %}
+      <span class="status active">Active</span>
+    {% elif status == "paused" %}
+      <span class="status paused">Paused</span>
+    {% else %}
+      <span class="status unknown">{{ status }}</span>
+    {% endif %}
+  </strong></p>
+  {% endif %}
+
 </section>
+{% endmacro %}
 
-<section>
-  <h2>Void Vision / 空隙視界 (ongoing)</h2>
-  <p>An open-source graphics C++23 framework for UI application creation.</p>
-  <p>Sources:
-    <a href="https://github.com/rairen-rdd/kuugeki-sikai" target="_blank" rel="noopener">GitHub</a>
- </p>
-</section>
-
-<section>
-  <h2>Nintei / 認定 (halted)</h2>
-  <p>An open-source identity and authorization backend leveraging Classical and Post Quantum Cryptography for secure communication and authorization.</p>
-  <p>Sources:
-    <a href="https://github.com/rairen-rdd/nintei" target="_blank" rel="noopener">GitHub</a> |
-    <a href="https://codeberg.com/rairen-rdd/nintei" target="_blank" rel="noopener">Codeberg</a>
- </p>
-
-<div class="note warn">
-  <p>Development of this project halted due to timing priority reasons.</p>
-</div>
-
-</section>
-
+{{ create_project(
+  "Rensa / 連鎖",
+  "An open-source deterministic project orchestrator.",
+  {
+    "GitHub": "https://github.com/rairen-rdd/rensa"
+  },
+  "paused"
+) }}
 
 </main>

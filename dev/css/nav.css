@@ -1,239 +1,53 @@
 .nav {
-  width: 100%;
-  margin: 2vh auto 2vh;
-  height: 8vh;
+  text-align: right;
+
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-right: 2vh;
+}
+
+.nav a {
+  display: inline-block;
+
+  padding: 1.5vh 1.5vw;
+  margin-left: 1vw;
+
+  background-color: var(--grey);
+  color: var(--white);
+
+  text-decoration: none;
 
   font-size: 1.2rem;
+  font-weight: 500;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background-color: var(--black);
-  padding: 0 1rem;
-
-  position: relative;
-  z-index: 10;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo a {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 6vh;
-  width: auto;
-  border-radius: 12px;
-}
-
-.logo p {
-  margin: 0;
-  font-weight: 700;
-  font-style: italic;
-  color: var(--white);
-}
-
-.right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.links a {
-  text-decoration: none;
-  font-weight: 700;
-  color: var(--white);
-  background: var(--grey);
-  border-radius: 12px;
-  padding: 0.8rem 1.2rem;
-  display: flex;
-  align-items: center;
-  transition: 0.15s ease;
-}
-
-.links a:hover {
-  background: var(--white);
-  color: var(--black);
-}
-
-.links .contact {
-  color: var(--black);
-  background-color: var(--white);
-}
-
-.lang-selector {
-  height: 6vh;
-  width: 6vh;
-  color: var(--white);
-  cursor: pointer;
-}
-
-.nav-toggle,
-.lang-toggle {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-  position: relative;
-  z-index: 9999;
-}
-
-.hamburger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--white);
-  transition: 0.3s ease;
-  transform-origin: center;
-}
-
-.hamburger span:nth-child(1) { top: 0; }
-.hamburger span:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.hamburger span:nth-child(3) { bottom: 0; }
-
-.nav-overlay,
-.lang-overlay {
-  display: none;
-}
-
-.lang-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  background-color: var(--black);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.25s ease;
-}
-
-.lang-overlay .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-
-.lang-overlay .text p {
-  font-size: 1.5rem;
-  width: clamp(200px, 30vw, 280px);
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--white);
   border-radius: 15px;
-  cursor: pointer;
 }
 
-.lang-overlay .text p:hover {
+.nav a:last-child {
   background-color: var(--white);
-  color: var(--black);
+  color: var(--grey);
 }
 
 @media (max-width: 768px) {
-
-  .hamburger {
-    display: block;
-  }
-
-  .right {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--black);
-    transform: translate3d(100%, 0, 0);
-    transition: transform 0.35s ease;
-    z-index: 1100;
-  }
-
-  .nav-toggle:checked ~ .right {
-    transform: translate3d(0, 0, 0);
-  }
-
-  .links {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .links a {
-    width: 80vw;
-    justify-content: center;
+  .nav {
     text-align: center;
-  }
 
-  .lang-selector {
-    margin-top: 1rem;
-  }
+    margin-right: 0;
+    padding: 0 2vw;
 
-  .nav-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1099;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.25s ease;
-  }
-
-  .nav-toggle:checked ~ .nav-overlay {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-toggle:checked + .hamburger span:nth-child(1) {
-    top: 50%;
-    transform: rotate(45deg);
-  }
-
-  .nav-toggle:checked + .hamburger span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .nav-toggle:checked + .hamburger span:nth-child(3) {
-    top: 50%;
-    transform: rotate(-45deg);
-  }
-
-  .lang-toggle:checked ~ .lang-overlay {
     display: flex;
-    opacity: 1;
-    visibility: visible;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vh;
   }
-}
 
-.open {
-  display: flex;
+  .nav a {
+    margin-left: 0;
+    font-size: 1rem;
+
+    padding: 1.2vh 3vw;
+
+    border-radius: 12px;
+  }
 }
 

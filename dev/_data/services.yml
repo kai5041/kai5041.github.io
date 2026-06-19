@@ -1,39 +1,32 @@
 offers:
   en:
-    - title: Static Websites
-      description: >
-        Fast, low-maintenance websites for freelancers and small businesses.
-      pricing: "Starting from &euro;800"
+    - title: Websites
+      description: Fast, low-maintenance websites designed for simple public presence.
+      optimal_for:
+        - Personal portfolios requiring professional presentation
+        - Small business pages with static content needs
+      pricing: 800
       link: static-website
 
-    - title: Linux Scripting
-      description: >
-        Automation, deployment, and system administration for Linux environments.
-      pricing: "Starting from &euro;400"
-      link: linux-scripting
+    - title: Custom Software
+      description: Tailor-made tools designed to automate and optimize specific workflows.
+      optimal_for:
+        - Repetitive task automation
+        - Lightweight internal tooling
+        - Problem-specific standalone applications
+      pricing: 800
+      link: custom-software
 
-    - title: Custom Software and Automation
-      description: >
-        Tailor-made applications and automation workflows built in
-        C++23 and Python.
-      pricing: "Starting from &euro;800"
-      link: custom-software-automation
-
-    - title: API Development (C++23)
-      description: >
-        High-performance HTTP and WebSocket APIs for real-time systems,
-        online platforms, games, and software integrations.
-      pricing: "Starting from &euro;1500"
-      link: api-development
-
-    - title: Web Systems (C++23)
-      description: >
-        Full-stack web applications with databases, authentication,
-        dashboards, and business logic. Ideal for internal tools,
-        customer portals, and business platforms.
-      pricing: "Starting from &euro;2000"
-      link: web-system
+    - title: Web Systems
+      description: Structured, deployable systems for data-driven and multi-user applications.
+      optimal_for:
+        - Internal dashboards with authentication
+        - Role-based management systems
+        - API-driven or integration-heavy platforms
+      pricing: 2000
+      link: web-systems
 
 cta:
-  en: Contact the Operator
+  en: Contact Operator
   it: Contatta l'Operatore
+

@@ -1,26 +1,69 @@
 ---
 layout: base.njk
-title: Coming soon
 title_id: home
 ---
 
-  <script>
-    (function () {
-      const supported_languages = ["en", "ja", "it", "ro"];
-      const fallback_language = "en";
+<style>
 
-      const lang = navigator.language || navigator.userLanguage;
-      const short = lang.toLowerCase().split("-")[0];
+.hero {
+  text-align: center;
 
-      const chosen = supported_languages.includes(short) ? short : fallback_language;
+  font-size: 1.5rem;
 
-      window.location.replace("/" + chosen + "/services");
-    })();
-  </script>
+  margin-bottom: 4vh;
+}
 
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=/en/services">
-  </noscript>
+.logo {
+  font-size: 3rem;
+  font-family: "Noto Serif JP", serif;
+}
 
-<h1>Coming soon</h1>
+.hero .tagline {
+  font-style: italic;
+}
+
+.selector div {
+  margin: 0 auto;
+
+  width: 70vw;
+
+  background-color: var(--grey);
+
+  margin-bottom: 2vh;
+
+  padding: 4vh 4vw;
+
+  border-radius: 15px;
+}
+
+.selector div a {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .selector div {
+     width: 90vw;
+  }
+}
+
+</style>
+
+<div class="hero">
+  <p class="logo">Kai/解</p>
+  <p class="tagline">An operator building systems and tools</p>
+</div>
+
+<div class="selector">
+  <div class="left">
+    <a href="/{{ lang }}/projects">Explore Projects</a>
+    <p>Discover more about Kai's open-source projects.</p>
+
+  </div>
+  
+  <div class="right">
+    <a href="/{{ lang }}/services">Request Service</a>
+    <p>Discover more about Kai's services.</p>
+  </div>
+
+</div>
 
