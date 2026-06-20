@@ -27,23 +27,31 @@ title_id: home
 
   width: 70vw;
 
-  background-color: var(--grey);
+  border: 4px solid var(--grey);
 
   margin-bottom: 2vh;
 
-  padding: 4vh 4vw;
+  padding: 2vh 2vw;
 
   border-radius: 15px;
-}
-
-.selector div a {
-  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
   .selector div {
      width: 90vw;
   }
+}
+
+.cta {
+  padding: 1vh 1vw;
+  margin-top: 2vh;
+
+  display: inline-block;
+  border-radius: 15px;
+
+
+  background-color: var(--white);
+  color: var(--grey);
 }
 
 </style>
@@ -55,14 +63,14 @@ title_id: home
 
 <div class="selector">
   <div class="left">
-    <a href="/{{ lang }}/projects">Explore Projects</a>
     <p>Discover more about Kai's open-source projects.</p>
+    <a class="cta" href="/{{ lang }}/projects">Explore Projects</a>
 
   </div>
   
   <div class="right">
-    <a href="/{{ lang }}/services">Request Service</a>
     <p>Discover more about Kai's services.</p>
+    <a class="cta" href="/{{ lang }}/services">Request Service</a>
   </div>
 
 </div>

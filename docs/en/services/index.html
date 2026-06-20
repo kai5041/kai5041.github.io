@@ -53,7 +53,7 @@
 
   </div>
 </div>
-  
+
 <nav class="nav">
   <a href="/en/">Home</a>
   <a href="/en/services">Services</a>
@@ -62,11 +62,13 @@
 </nav>
 
 
+<p class="msg warning">This website is under construction.</p>
+
 
 <style>
 
 .offer {
-  background-color: var(--grey);
+  border: 4px solid var(--grey);
   margin: 2vh 2vw;
   padding: 2vh 2vw;
 
@@ -92,6 +94,10 @@
   grid-template-columns: 1fr;
 }
 
+.explain p {
+  margin-bottom: 2vh;  
+}
+
 @media (min-width: 768px) {
   .offers-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -105,41 +111,17 @@
   }
 }
 
+.explain {
+  margin-top: 2vh;
+}
+
 </style>
 
 <main>
   <h1>Services</h1>
-</main>
 
 <section class="offers-grid">
 
-  
-    <div class="offer">
-
-      <h3 class="offer-title">Websites</h3>
-
-      <div class="offer-content">
-        <p>Fast, low-maintenance websites designed for simple public presence.</p>
-
-        <div class="offer-middle">
-        <p><strong>Optimal for:</strong></p>
-        
-          <li>Personal portfolios requiring professional presentation</li>
-        
-          <li>Small business pages with static content needs</li>
-        
-        </div>
-
-        <div class="offer-footer">
-          <p class="price">Starting from &euro;800</p>
-
-          <a class="cta" href="/en/services/static-website/">
-            ▸ Learn more
-          </a>
-        </div>
-      </div>
-
-    </div>
   
     <div class="offer">
 
@@ -202,8 +184,25 @@
 
 </section>
 
+<p class="msg">
+USD (&dollar;), RON and JPY (&yen;) are accepted, referencing against the EUR (&euro;).
+<br>
+Check <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html" target="_blank">Euro foreign exchange reference rates</a> for daily exchange rates.
+</p>
 
+<div class="explain">
+  <h2>How it works</h2>
 
+  <p><strong>1.</strong> The Client will contact the Operator Kai stating their needs.</p>
+  <p><strong>2.</strong> The Operator will make a minimum viable proposal for the Client.</p>
+  <p><strong>3.</strong> Once agreed, the Operator will send the Contract the Client has to sign (wet and digital signatures are accepted).</p>
+  <p><strong>4.</strong> The Operator will send the Project Blueprint the Client has to evaluate and sign if approved.</p>
+  <p><strong>5.</strong> The commission is paid in Installments defined by the Project Blueprint.</p>
+  <p><strong>6.</strong> The Operator will prove the completion of each Milestone appropriately.</p>
+  <p><strong>7.</strong> The Client pays the final remeaning amount and the Operator will deliver the project.</p>
+</div>
+
+</main>
 
 
 <footer>

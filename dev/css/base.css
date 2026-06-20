@@ -60,11 +60,21 @@ main {
 .msg {
   width: 90%;
 
-  border: 1px solid white;
-  border-left: 4px solid white;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+
+  border: 1px solid var(--grey);
+  border-left: 4px solid var(--white);
   padding: 2vh 2vw;
 
   font-weight: 500;
+}
+
+.msg::before {
+  content: "NOTE";
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5em;
 }
 
 .msg.warning {

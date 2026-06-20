@@ -1,13 +1,5 @@
 offers:
   en:
-    - title: Websites
-      description: Fast, low-maintenance websites designed for simple public presence.
-      optimal_for:
-        - Personal portfolios requiring professional presentation
-        - Small business pages with static content needs
-      pricing: 800
-      link: static-website
-
     - title: Custom Software
       description: Tailor-made tools designed to automate and optimize specific workflows.
       optimal_for:
