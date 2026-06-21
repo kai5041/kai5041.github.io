@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+
+  <script>
+    (function () {
+      const supported = ["en", "it", "ja", "ro"];
+
+      const lang = (navigator.language || navigator.userLanguage || "en")
+        .toLowerCase()
+        .slice(0, 2);
+
+      if (supported.includes(lang)) {
+        window.location.replace("/" + lang + "/contact");
+      } else {
+        window.location.replace("/en/contact");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/contact" />
+  </noscript>
+</body>
+</html>
+
