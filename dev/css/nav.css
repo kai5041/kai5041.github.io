@@ -30,24 +30,29 @@
 
 @media (max-width: 768px) {
   .nav {
-    text-align: center;
-
     margin-right: 0;
     padding: 0 2vw;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1vh;
+
+    gap: 1vh 2vw;
   }
 
   .nav a {
     margin-left: 0;
-    font-size: 1rem;
 
+    flex: 0 0 calc(33.333% - 2vw);
+    box-sizing: border-box;
+
+    font-size: 1rem;
     padding: 1.2vh 3vw;
 
     border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-

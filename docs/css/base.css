@@ -102,3 +102,8 @@ li::before {
   flex-shrink: 0;
 }
 
+@media (max-width: 768px) {
+  .msg {
+    width: 85vw;
+  }
+}
