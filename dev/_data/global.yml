@@ -44,3 +44,7 @@ custom_software:
 linux_scripting:
   en: Linux Scripting
 
+mail:
+  en: Email
+  ja: Eメール
+

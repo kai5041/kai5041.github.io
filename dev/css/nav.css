@@ -20,7 +20,7 @@
   font-size: 1.2rem;
   font-weight: 500;
 
-  border-radius: 15px;
+  border: 1px solid var(--white);
 }
 
 .nav a:last-child {

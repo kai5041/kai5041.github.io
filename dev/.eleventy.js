@@ -27,12 +27,6 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addNunjucksShortcode("note", (keyObj, lang, text) => {
-    const label = keyObj?.[lang] ?? keyObj?.en ?? "NOTE";
-    const out = text?.[lang] ?? text?.en ?? "⚠️ missing";
-    return `<p class="note">◆ <strong>${label}</strong><br>${out}</p>`;
-  });
-
   eleventyConfig.addFilter("t", function (obj, lang) {
     return obj?.[lang] ?? obj?.en ?? "⚠️ missing";
   });

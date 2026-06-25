@@ -6,7 +6,6 @@
 
   max-width: 800px;
 
-  border-radius: 15px;
 }
 
 .includes {
@@ -45,7 +44,6 @@ h2::before {
   background-color: var(--white);
   color: var(--grey);
 
-  border-radius: 15px;
 
   font-size: 1.4rem;
   font-weight: 600;

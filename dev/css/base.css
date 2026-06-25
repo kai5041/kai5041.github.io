@@ -63,7 +63,7 @@ main {
   margin: 0 auto;
   margin-bottom: 2vh;
 
-  border: 1px solid var(--grey);
+  border: 2px solid var(--grey);
   border-left: 4px solid var(--white);
   padding: 2vh 2vw;
 
@@ -85,6 +85,11 @@ main {
   content: "WARNING";
   color: var(--warn);
 }
+
+:lang(ja) .msg.warning::before {
+  content: "警告";
+}
+
 
 ul {
   list-style: none;

@@ -41,9 +41,9 @@ title_id: custom_software
     </ul>
   </div>
 
-  <p class="pricing">Starting from &euro;800</p>
+  <p class="pricing">Starting from {{ services.offers["en"][0].pricing | t(lang) | safe }} </p>
   <p>(VAT is exempt)</p>
-  <a href="/{{ lang }}/contact" class="cta">{{ global.contact | t(lang) }}</a>
+  <a href="/{{ lang }}/contact" class="cta">{{ services.cta | t(lang) }}</a>
 
 </section>
 

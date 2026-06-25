@@ -41,7 +41,7 @@ title_id: web_systems
     </ul>
   </div>
 
-  <p class="pricing">Starting from &euro;2000</p>
+  <p class="pricing">Starting from {{ services.offers["en"][1].pricing | t(lang) | safe }} </p>
   <p>(VAT is exempt)</p>
 
   <a href="/{{ lang }}/contact" class="cta">{{ global.contact | t(lang) }}</a>

@@ -9,8 +9,6 @@ title_id: services
   border: 4px solid var(--grey);
   margin: 2vh 2vw;
   padding: 2vh 2vw;
-
-  border-radius: 15px;
 }
 
 .offer-title::before {
@@ -53,6 +51,21 @@ title_id: services
   margin-top: 2vh;
 }
 
+h2 {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 4em;
+  height: 4px;
+  background: currentColor;
+}
+
 </style>
 
 <main>
@@ -76,7 +89,7 @@ title_id: services
         </div>
 
         <div class="offer-footer">
-          <p class="price">Starting from &euro;{{ offer.pricing | safe }}</p>
+          <p class="price">Starting from {{ offer.pricing | t(lang) | safe }}</p>
 
           <a class="cta" href="/{{ lang }}/services/{{ offer.link }}/">
             ▸ Learn more
@@ -89,11 +102,7 @@ title_id: services
 
 </section>
 
-<p class="msg">
-USD (&dollar;) and JPY (&yen;) are accepted, referencing against the EUR (&euro;).
-<br>
-Check <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html" target="_blank">Euro foreign exchange reference rates</a> for daily exchange rates.
-</p>
+<p class="msg">EUR (&euro;), USD (&dollar;) and JPY (&yen;) are accepted.</p>
 
 <div class="explain">
   <h2>How it works</h2>

@@ -6,7 +6,9 @@ offers:
         - Repetitive task automation
         - Lightweight internal tooling
         - Problem-specific standalone applications
-      pricing: 800
+      pricing:
+        en: "&euro;800"
+        ja: 12万円
       link: custom-software
 
     - title: Web Systems
@@ -15,10 +17,12 @@ offers:
         - Internal dashboards with authentication
         - Role-based management systems
         - API-driven or integration-heavy platforms
-      pricing: 2000
+      pricing:
+        en: "&euro;2000"
+        ja: 30万円
       link: web-systems
 
 cta:
   en: Contact Operator
   it: Contatta l'Operatore
-
+  ja: 技術者へ連絡
