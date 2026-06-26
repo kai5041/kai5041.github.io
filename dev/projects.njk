@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title_id: projects
+title_id: project_index
 ---
 
 <style>
@@ -14,7 +14,7 @@ title_id: projects
 </style>
 
 <main>
-  <h1>Projects</h1>
+  <h1>{{ global[title_id] | t(lang) }}</h1>
   
 
   {% macro create_project(project_name, description, repositories = {}, status = "active") %}
@@ -55,7 +55,7 @@ title_id: projects
 {% endmacro %}
 
 {{ create_project(
-  "Rensa / 連鎖",
+  "Rensa/連鎖",
   "An open-source deterministic project orchestrator.",
   {
     "GitHub": "https://github.com/rairen-rdd/rensa"

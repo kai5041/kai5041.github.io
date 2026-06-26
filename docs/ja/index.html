@@ -6,6 +6,8 @@
 
   <script type="module" src="/js/consent.js" defer></script>
   <script type="module" src="/js/lang.js" defer></script>
+  <script type="module" src="/js/widget.js" defer></script>
+  
   <title>
     解 | 主要頁
   </title>
@@ -56,6 +58,9 @@
 </div>
 
 <div class="bar">
+  <img src="/assets/png/kai_logo_light.png">
+  <span id="date"></span>
+  
   <button id="lang-selector"></button>
 </div>
 
@@ -67,7 +72,9 @@
 </nav>
 
 
+<!--
 <p class="msg warning">此の網頁は開発中です。</p>
+-->
 
 
 <style>
@@ -80,10 +87,6 @@
 .logo {
   font-size: 3rem;
   font-family: "Noto Serif JP", serif;
-}
-
-.hero .tagline {
-  font-style: italic;
 }
 
 .selector {
@@ -151,22 +154,26 @@
 }
 </style>
 
+<main>
+
 <div class="hero">
   <p class="logo">Kai/解</p>
-  <p class="tagline">An independent operator building systems and tools</p>
+  <p class="tagline">電子的体系と道具を構築する独立系技術者</p>
 </div>
 
 <div class="selector">
   <div class="left">
     <p>Software and Systems with localization support.</p>
-    <a class="cta" href="/ja/services">Request Commission</a>
+    <a class="cta" href="/ja/services">制作依頼</a>
   </div>
 
   <div class="right">
     <p>Open-source projects created and maintained by the operator.</p>
-    <a class="cta" href="/ja/projects">Open project index</a>
+    <a class="cta" href="/ja/projects">計画の索引</a>
   </div>
 </div>
+</main>
+
 
 
 <footer>

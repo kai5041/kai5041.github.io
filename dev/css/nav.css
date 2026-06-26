@@ -3,16 +3,27 @@
   height: 7vh;
 
   background-color: var(--black);
+  color: var(--white);
+
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+
+  gap: 2vw;
+}
+
+.bar img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 .bar button {
+  margin-left: auto;
   margin-right: 2vw;
 
   font-family: "Noto Sans JP", sans;
-
   font-size: 1.2rem;
+
   color: var(--white);
   background-color: transparent;
   border: transparent;
@@ -41,8 +52,6 @@
 
   font-size: 1.2rem;
   font-weight: 500;
-
-  border: 1px solid var(--white);
 }
 
 @media (max-width: 768px) {
@@ -71,5 +80,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #date {
+    margin-left: 2vw;
   }
 }

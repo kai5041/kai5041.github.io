@@ -15,10 +15,6 @@ title_id: home
   font-family: "Noto Serif JP", serif;
 }
 
-.hero .tagline {
-  font-style: italic;
-}
-
 .selector {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -84,19 +80,23 @@ title_id: home
 }
 </style>
 
+<main>
+
 <div class="hero">
   <p class="logo">Kai/解</p>
-  <p class="tagline">An independent operator building systems and tools</p>
+  <p class="tagline">{{ index.tagline | t(lang) }}</p>
 </div>
 
 <div class="selector">
   <div class="left">
     <p>Software and Systems with localization support.</p>
-    <a class="cta" href="/{{ lang }}/services">Request Commission</a>
+    <a class="cta" href="/{{ lang }}/services">{{ index.cta_1 | t(lang) }}</a>
   </div>
 
   <div class="right">
     <p>Open-source projects created and maintained by the operator.</p>
-    <a class="cta" href="/{{ lang }}/projects">Open project index</a>
+    <a class="cta" href="/{{ lang }}/projects">{{ global.project_index | t(lang) }}</a>
   </div>
 </div>
+</main>
+

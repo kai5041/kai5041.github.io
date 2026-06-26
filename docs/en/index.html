@@ -6,6 +6,8 @@
 
   <script type="module" src="/js/consent.js" defer></script>
   <script type="module" src="/js/lang.js" defer></script>
+  <script type="module" src="/js/widget.js" defer></script>
+  
   <title>
     Kai | Home
   </title>
@@ -56,6 +58,9 @@
 </div>
 
 <div class="bar">
+  <img src="/assets/png/kai_logo_light.png">
+  <span id="date"></span>
+  
   <button id="lang-selector"></button>
 </div>
 
@@ -67,7 +72,9 @@
 </nav>
 
 
+<!--
 <p class="msg warning">This website is under construction</p>
+-->
 
 
 <style>
@@ -80,10 +87,6 @@
 .logo {
   font-size: 3rem;
   font-family: "Noto Serif JP", serif;
-}
-
-.hero .tagline {
-  font-style: italic;
 }
 
 .selector {
@@ -151,9 +154,11 @@
 }
 </style>
 
+<main>
+
 <div class="hero">
   <p class="logo">Kai/解</p>
-  <p class="tagline">An independent operator building systems and tools</p>
+  <p class="tagline">An indipendent operator building systems and tools</p>
 </div>
 
 <div class="selector">
@@ -164,9 +169,11 @@
 
   <div class="right">
     <p>Open-source projects created and maintained by the operator.</p>
-    <a class="cta" href="/en/projects">Open project index</a>
+    <a class="cta" href="/en/projects">Project Index</a>
   </div>
 </div>
+</main>
+
 
 
 <footer>

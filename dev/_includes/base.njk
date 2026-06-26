@@ -6,6 +6,8 @@
 
   <script type="module" src="/js/consent.js" defer></script>
   <script type="module" src="/js/lang.js" defer></script>
+  <script type="module" src="/js/widget.js" defer></script>
+  
   <title>
     {{ '解' if lang == 'ja' else 'Kai' }} | {{ global[title_id] | t(lang) }}
   </title>
@@ -57,7 +59,9 @@
 
 {% include "nav.njk" %}
 
+<!--
 <p class="msg warning">{{ global["sla"] | t(lang) }}</p>
+-->
 
 {{ content | safe }}
 

@@ -63,3 +63,7 @@ sla:
 response:
   en: "Response within 7 days."
   ja: "7日以内に返信いたします。"
+
+project_index:
+  en: "Project Index"
+  ja: "計画の索引"

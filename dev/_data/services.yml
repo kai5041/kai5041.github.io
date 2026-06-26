@@ -24,7 +24,6 @@ offers:
 
 cta:
   en: Contact Operator
-  it: Contatta l'Operatore
   ja: 技術者へ連絡
 
 
@@ -35,3 +34,13 @@ custom_sw_lang:
 vat_exempt:
   en: "(VAT exempt)"
   ja: "（消費税免税）"
+
+
+explain:
+  title:
+    en: "How it works"
+    ja: "どう動くのか"
+
+  body:
+    en: ""
+    ja: ""
