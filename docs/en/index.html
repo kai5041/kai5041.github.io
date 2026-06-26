@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script type="module" src="/js/consent.js" defer></script>
-
+  <script type="module" src="/js/lang.js" defer></script>
   <title>
     Kai | Home
   </title>
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/css/banner.css">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/nav.css">
+
 
   <meta property="og:title" content="Kai: Open-source projects and Freelancing">
   <meta name="description" content="Discover more about the ambitions of this operator, founder of the projects Rensa and Nintei, sharing contents of their studies on Instagram.">
@@ -54,6 +55,10 @@
   </div>
 </div>
 
+<div class="bar">
+  <button id="lang-selector"></button>
+</div>
+
 <nav class="nav">
   <a href="/en/">Home</a>
   <a href="/en/services">Services</a>
@@ -62,16 +67,13 @@
 </nav>
 
 
-<p class="msg warning">This website is under construction.</p>
+<p class="msg warning">This website is under construction</p>
 
 
 <style>
-
 .hero {
   text-align: center;
-
   font-size: 1.5rem;
-
   margin-bottom: 4vh;
 }
 
@@ -84,61 +86,87 @@
   font-style: italic;
 }
 
-.selector div {
-  margin: 0 auto;
-
+.selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vh;
   width: 70vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-  border: 4px solid var(--grey);
+.selector div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  margin-bottom: 2vh;
+  min-height: 180px;
 
+  border: 4px solid var(--black);
   padding: 2vh 2vw;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
+  .selector {
+    grid-template-columns: 1fr;
+    width: 75vw;
+  }
+
   .selector div {
-     width: 75vw;
-     padding: 4vh 6vw;
+    padding: 4vh 6vw;
+  }
+
+  .selector div a {
+    margin-top: 2vh;
   }
 }
 
 .cta {
+  margin-top: auto;
+
   padding: 1vh 2vw;
-  margin-top: 2vh;
-
-
   display: inline-block;
 
   background-color: var(--white);
-  color: var(--grey);
-
+  color: var(--black);
   text-decoration: none;
+  font-weight: 600;
 
-  font-weight: 500;
+  text-align: center;
 }
 
+.right {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.left .cta {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.selector p {
+  font-size: 1.1rem;
+}
 </style>
 
 <div class="hero">
   <p class="logo">Kai/解</p>
-  <p class="tagline">An operator building systems and tools</p>
+  <p class="tagline">An independent operator building systems and tools</p>
 </div>
 
 <div class="selector">
   <div class="left">
-    <p>Explore Kai's open-source projects.</p>
-    <a class="cta" href="/en/projects">Open project index</a>
-
-  </div>
-  
-  <div class="right">
-    <p>Submit a commission request to Kai.</p>
+    <p>Software and Systems with localization support.</p>
     <a class="cta" href="/en/services">Request Commission</a>
   </div>
 
+  <div class="right">
+    <p>Open-source projects created and maintained by the operator.</p>
+    <a class="cta" href="/en/projects">Open project index</a>
+  </div>
 </div>
-
 
 
 <footer>

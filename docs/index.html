@@ -7,16 +7,38 @@
 
   <script>
     (function () {
-      const supported = ["en", "it", "ja", "ro"];
+      const supported = ["en", "ja"];
+      const COOKIE_NAME = "lang";
 
-      const lang = (navigator.language || navigator.userLanguage || "en")
-        .toLowerCase()
-        .slice(0, 2);
+      function getCookie(name) {
+        return document.cookie
+          .split("; ")
+          .find(row => row.startsWith(name + "="))
+          ?.split("=")[1];
+      }
 
-      if (supported.includes(lang)) {
-        window.location.replace("/" + lang + "/");
-      } else {
-        window.location.replace("/en/");
+      function getLangFromCookie() {
+        const val = getCookie(COOKIE_NAME);
+        return supported.includes(val) ? val : null;
+      }
+
+      function getLangFromBrowser() {
+        const lang = (navigator.language || navigator.userLanguage || "en")
+          .toLowerCase()
+          .slice(0, 2);
+
+        return supported.includes(lang) ? lang : null;
+      }
+
+      const lang =
+        getLangFromCookie() ||
+        getLangFromBrowser() ||
+        "en";
+
+      const target = "/" + lang + "/";
+
+      if (window.location.pathname !== target) {
+        window.location.replace(target);
       }
     })();
   </script>

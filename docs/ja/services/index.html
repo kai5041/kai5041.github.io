@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script type="module" src="/js/consent.js" defer></script>
-
+  <script type="module" src="/js/lang.js" defer></script>
   <title>
     解 | 業務内容
   </title>
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/css/banner.css">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/nav.css">
+
 
   <meta property="og:title" content="Kai: Open-source projects and Freelancing">
   <meta name="description" content="Discover more about the ambitions of this operator, founder of the projects Rensa and Nintei, sharing contents of their studies on Instagram.">
@@ -54,6 +55,10 @@
   </div>
 </div>
 
+<div class="bar">
+  <button id="lang-selector"></button>
+</div>
+
 <nav class="nav">
   <a href="/ja/">主要頁</a>
   <a href="/ja/services">業務内容</a>
@@ -62,13 +67,15 @@
 </nav>
 
 
-<p class="msg warning">This website is under construction.</p>
+<p class="msg warning">此の網頁は開発中です。</p>
 
 
 <style>
 
 .offer {
-  border: 4px solid var(--grey);
+  background-color: var(--black);
+  color: var(--white);
+
   margin: 2vh 2vw;
   padding: 2vh 2vw;
 }
@@ -128,6 +135,10 @@ h2::after {
   background: currentColor;
 }
 
+.cta {
+  color: var(--white);
+}
+
 </style>
 
 <main>
@@ -155,10 +166,10 @@ h2::after {
         </div>
 
         <div class="offer-footer">
-          <p class="price">Starting from 12万円</p>
+          <p class="price">12万円から</p>
 
           <a class="cta" href="/ja/services/custom-software/">
-            ▸ Learn more
+            ▸ もっと見る
           </a>
         </div>
       </div>
@@ -184,10 +195,10 @@ h2::after {
         </div>
 
         <div class="offer-footer">
-          <p class="price">Starting from 30万円</p>
+          <p class="price">30万円から</p>
 
           <a class="cta" href="/ja/services/web-systems/">
-            ▸ Learn more
+            ▸ もっと見る
           </a>
         </div>
       </div>

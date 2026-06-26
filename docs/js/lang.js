@@ -1,30 +1,42 @@
+import { getCookie, setCookie } from "/js/cookie.js";
+
 document.addEventListener("DOMContentLoaded", () => {
-  const wrapper = document.querySelector(".lang-overlay");
-  const trigger = document.querySelector(".lang-selector");
-  const buttons = document.querySelectorAll("[data-lang]");
+  const btn = document.getElementById("lang-selector");
+  const COOKIE_NAME = "lang";
 
-  trigger.addEventListener("click", (e) => {
-    e.stopPropagation();
-    wrapper.classList.toggle("open");
-  });
+  function getLangFromURL() {
+    return window.location.pathname.startsWith("/ja") ? "ja" : "en";
+  }
 
-  document.addEventListener("click", (e) => {
-    if (!wrapper.contains(e.target)) {
-      wrapper.classList.remove("open");
-    }
-  });
+  function getLangFromCookie() {
+    const val = getCookie(COOKIE_NAME);
+    return val === "en" || val === "ja" ? val : null;
+  }
 
+  function getCurrentLang() {
+    return getLangFromURL();
+  }
 
+  function updateLabel(lang) {
+    if (btn) btn.textContent = lang.toUpperCase();
+  }
 
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const lang = btn.dataset.lang;
+  function setLang(next) {
+    setCookie(COOKIE_NAME, next, 365);
 
-      const parts = window.location.pathname.split("/");
-      parts[1] = lang;
+    const path = window.location.pathname;
+    const newPath = path.replace(/^\/(en|ja)/, `/${next}`);
 
-      window.location.pathname = parts.join("/");
-    });
+    window.location.pathname = newPath;
+  }
+
+  updateLabel(getCurrentLang());
+
+  btn?.addEventListener("click", () => {
+    const current = getCurrentLang();
+    const next = current === "en" ? "ja" : "en";
+
+    setLang(next);
   });
 });
 

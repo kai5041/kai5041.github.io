@@ -1,7 +1,29 @@
+.bar {
+  width: 100vw;
+  height: 7vh;
+
+  background-color: var(--black);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bar button {
+  margin-right: 2vw;
+
+  font-family: "Noto Sans JP", sans;
+
+  font-size: 1.2rem;
+  color: var(--white);
+  background-color: transparent;
+  border: transparent;
+
+  text-decoration: underline;
+}
+
 .nav {
   text-align: right;
 
-  margin-top: 4vh;
+  margin-top: 1vh;
   margin-bottom: 4vh;
   margin-right: 2vh;
 }
@@ -12,7 +34,7 @@
   padding: 1.5vh 1.5vw;
   margin-left: 1vw;
 
-  background-color: var(--grey);
+  background-color: var(--black);
   color: var(--white);
 
   text-decoration: none;
@@ -21,11 +43,6 @@
   font-weight: 500;
 
   border: 1px solid var(--white);
-}
-
-.nav a:last-child {
-  background-color: var(--white);
-  color: var(--grey);
 }
 
 @media (max-width: 768px) {
