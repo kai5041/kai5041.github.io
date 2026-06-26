@@ -23,9 +23,8 @@ title_id: custom_software
   <div>
     <p><strong>Features increasing price:</strong></p>
     <ul>
-      <li>+€50 per command interfacing with external web services (HTTP/HTTPS APIs)</li>
       <li>
-        Multilingual CLI output support (+€50 per command per supported language:
+        Multilingual CLI output support (+{{services["custom_sw_lang"] | t(lang) | safe }} per command per supported language:
         Italian, Romanian, Japanese)
       </li>
     </ul>
@@ -41,8 +40,8 @@ title_id: custom_software
     </ul>
   </div>
 
-  <p class="pricing">Starting from {{ services.offers["en"][0].pricing | t(lang) | safe }} </p>
-  <p>(VAT is exempt)</p>
+  <p class="price">{{ services.offers["en"][0].pricing | t(lang) | safe }} </p>
+  <p>{{ services.vat_exempt | t(lang) }}</p>
   <a href="/{{ lang }}/contact" class="cta">{{ services.cta | t(lang) }}</a>
 
 </section>

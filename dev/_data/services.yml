@@ -7,8 +7,8 @@ offers:
         - Lightweight internal tooling
         - Problem-specific standalone applications
       pricing:
-        en: "&euro;800"
-        ja: 12万円
+        en: "Starting from &euro;800"
+        ja: "12万円から"
       link: custom-software
 
     - title: Web Systems
@@ -18,11 +18,20 @@ offers:
         - Role-based management systems
         - API-driven or integration-heavy platforms
       pricing:
-        en: "&euro;2000"
-        ja: 30万円
+        en: "Starting from &euro;2000"
+        ja: "30万円から"
       link: web-systems
 
 cta:
   en: Contact Operator
   it: Contatta l'Operatore
   ja: 技術者へ連絡
+
+
+custom_sw_lang:
+  en: "&euro;5"
+  ja: "7百円"
+
+vat_exempt:
+  en: "(VAT exempt)"
+  ja: "（消費税免税）"

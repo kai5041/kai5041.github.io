@@ -4,12 +4,9 @@ title_id: home
 ---
 
 <style>
-
 .hero {
   text-align: center;
-
   font-size: 1.5rem;
-
   margin-bottom: 4vh;
 }
 
@@ -22,58 +19,84 @@ title_id: home
   font-style: italic;
 }
 
-.selector div {
-  margin: 0 auto;
-
+.selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vh;
   width: 70vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-  border: 4px solid var(--grey);
+.selector div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  margin-bottom: 2vh;
+  min-height: 180px;
 
+  border: 4px solid var(--black);
   padding: 2vh 2vw;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
+  .selector {
+    grid-template-columns: 1fr;
+    width: 75vw;
+  }
+
   .selector div {
-     width: 75vw;
-     padding: 4vh 6vw;
+    padding: 4vh 6vw;
+  }
+
+  .selector div a {
+    margin-top: 2vh;
   }
 }
 
 .cta {
+  margin-top: auto;
+
   padding: 1vh 2vw;
-  margin-top: 2vh;
-
-
   display: inline-block;
 
   background-color: var(--white);
-  color: var(--grey);
-
+  color: var(--black);
   text-decoration: none;
+  font-weight: 600;
 
-  font-weight: 500;
+  text-align: center;
 }
 
+.right {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.left .cta {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.selector p {
+  font-size: 1.1rem;
+}
 </style>
 
 <div class="hero">
   <p class="logo">Kai/解</p>
-  <p class="tagline">An operator building systems and tools</p>
+  <p class="tagline">An independent operator building systems and tools</p>
 </div>
 
 <div class="selector">
   <div class="left">
-    <p>Explore Kai's open-source projects.</p>
-    <a class="cta" href="/{{ lang }}/projects">Open project index</a>
-
-  </div>
-  
-  <div class="right">
-    <p>Submit a commission request to Kai.</p>
+    <p>Software and Systems with localization support.</p>
     <a class="cta" href="/{{ lang }}/services">Request Commission</a>
   </div>
 
+  <div class="right">
+    <p>Open-source projects created and maintained by the operator.</p>
+    <a class="cta" href="/{{ lang }}/projects">Open project index</a>
+  </div>
 </div>
-

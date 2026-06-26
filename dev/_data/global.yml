@@ -45,6 +45,21 @@ linux_scripting:
   en: Linux Scripting
 
 mail:
-  en: Email
-  ja: Eメール
+  en: "Email"
+  ja: "電子郵便"
 
+learn_more:
+  en: Learn more
+  ja: もっと見る
+
+err_404:
+  en: "404 Page not found"
+  ja: "(404) 頁が見つかりません。"
+
+sla:
+  en: "This website is under construction"
+  ja: "此の網頁は開発中です。"
+
+response:
+  en: "Response within 7 days."
+  ja: "7日以内に返信いたします。"

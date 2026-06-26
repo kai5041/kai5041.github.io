@@ -20,24 +20,35 @@
 
   --white: #F0F0F0FF;
 
+  --note: #007FFFFF;
   --warn: #D6A21EFF;
 }
 
 * {
   margin: 0;
   border: 0;
+  font-family: "Noto Sans JP", sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Noto Serif JP", sans-serif;
 }
 
 a {
-  color: var(--white);
+  color: var(--grey);
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
 
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
+
+  line-height: 1.7;
+}
+
+p {
+  line-height: 1.4;
 }
 
 footer {
@@ -47,7 +58,7 @@ footer {
 }
 
 footer a {
-  color: var(--white);
+  color: var(--grey);
 
   margin: 1vh 1vw;
 }
@@ -58,20 +69,24 @@ main {
 }
 
 .msg {
+  font-family: "Noto Sans JP";
   width: 90%;
 
   margin: 0 auto;
   margin-bottom: 2vh;
 
-  border: 2px solid var(--grey);
-  border-left: 4px solid var(--white);
+  border-left: 8px solid var(--note);
   padding: 2vh 2vw;
+
+  background-color: var(--black);
+  color: var(--white);
 
   font-weight: 500;
 }
 
 .msg::before {
   content: "NOTE";
+  color: var(--note);
   display: block;
   font-weight: 700;
   margin-bottom: 0.5em;
@@ -111,4 +126,12 @@ li::before {
   .msg {
     width: 85vw;
   }
+}
+
+.price {
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
 }
