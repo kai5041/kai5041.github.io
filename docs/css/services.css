@@ -8,7 +8,10 @@
   margin: 0 auto;
 
   max-width: 800px;
+}
 
+.offer a {
+  color: var(--white);
 }
 
 .includes {

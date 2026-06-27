@@ -5,44 +5,51 @@ title_id: custom_software
 
 <link rel="stylesheet" href="/css/services.css">
 
-<section class="offer"> 
-  <h2>Custom Software (Command Line Interface)</h2>
+{% for offerId, offer in offers.offers %}
+
+<section class="offer" id="{{ offerId }}">
+  <h2>{{ offer.title }}</h2>
 
   <div>
     <p class="includes"><strong>Includes:</strong></p>
     <ul>
-      <li>Command-line application with a defined and agreed command set</li>
-      <li>Command-level usage documentation</li>
-      <li>Error handling for specified input and execution cases</li>
-      <li>Deterministic execution behavior within defined specifications</li>
-      <li>Testing in Ubuntu 24.04 LTS container environment</li>
-      <li>English output as default runtime language</li>
+      {% for item in offer.includes %}
+        <li>{{ item }}</li>
+      {% endfor %}
     </ul>
   </div>
 
   <div>
     <p><strong>Features increasing price:</strong></p>
     <ul>
-      <li>
-        Multilingual CLI output support (+{{services["custom_sw_lang"] | t(lang) | safe }} per command per supported language:
-        Italian, Romanian, Japanese)
-      </li>
+      {% for item in offer.features_increasing_price %}
+        {% if item == "LANG_PRICE_NOTE" %}
+          <li>
+            +{{ services["custom_sw_lang"] | t(lang) | safe }}
+            per user-visible output event (printf, log, warn, error),
+            per supported language (Italian, Romanian, Japanese)
+          </li>
+        {% else %}
+          <li>{{ item }}</li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </div>
 
   <div>
     <p class="excludes"><strong>Excludes:</strong></p>
     <ul>
-      <li>Graphical User Interface (GUI)</li>
-      <li>Game development</li>
-      <li>Hosting, deployment, infrastructure setup, or ongoing maintenance unless separately contracted</li>
-      <li>Unspecified feature expansion beyond the agreed command set</li>
+      {% for item in offer.excludes %}
+        <li>{{ item }}</li>
+      {% endfor %}
     </ul>
   </div>
 
-  <p class="price">{{ services.offers["en"][0].pricing | t(lang) | safe }} </p>
+  <p><strong>{{ services.tax_residence | t(lang) }}</strong></p>
+  <p class="price">{{ services.offers["en"][0].pricing | t(lang) | safe }}
+  {{ services.efer | t(lang) | safe }}</p>
   <p>{{ services.vat_exempt | t(lang) }}</p>
   <a href="/{{ lang }}/contact" class="cta">{{ services.cta | t(lang) }}</a>
-
 </section>
 
+{% endfor %}

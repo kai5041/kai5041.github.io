@@ -7,8 +7,8 @@ offers:
         - Lightweight internal tooling
         - Problem-specific standalone applications
       pricing:
-        en: "Starting from &euro;800"
-        ja: "12万円から"
+        en: "Japan: Starting from 12万円<br>Other countries: Starting from €800"
+        ja: "日本：12万円から<br>其の他の国：€800から"
       link: custom-software
 
     - title: Web Systems
@@ -26,6 +26,13 @@ cta:
   en: Contact Operator
   ja: 技術者へ連絡
 
+tax_residence:
+  en: "Tax Residence"
+  ja: "税務上の居住者"
+
+efer:
+  en: "(FX-influenced・<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html\" target=\"_blank\">EFER Exchange Rates</a>)"
+  ja: "（為替影響あり・<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html\" target=\"_blank\">EFER相場適用</a>)"
 
 custom_sw_lang:
   en: "&euro;5"

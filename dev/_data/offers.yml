@@ -1,0 +1,23 @@
+offers:
+  custom_software:
+    title: "Custom Software (Command Line Interface)"
+
+    includes:
+      - "Command-line application with a defined and agreed command set"
+      - "Command-level usage documentation"
+      - "Error handling for specified input and execution cases"
+      - "Deterministic execution behavior within defined specifications"
+      - "Testing in Ubuntu 24.04 LTS container environment"
+      - "English output as default runtime language"
+
+    features_increasing_price:
+      - "Web-interfacing commands"
+      - "Database interfacing"
+      - "LANG_PRICE_NOTE"
+
+    excludes:
+      - "Graphical User Interface (GUI)"
+      - "Game development"
+      - "Hosting, deployment, infrastructure setup, or ongoing maintenance unless separately contracted"
+      - "Unspecified feature expansion beyond the agreed command set"
+
