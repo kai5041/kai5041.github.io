@@ -128,10 +128,26 @@ li::before {
   }
 }
 
-.price {
-  font-weight: 600;
-}
-
 button:hover {
   cursor: pointer;
+}
+
+h1, h2 {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+h1::after, h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  height: 4px;
+  width: 60%;
+  background: currentColor;
+}
+
+h2::after {
+  width: 40%;
 }

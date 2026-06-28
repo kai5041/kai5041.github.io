@@ -5,16 +5,19 @@ title_id: custom_software
 
 <link rel="stylesheet" href="/css/services.css">
 
+<div class="offers">
 {% for offerId, offer in offers.offers %}
 
-<section class="offer" id="{{ offerId }}">
-  <h2>{{ offer.title }}</h2>
+<section
+  class="offer {% if offer.disabled %}disabled{% endif %}"
+  id="{{ offerId }}">
+  <h2>{{ offer.title | t(lang) }}</h2>
 
   <div>
     <p class="includes"><strong>Includes:</strong></p>
     <ul>
       {% for item in offer.includes %}
-        <li>{{ item }}</li>
+        <li>{{ item | t(lang) }}</li>
       {% endfor %}
     </ul>
   </div>
@@ -23,14 +26,13 @@ title_id: custom_software
     <p><strong>Features increasing price:</strong></p>
     <ul>
       {% for item in offer.features_increasing_price %}
-        {% if item == "LANG_PRICE_NOTE" %}
+        {% if item | t(lang) == "LANG_PRICE_NOTE" %}
           <li>
             +{{ services["custom_sw_lang"] | t(lang) | safe }}
-            per user-visible output event (printf, log, warn, error),
-            per supported language (Italian, Romanian, Japanese)
+            per output event (printf, log, warn, error) and per language (Italian, Romanian, Japanese)
           </li>
         {% else %}
-          <li>{{ item }}</li>
+          <li>{{ item | t(lang) }}</li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -40,16 +42,21 @@ title_id: custom_software
     <p class="excludes"><strong>Excludes:</strong></p>
     <ul>
       {% for item in offer.excludes %}
-        <li>{{ item }}</li>
+        <li>{{ item | t(lang) }}</li>
       {% endfor %}
     </ul>
   </div>
 
-  <p><strong>{{ services.tax_residence | t(lang) }}</strong></p>
-  <p class="price">{{ services.offers["en"][0].pricing | t(lang) | safe }}
-  {{ services.efer | t(lang) | safe }}</p>
-  <p>{{ services.vat_exempt | t(lang) }}</p>
-  <a href="/{{ lang }}/contact" class="cta">{{ services.cta | t(lang) }}</a>
+  <div class="bottom">
+    <p><strong>{{ services.tax_residence | t(lang) }}</strong></p>
+    <p class="price">{{ offer.pricing | t(lang) | safe }}
+    {{ services.efer | t(lang) | safe }}</p>
+    <p>{{ services.vat_exempt | t(lang) }}</p>
+    <a href="/{{ lang }}/contact" class="cta">{{ services.cta | t(lang) }}</a>
+  </div>
 </section>
 
 {% endfor %}
+
+</div>
+

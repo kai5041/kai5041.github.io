@@ -21,7 +21,6 @@
   margin-left: auto;
   margin-right: 2vw;
 
-  font-family: "Noto Sans JP", sans;
   font-size: 1.2rem;
 
   color: var(--white);
@@ -29,6 +28,11 @@
   border: transparent;
 
   text-decoration: underline;
+}
+
+#news-new {
+  color: #FF5555FF;
+  margin-right: 0.5rem;
 }
 
 .nav {
@@ -85,4 +89,8 @@
   #date {
     margin-left: 2vw;
   }
+}
+
+.hide {
+  display: none;
 }

@@ -60,7 +60,10 @@
 <div class="bar">
   <img src="/assets/png/kai_logo_light.png">
   <span id="date"></span>
-  
+  <span class="hide">
+    <span id="news-new">NEW</span>
+    <span></span>
+  </span>
   <button id="lang-selector"></button>
 </div>
 
@@ -79,12 +82,42 @@
 
 <style>
 
+.offers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  row-gap: 2vh;
+}
+
+@media (min-width: 768px) {
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .offer {
   background-color: var(--black);
   color: var(--white);
 
   margin: 2vh 2vw;
   padding: 2vh 2vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .offer {
+    padding: 4vh 6vw;
+  }
+}
+
+.offer-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+
 }
 
 .offer-title::before {
@@ -96,54 +129,41 @@
   margin-top: 2vh;
 }
 
-.price {
-  margin-top: 2vh;
-  font-size: 1.2rem;
+.offer-footer {
+  margin-top: auto;
+  padding-top: 2vh;
 }
 
-.offers-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+.offer p {
+  margin: 0 0 1.2vh 0;
 }
 
-.explain p {
-  margin-bottom: 2vh;  
+.offer ul,
+.offer ol {
+  margin: 0;
+  padding-left: 1.2em;
 }
 
-@media (min-width: 768px) {
-  .offers-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-@media (max-width: 768px) {
-.offer {
-    padding: 4vh 6vw;
-  }
+.offer li {
+  margin-bottom: 0.5vh;
 }
 
 .explain {
   margin-top: 2vh;
 }
 
-h2 {
-  position: relative;
-  padding-bottom: 20px;
-}
-
-h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 4em;
-  height: 4px;
-  background: currentColor;
+.explain p {
+  margin-bottom: 2vh;
 }
 
 .cta {
   color: var(--white);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.msg {
+  margin-top: 2vh;
 }
 
 </style>
@@ -173,7 +193,7 @@ h2::after {
         </div>
 
         <div class="offer-footer">
-          <p class="price">Japan: Starting from 12万円<br>Other countries: Starting from €800</p>
+          <p>Pricing based on tax residence:<br>International: From €800<br>Japan: From ¥120,000</p>
 
           <a class="cta" href="/en/services/custom-software/">
             ▸ Learn more
@@ -202,7 +222,7 @@ h2::after {
         </div>
 
         <div class="offer-footer">
-          <p class="price">Starting from &euro;2000</p>
+          <p>Pricing based on tax residence:<br>International: From €2000<br>Japan: Starting from ¥300,000</p>
 
           <a class="cta" href="/en/services/web-systems/">
             ▸ Learn more

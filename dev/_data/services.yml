@@ -1,34 +1,42 @@
 offers:
-  en:
-    - title: Custom Software
-      description: Tailor-made tools designed to automate and optimize specific workflows.
-      optimal_for:
-        - Repetitive task automation
-        - Lightweight internal tooling
-        - Problem-specific standalone applications
-      pricing:
-        en: "Japan: Starting from 12万円<br>Other countries: Starting from €800"
-        ja: "日本：12万円から<br>其の他の国：€800から"
-      link: custom-software
+  - title:
+      en: "Custom Software"
+    
+    description:
+      en: "Tailor-made tools designed to automate and optimize specific workflows."
 
-    - title: Web Systems
-      description: Structured, deployable systems for data-driven and multi-user applications.
-      optimal_for:
-        - Internal dashboards with authentication
-        - Role-based management systems
-        - API-driven or integration-heavy platforms
-      pricing:
-        en: "Starting from &euro;2000"
-        ja: "30万円から"
-      link: web-systems
+    optimal_for:
+      - en: "Repetitive task automation"
+      - en: "Lightweight internal tooling"
+      - en: "Problem-specific standalone applications"
+
+    pricing:
+      en: "International: From €800<br>Japan: From ¥120,000"
+      ja: "海外：€800から<br>日本：12万円から"
+    link: custom-software
+
+  - title:
+      en: "Web Systems"
+
+    description:
+      en: "Structured, deployable systems for data-driven and multi-user applications."
+
+    optimal_for:
+      - en: "Internal dashboards with authentication"
+      - en: "Role-based management systems"
+      - en: "API-driven or integration-heavy platforms"
+    pricing:
+      en: "International: From €2000<br>Japan: Starting from ¥300,000"
+      ja: "海外：€2000から<br>日本：30万円から"
+    link: web-systems
 
 cta:
   en: Contact Operator
   ja: 技術者へ連絡
 
 tax_residence:
-  en: "Tax Residence"
-  ja: "税務上の居住者"
+  en: "Pricing based on tax residence"
+  ja: "税務上の居住地に基づく価格設定"
 
 efer:
   en: "(FX-influenced・<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html\" target=\"_blank\">EFER Exchange Rates</a>)"

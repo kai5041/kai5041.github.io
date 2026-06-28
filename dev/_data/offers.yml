@@ -1,23 +1,57 @@
 offers:
-  custom_software:
-    title: "Custom Software (Command Line Interface)"
+  custom_software_cli:
+    title:
+      en: "Custom Software (Command Line Interface)"
 
     includes:
-      - "Command-line application with a defined and agreed command set"
-      - "Command-level usage documentation"
-      - "Error handling for specified input and execution cases"
-      - "Deterministic execution behavior within defined specifications"
-      - "Testing in Ubuntu 24.04 LTS container environment"
-      - "English output as default runtime language"
+      - en: "Command-line application with a defined and agreed command set"
+      - en: "Command-level usage documentation"
+      - en: "Error handling for specified input and execution cases"
+      - en: "Deterministic execution behavior within defined specifications"
+      - en: "Testing in Ubuntu 24.04 LTS container environment"
+      - en: "English output as default runtime language"
 
     features_increasing_price:
-      - "Web-interfacing commands"
-      - "Database interfacing"
-      - "LANG_PRICE_NOTE"
+      - en: "Web-interfacing commands"
+      - en: "Database interfacing"
+      - en: "LANG_PRICE_NOTE"
 
     excludes:
-      - "Graphical User Interface (GUI)"
-      - "Game development"
-      - "Hosting, deployment, infrastructure setup, or ongoing maintenance unless separately contracted"
-      - "Unspecified feature expansion beyond the agreed command set"
+      - en: "Graphical User Interface (GUI)"
+      - en: "Game development"
+      - en: "Hosting, deployment, infrastructure setup, or ongoing maintenance unless separately contracted"
+      - en: "Unspecified feature expansion beyond the agreed command set"
 
+
+    pricing:
+      en: "International: From €2000<br>Japan: Starting from ¥300,000"
+      ja: "海外：€800から<br>日本：12万円から"
+
+  custom_software_gui:
+    disabled: true
+
+    title:
+      en: "Custom Software (Graphical User Interface)"
+
+    includes:
+      - en: "Graphic application with a defined and agreed function set"
+      - en: "Command-line application with a defined and agreed command set"
+      - en: "Command-level usage documentation"
+      - en: "Error handling for specified input and execution cases for both interfaces"
+      - en: "Deterministic execution behavior within defined specifications"
+      - en: "Testing in Ubuntu 24.04 LTS container environment"
+      - en: "English output as default runtime language"
+
+    features_increasing_price:
+      - en: "Web-interfacing commands"
+      - en: "Database interfacing"
+      - en: "LANG_PRICE_NOTE"
+
+    excludes:
+      - en: "Game development"
+      - en: "Hosting, deployment, infrastructure setup, or ongoing maintenance unless separately contracted"
+      - en: "Unspecified feature expansion beyond the agreed command set"
+
+    pricing:
+      en: "International: From €2000<br>Japan: Starting from ¥300,000"
+      ja: "海外：€2000から<br>日本：30万円から"

@@ -1,4 +1,16 @@
+.offers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vh 2vw;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2vh 2vw;
+}
+
 .offer {
+  display: flex;
+  flex-direction: column;
+
   border: 4px solid var(--grey);
   padding: 2vh 2vw;
 
@@ -6,12 +18,24 @@
   color: var(--white);
 
   margin: 0 auto;
-
   max-width: 800px;
+}
+
+.offer .bottom {
+  margin-top: auto;
 }
 
 .offer a {
   color: var(--white);
+}
+
+.offer div {
+  margin-bottom: 4vh;
+}
+
+h2::before {
+  content: "❖";
+  margin-right: 0.5em;
 }
 
 .includes {
@@ -22,22 +46,14 @@
   color: #C85A5A;
 }
 
-
-h2::before {
-  content: "❖";
-  margin-right: 0.5em;
-}
-
-.includes::before, .excludes::before {
+.includes::before,
+.excludes::before {
   content: "◆";
   margin-right: 0.5em;
 }
 
-.offer div {
-  margin-bottom: 4vh;
-}
-
-.pricing {
+.pricing,
+.price {
   font-size: 1.2rem;
 }
 
@@ -56,21 +72,19 @@ h2::before {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-.offer {
-    margin: 4vh 6vw;
-    padding: 4vh 6vw;
-  }
-}
-
-.offer.disabled {
-  opacity: 0.6;
-}
-
-.offer.disabled .cta:hover {
+.offer.disabled *:hover {
   cursor: not-allowed;
 }
 
-.price {
-  font-size: 1.2rem;
+@media (max-width: 768px) {
+  .offer {
+    padding: 4vh 6vw;
+  }
+
+  .offers {
+    grid-template-columns: 1fr;
+    padding: 0 6vw;
+  }
 }
+
+
