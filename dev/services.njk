@@ -112,7 +112,7 @@ title_id: services
         </div>
 
         <div class="offer-footer">
-          <p>{{ services.tax_residence | t(lang) }}:<br>{{ offer.pricing | t(lang) | safe }}</p>
+          <p>{{ offer.pricing | t(lang) | safe }}</p>
 
           <a class="cta" href="/{{ lang }}/services/{{ offer.link }}/">
             ▸ {{ global["learn_more"] | t(lang) }}

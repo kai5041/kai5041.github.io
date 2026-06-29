@@ -1,34 +1,39 @@
 offers:
   - title:
-      en: "Custom Software"
-    
+      en: "Automation & Internal Tools"
+
     description:
-      en: "Tailor-made tools designed to automate and optimize specific workflows."
+      en: "Custom software that automates repetitive tasks and streamlines internal workflows."
 
     optimal_for:
-      - en: "Repetitive task automation"
-      - en: "Lightweight internal tooling"
-      - en: "Problem-specific standalone applications"
+      - en: "Command-line utilities"
+      - en: "Workflow automation"
+      - en: "File and data processing"
+      - en: "Internal business tools"
 
     pricing:
-      en: "International: From €800<br>Japan: From ¥120,000"
-      ja: "海外：€800から<br>日本：12万円から"
-    link: custom-software
+      en: "From €800"
+      ja: "€800から"
+
+    link: automation-tools
 
   - title:
-      en: "Web Systems"
+      en: "Business Web Applications"
 
     description:
-      en: "Structured, deployable systems for data-driven and multi-user applications."
+      en: "Custom web applications for secure, data-driven business operations."
 
     optimal_for:
-      - en: "Internal dashboards with authentication"
+      - en: "Administrative dashboards"
       - en: "Role-based management systems"
-      - en: "API-driven or integration-heavy platforms"
+      - en: "Business portals"
+      - en: "REST API integrations"
+
     pricing:
-      en: "International: From €2000<br>Japan: Starting from ¥300,000"
-      ja: "海外：€2000から<br>日本：30万円から"
-    link: web-systems
+      en: "From €2,000"
+      ja: "€2,000から"
+
+    link: web-applications
 
 cta:
   en: Contact Operator

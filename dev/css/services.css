@@ -1,10 +1,19 @@
 .offers {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  /* responsive centered columns */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
   gap: 3vh 2vw;
+
   max-width: 1500px;
   margin: 0 auto;
+
   padding: 2vh 2vw;
+
+  /* key: center grid items when columns don't fully stretch */
+  justify-content: center;
+  align-items: stretch;
 }
 
 .offer {
@@ -17,8 +26,14 @@
   background-color: var(--black);
   color: var(--white);
 
-  margin: 0 auto;
+  /* important change: remove auto-centering inside grid */
+  margin: 0;
+
+  width: 100%;
   max-width: 800px;
+
+  /* keeps cards visually balanced in wide layouts */
+  justify-self: center;
 }
 
 .offer .bottom {
@@ -72,19 +87,22 @@ h2::before {
   text-decoration: none;
 }
 
-.offer.disabled *:hover {
+.offer.disabled {
+  display: none;
+}
+
+.offer.disabled * {
   cursor: not-allowed;
 }
 
 @media (max-width: 768px) {
-  .offer {
-    padding: 4vh 6vw;
-  }
-
   .offers {
     grid-template-columns: 1fr;
     padding: 0 6vw;
   }
-}
 
+  .offer {
+    padding: 4vh 6vw;
+  }
+}
 
