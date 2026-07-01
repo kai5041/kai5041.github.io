@@ -40,8 +40,8 @@ cta:
   ja: 技術者へ連絡
 
 tax_residence:
-  en: "Pricing based on tax residence"
-  ja: "税務上の居住地に基づく価格設定"
+  en: "Pricing based on client tax residence"
+  ja: "納税者の居住地に基づく料金"
 
 efer:
   en: "(FX-influenced・<a href=\"https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html\" target=\"_blank\">EFER Exchange Rates</a>)"
