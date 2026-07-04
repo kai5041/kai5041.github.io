@@ -76,6 +76,7 @@ main {
   width: 90%;
 
   margin: 0 auto;
+  margin-top: 2vh;
   margin-bottom: 2vh;
 
   border-left: 8px solid var(--note);
@@ -136,21 +137,31 @@ button:hover {
 }
 
 h1, h2 {
-  display: inline-block;
   position: relative;
-  padding-bottom: 20px;
+  display: block;
+  padding-bottom: 0.3em;
 }
 
-h1::after, h2::after {
+h1::after,
+h2::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 10px;
-  height: 4px;
-  width: 60%;
+  bottom: 0.15em;
+
+  height: 0.3vh;
+
   background: currentColor;
 }
 
+h2 {
+  margin-top: 0.5em;
+}
+
+h1::after {
+  width: 7em;
+}
+
 h2::after {
-  width: 40%;
+  width: 5em;
 }
