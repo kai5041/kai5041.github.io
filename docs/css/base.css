@@ -53,14 +53,17 @@ p {
 
 footer {
   margin-top: 4vh;
-
+  background-color: var(--black);
+  padding: 2vh 2vw;
   text-align: center;
 }
 
 footer a {
-  color: var(--grey);
+  color: var(--white);
 
   margin: 1vh 1vw;
+
+  text-decoration: underline;
 }
 
 main {

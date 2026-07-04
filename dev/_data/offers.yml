@@ -19,7 +19,7 @@ offers:
     excludes:
       - en: "Graphical User Interface (GUI)"
       - en: "Game development"
-      - en: "Hosting, deployment, infrastructure setup, or ongoing maintenance unless separately contracted"
+      - en: "Hosting, deployment, infrastructure setup or ongoing maintenance"
       - en: "Unspecified feature expansion beyond the agreed command set"
 
 
@@ -49,7 +49,7 @@ offers:
 
     excludes:
       - en: "Game development"
-      - en: "Hosting, deployment, infrastructure setup, or ongoing maintenance unless separately contracted"
+      - en: "Hosting, deployment, infrastructure setup, or ongoing maintenance"
       - en: "Unspecified feature expansion beyond the agreed command set"
 
     pricing:
