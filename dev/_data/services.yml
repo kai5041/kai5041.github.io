@@ -33,6 +33,7 @@ offers:
       en: "From €2,000"
       ja: "€2,000から"
 
+    hidden: true
     link: web-applications
 
 cta:

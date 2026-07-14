@@ -1,26 +1,24 @@
 offers:
   custom_software_cli:
     title:
-      en: "Custom Software (Command Line Interface)"
+      en: "Custom Commant-Line Application"
 
     includes:
-      - en: "Command-line application with a defined and agreed command set"
-      - en: "Command-level usage documentation"
-      - en: "Error handling for specified input and execution cases"
-      - en: "Deterministic execution behavior within defined specifications"
-      - en: "Testing in Ubuntu 24.04 LTS container environment"
-      - en: "English output as default runtime language"
+      - en: "Windows or/and Linux support"
+      - en: "English as default display language"
+      - en: "Help section per command"
+      - en: "Tests on an appropriate reproducible enviroment"
 
     features_increasing_price:
-      - en: "Web-interfacing commands"
-      - en: "Database interfacing"
+      - en: "Web integrations"
+      - en: "Database integration (fetching, insertion, updating...)"
       - en: "LANG_PRICE_NOTE"
 
     excludes:
       - en: "Graphical User Interface (GUI)"
       - en: "Game development"
+      - en: "macOS builds"
       - en: "Hosting, deployment, infrastructure setup or ongoing maintenance"
-      - en: "Unspecified feature expansion beyond the agreed command set"
 
 
     pricing:

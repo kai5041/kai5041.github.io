@@ -28,8 +28,8 @@ title_id: custom_software
       {% for item in offer.features_increasing_price %}
         {% if item | t(lang) == "LANG_PRICE_NOTE" %}
           <li>
-            +{{ services["custom_sw_lang"] | t(lang) | safe }}
-            per localized string entry per language (Supported languages: Japanese, Italian)
+            {{ services["custom_sw_lang"] | t(lang) | safe }}
+            per localized phrase per language (Japanese and Italian are supported)
           </li>
         {% else %}
           <li>{{ item | t(lang) }}</li>
@@ -39,7 +39,7 @@ title_id: custom_software
   </div>
 
   <div>
-    <p class="excludes"><strong>Excludes:</strong></p>
+    <p class="excludes"><strong>Not included:</strong></p>
     <ul>
       {% for item in offer.excludes %}
         <li>{{ item | t(lang) }}</li>
