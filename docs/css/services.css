@@ -1,7 +1,6 @@
 .offers {
   display: grid;
 
-  /* responsive centered columns */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
   gap: 3vh 2vw;
@@ -11,7 +10,6 @@
 
   padding: 2vh 2vw;
 
-  /* key: center grid items when columns don't fully stretch */
   justify-content: center;
   align-items: stretch;
 }
@@ -20,19 +18,16 @@
   display: flex;
   flex-direction: column;
 
-  border: 4px solid var(--grey);
   padding: 2vh 2vw;
 
   background-color: var(--black);
   color: var(--white);
 
-  /* important change: remove auto-centering inside grid */
   margin: 0;
 
   width: 100%;
   max-width: 800px;
 
-  /* keeps cards visually balanced in wide layouts */
   justify-self: center;
 }
 
@@ -62,6 +57,7 @@ h2::before {
 }
 
 .includes::before,
+.add-ft::before,
 .excludes::before {
   content: "◆";
   margin-right: 0.5em;
@@ -103,6 +99,7 @@ h2::before {
 
   .offer {
     padding: 4vh 6vw;
+    width: 90%;
   }
 }
 

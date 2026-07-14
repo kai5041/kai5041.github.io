@@ -1,7 +1,7 @@
 offers:
   custom_software_cli:
     title:
-      en: "Custom Commant-Line Application"
+      en: "Custom Command-Line Application"
 
     includes:
       - en: "Windows or/and Linux support"

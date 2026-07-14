@@ -19,9 +19,9 @@
   <link rel="stylesheet" href="/css/nav.css">
 
 
-  <meta property="og:title" content="Kai: Open-source projects and Freelancing">
-  <meta name="description" content="{{ description or site.description | t(lang) }}">
-  <meta property="og:description" content="{{ description or site.description | t(lang) }}">
+  <meta property="og:title" content="{{ (meta_title or site.meta_title) | t(lang) }}">
+  <meta name="description" content="{{ (description or site.description) | t(lang) }}">
+  <meta property="og:description" content="{{ (description or site.description) | t(lang) }}">
 
   <meta name="robots" content="noimageindex">
   <meta property="og:image" content="">

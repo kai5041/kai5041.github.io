@@ -14,7 +14,7 @@ title_id: custom_software
   <h2>{{ offer.title | t(lang) }}</h2>
 
   <div>
-    <p class="includes"><strong>Includes:</strong></p>
+    <p class="includes"><strong>Includes</strong></p>
     <ul>
       {% for item in offer.includes %}
         <li>{{ item | t(lang) }}</li>
@@ -23,7 +23,7 @@ title_id: custom_software
   </div>
 
   <div>
-    <p><strong>Features increasing price:</strong></p>
+    <p class="add-ft"><strong>Optional features</strong></p>
     <ul>
       {% for item in offer.features_increasing_price %}
         {% if item | t(lang) == "LANG_PRICE_NOTE" %}
@@ -39,7 +39,7 @@ title_id: custom_software
   </div>
 
   <div>
-    <p class="excludes"><strong>Not included:</strong></p>
+    <p class="excludes"><strong>Not included</strong></p>
     <ul>
       {% for item in offer.excludes %}
         <li>{{ item | t(lang) }}</li>
@@ -49,8 +49,9 @@ title_id: custom_software
 
   <div class="bottom">
     <p><strong>{{ services.tax_residence | t(lang) }}</strong></p>
-    <p class="price">{{ offer.pricing | t(lang) | safe }}
-    <p>{{ services.vat_exempt | t(lang) }}</p>
+    <p class="price">{{ offer.pricing | t(lang) | safe }}</p>
+    <br>
+    <p>{{ services.vat_exempt | t(lang) | safe }}</p>
     <a href="/{{ lang }}/contact" class="cta">{{ services.cta | t(lang) }}</a>
   </div>
 </section>

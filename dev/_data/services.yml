@@ -1,6 +1,6 @@
 offers:
   - title:
-      en: "Automation & Internal Tools"
+      en: "Custom Command-Line Applications"
 
     description:
       en: "Custom software that automates repetitive tasks and streamlines internal workflows."
@@ -37,8 +37,8 @@ offers:
     link: web-applications
 
 cta:
-  en: Contact Operator
-  ja: 技術者へ連絡
+  en: "Contact Operator"
+  ja: "技術者へ連絡"
 
 tax_residence:
   en: "Pricing based on client country of incorporation"
@@ -53,8 +53,11 @@ custom_sw_lang:
   ja: "7百円"
 
 vat_exempt:
-  en: "(VAT exempt)"
-  ja: "（消費税免税）"
+  en: "(Invoices are issued without VAT under the Italian Regime Forfettario.<br>
+Official information: <a href=\"https://www.agenziaentrate.gov.it/portale/web/english/vat-exemptions\" target=\"_blank\">Agenzia delle Entrate link</a>)"
+
+  ja: "（イタリアのRegime Forfettarioに基づき、請求書にはVATを記載しません。
+公式情報: <a href=\"https://www.agenziaentrate.gov.it/portale/web/english/vat-exemptions\" target=\"_blank\">Agenzia delle Entrate</a>）"
 
 
 explain:
