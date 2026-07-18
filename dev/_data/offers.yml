@@ -7,7 +7,7 @@ offers:
       - en: "Windows or/and Linux support"
       - en: "English as default display language"
       - en: "Help section per command"
-      - en: "Tests on an appropriate reproducible enviroment"
+      - en: "Tests on an appropriate reproducible environment"
 
     features_increasing_price:
       - en: "Web integrations"
