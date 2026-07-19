@@ -11,19 +11,19 @@ offers:
 
     features_increasing_price:
       - en: "Web integrations"
-      - en: "Database integration (fetching, insertion, updating...)"
       - en: "LANG_PRICE_NOTE"
 
     excludes:
       - en: "Graphical User Interface (GUI)"
+      - en: "Database integration (fetching, insertion, updating...)"
       - en: "Game development"
       - en: "macOS builds"
       - en: "Hosting, deployment, infrastructure setup or ongoing maintenance"
 
 
     pricing:
-      en: "International: From €800<br>Japan: From ¥120,000"
-      ja: "海外：€800から<br>日本：12万円から"
+      en: "International: From €500<br>Japan: From ¥70,000"
+      ja: "海外：€500から<br>日本：70,000円から"
 
   custom_software_gui:
     disabled: true

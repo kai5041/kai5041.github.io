@@ -1,6 +1,6 @@
 offers:
   - title:
-      en: "Custom Command-Line Applications"
+      en: "Custom Command-Line Software Development"
 
     description:
       en: "Custom software that automates repetitive tasks and streamlines internal workflows."
@@ -12,8 +12,8 @@ offers:
       - en: "Internal business tools"
 
     pricing:
-      en: "From €800"
-      ja: "€800から"
+      en: "From €500"
+      ja: "€500から"
 
     link: automation-tools
 
@@ -50,15 +50,13 @@ efer:
 
 custom_sw_lang:
   en: "&euro;5"
-  ja: "7百円"
+  ja: "600円"
 
 vat_exempt:
   en: "(Invoices are issued without VAT under the Italian Regime Forfettario.<br>
 Official information: <a href=\"https://www.agenziaentrate.gov.it/portale/web/english/vat-exemptions\" target=\"_blank\">Agenzia delle Entrate link</a>)"
 
-  ja: "（イタリアのRegime Forfettarioに基づき、請求書にはVATを記載しません。
-公式情報: <a href=\"https://www.agenziaentrate.gov.it/portale/web/english/vat-exemptions\" target=\"_blank\">Agenzia delle Entrate</a>）"
-
+  ja: "（イタリアのRegime Forfettario制度に基づき、VAT（付加価値税）は免除対象となるため、請求書には記載いたしません。<br>公式情報：<a href=\"https://www.agenziaentrate.gov.it/portale/web/english/vat-exemptions\" target=\"_blank\">Agenzia delle Entrate</a>）"
 
 explain:
   title:
