@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+
+  <script>
+    (function () {
+      const supported = ["en", "ja"];
+      const COOKIE_NAME = "lang";
+
+      function getCookie(name) {
+        return document.cookie
+          .split("; ")
+          .find(row => row.startsWith(name + "="))
+          ?.split("=")[1];
+      }
+
+      function getLangFromCookie() {
+        const val = getCookie(COOKIE_NAME);
+        return supported.includes(val) ? val : null;
+      }
+
+      function getLangFromBrowser() {
+        const lang = (navigator.language || navigator.userLanguage || "en")
+          .toLowerCase()
+          .slice(0, 2);
+
+        return supported.includes(lang) ? lang : null;
+      }
+
+      const lang =
+        getLangFromCookie() ||
+        getLangFromBrowser() ||
+        "en";
+
+      const target = "/" + lang + "/privacy-policy";
+
+      if (window.location.pathname !== target) {
+        window.location.replace(target);
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/privacy-policy" />
+  </noscript>
+</body>
+</html>

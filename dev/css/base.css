@@ -6,14 +6,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Noto Serif JP';
-  src: url('/fonts/woff2/NotoSerifJP-VariableFont_wght.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --black: #0F0F0FFF; 
   --grey:  #2A2A2AFF;
@@ -28,10 +20,6 @@
   margin: 0;
   border: 0;
   font-family: "Noto Sans JP", sans;
-}
-
-h1, h2, h3, h4 {
-  font-family: "Noto Serif JP", sans-serif;
 }
 
 a {
