@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Servizi</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.p
+ng">
+  </head>
+
+  <body>
+<script data-goatcounter="https://kai5041.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+    <header>
+  <nav>
+    <input type="checkbox" id="nav-toggle">
+
+    <label class="nav-burger" for="nav-toggle">
+      <span></span>
+    </label>
+
+    <div class="nav-logo">
+      <a href="/it/">
+        <img src="/assets/png/kai_logo_light.png">
+      </a>
+    </div>
+
+    <div class="nav-right"></div>
+
+    <div class="nav-desktop">
+      <a href="/it/">Home</a>
+      <a href="/it/services">Servizi</a>
+      <a href="/it/projects">Progetti</a>
+      <a href="/it/about">Informazioni</a>
+      <a href="/it/contact">Contatti</a>
+    </div>
+
+    <div class="nav-menu">
+      <a href="/it/">Home</a>
+      <a href="/it/services">Servizi</a>
+      <a href="/it/projects">Progetti</a>
+      <a href="/it/about">Informazioni</a>
+      <a href="/it/contact">Contatti</a>
+    </div>
+  </nav>
+</header>
+
+
+
+    <p class="note warning">This website is currently under construction. Do not contact us until this notice is removed.</p>
+
+    
+<style>
+  .services {
+    margin-top: 2vh;
+  }
+
+  .offer {
+    border: 2px solid var(--black);
+
+    padding: 2vh 2vw;
+    margin-bottom: 2vh;
+  }
+
+  .offer h2 {
+    margin-top: 0;
+  }
+
+  .offer p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .offer ul {
+    margin: 2vh 0;
+  }
+
+  .pricing {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+  }
+
+  .pricing span {
+    font-weight: 600;
+  }
+
+  .configure {
+    display: inline-block;
+
+    padding: 1.5vh 2vw;
+    margin-top: 2vh;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    border: 2px solid var(--black);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .configure:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+  .faq > h2 {
+    margin-bottom: 3vh;
+  }
+
+  .faq-item {
+    margin: 0 0 1.5vh;
+    padding: 2vh 2vw;
+
+    background-color: var(--dim-white);
+    border-left: 4px solid var(--black);
+  }
+
+  .faq-item p {
+    line-height: 1.6;
+  }
+
+  .faq-item p:first-child {
+    margin-top: 0;
+    margin-bottom: 1.25vh;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  .faq-item p:last-child {
+    margin-bottom: 0;
+  }
+
+  .faq-item ul {
+    margin: 1.5vh 0 1.5vh 1rem;
+  }
+
+  .faq-item li {
+    margin-bottom: 0.75vh;
+    line-height: 1.5;
+  }
+
+  .faq-item a {
+    font-weight: 600;
+    text-underline-offset: 0.15em;
+  }
+
+  .faq-item a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  #upfront {
+    scroll-margin-top: 4vh;
+  }
+
+  @media (max-width: 640px) {
+    .services {
+      margin-top: 2vh;
+    }
+
+    .offer {
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .offer h2 {
+      font-size: clamp(1.35rem, 6vw, 1.75rem);
+      line-height: 1.25;
+    }
+
+    .offer ul {
+      margin: 1.5rem 0;
+    }
+
+    .pricing {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .configure {
+      display: block;
+
+      width: 100%;
+
+      padding: 0.9rem 1rem;
+      margin-top: 1.5rem;
+
+      text-align: center;
+    }
+
+    .faq {
+      margin-top: 5rem;
+    }
+
+    .faq > h2 {
+      margin-bottom: 1.5rem;
+
+      font-size: clamp(1.5rem, 7vw, 2rem);
+      line-height: 1.3;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+      padding: 1.25rem 1rem;
+
+      border-left-width: 4px;
+    }
+
+    .faq-item p {
+      line-height: 1.6;
+    }
+
+    .faq-item p:first-child {
+      margin-bottom: 1rem;
+
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .faq-item p:not(:first-child) {
+      margin-left: 0.5rem;
+    }
+
+    .faq-item ul {
+      margin: 1rem 0 1rem 0.5rem;
+    }
+
+    .faq-item li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    #upfront {
+      scroll-margin-top: 2vh;
+    }
+  }
+</style>
+
+<main class="services">
+  <section class="offer">
+    <h2>Command-Line Tool Development</h2>
+
+    <p>
+      Get a new C++ command-line tool developed from a defined Project
+      Blueprint.
+    </p>
+
+    <ul>
+      <li>C++ project</li>
+      <li>Linux x86_64 available</li>
+      <li>Windows 11 x86_64 available</li>
+      <li>Localization available for Japanese, Italian and Romanian</li>
+      <li>SQL and web integrations available</li>
+    </ul>
+
+    <p class="pricing">
+      From 700 EUR or 280 mETH (taxes included)<br />
+      <small>1 mETH = 0.001 ETH</small>
+    </p>
+    <a href="/contact" class="configure"> Contatti </a>
+  </section>
+
+  <section class="faq">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+
+    <div class="faq-item">
+      <p>Q1. How does the engagement process work?</p>
+
+      <p>
+        A1. Contact us through any of the methods listed on
+        <a href="/it/contact">Contatti</a>,
+        describe your requirements, and you will receive an estimated quotation.
+        If you agree to proceed, the Provider will issue a Contract for your
+        review and signature.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p>Q2. What is the initial Project Blueprint fee?</p>
+
+      <p>
+        A2. To initiate the process, the Client must pay EUR 130, or the
+        equivalent amount in another agreed currency. Upon receipt of this
+        payment, the Provider will issue the first Project Blueprint, which will
+        define the technical specifications of the project and the applicable
+        installment schedule for the Client's review and approval.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p>Q3. When does work begin?</p>
+
+      <p>
+        A3. Work will commence only after both the Contract and the
+        corresponding Project Blueprint have been signed. Each signed Project
+        Blueprint constitutes the Client's acceptance of its contents and
+        supersedes any previously issued Project Blueprint or related project
+        document to the extent that they are inconsistent with it.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p>Q4. How are milestones and installments handled?</p>
+
+      <p>
+        A4. Work is performed according to the milestones specified in the
+        applicable Project Blueprint. Upon completion of each milestone, work
+        will pause while the Provider awaits payment of the full installment
+        associated with the next milestone. Once the applicable installment has
+        been received in full, the Provider will resume work on the
+        corresponding milestone.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p>Q5. What happens if the Client requests that the work be paused?</p>
+
+      <p>
+        A5. If the Client requests that work be paused, the Provider may issue a
+        new Project Blueprint for the continuation or reissuance of the project.
+        Each new Project Blueprint is subject to the same EUR 130 Project
+        Blueprint fee, or the equivalent amount in another agreed currency. The
+        Client may refuse a proposed Project Blueprint up to a maximum of three
+        times. Once a Project Blueprint is signed, it is deemed accepted by the
+        Client, and any previous Project Blueprints or related documents
+        concerning the same scope of work are deemed superseded and invalid to
+        the extent that they conflict with the signed Project Blueprint.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p>Q6. What are the accepted currencies?</p>
+
+      <p>A6. We accept the following currencies:</p>
+      <ul>
+        <li>EUR (&euro;)</li>
+        <li>US Dollar (&dollar;)</li>
+        <li>JPY (&yen;, Japanese Yen)</li>
+        <li>RON (Romanian leu)</li>
+        <li>ETH (Ethereum)</li>
+      </ul>
+      <p>
+        Prices denominated in mETH are converted to their equivalent ETH amount
+        at the stated rate of 1 mETH = 0.001 ETH.
+      </p>
+
+      <p>
+        Prices listed on this website are indicative and may not reflect the
+        final amount payable.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <p>Q7. What increases the price?</p>
+      <ul>
+        <li>Windows support (+€200)</li>
+        <li>
+          Linux support added after development has begun as Windows-only
+          (+€100)
+        </li>
+        <li>Web integrations (+€100 per interaction)</li>
+        <li>Database integrations (+€150 per interaction)</li>
+        <li>Database schema creation (+€300)</li>
+        <li>Localization support (+€50), plus €5 per localized phrase</li>
+      </ul>
+
+      <p>
+        Example: A warehouse stores entries on paper and needs a system to
+        insert products, view their availability, and enter invoices. If it
+        requires only Windows support and English, the final amount due may be
+        €2,400 or 960 mETH.
+      </p>
+    </div>
+  </section>
+</main>
+
+ 
+   <footer>
+  <a href="/it/legal">Informazioni Legali</a>
+   ・
+  <a href="/it/privacy">Privacy Policy</a>
+   ・
+  <a href="/it/donate">Donate</a>
+</footer>
+
+  </body>
+</html>
+

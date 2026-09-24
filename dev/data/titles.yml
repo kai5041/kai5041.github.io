@@ -1,0 +1,31 @@
+index:
+  en: "Home"
+  ja: "主要頁"
+
+services:
+  en: "Services"
+  ja: "業務内容"
+  it: "Servizi"
+
+projects:
+  en: "Projects"
+  it: "Progetti"
+  ja: "計画"
+
+about:
+  en: "About"
+  ja: "概要"
+  it: "Informazioni"
+
+
+contact:
+  en: "Contact"
+  ja: "連絡"
+  it: "Contatti"
+
+legal:
+  en: "Legal"
+  it: "Informazioni Legali"
+
+privacy:
+  en: "Privacy Policy"

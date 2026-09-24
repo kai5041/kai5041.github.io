@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title_id: index
+---
+
+<style>
+  .hero {
+    width: 100%;
+
+    text-align: center;
+    font-style: italic;
+
+    background-color: var(--black);
+
+    padding: 1vh 2vw;
+    margin-bottom: 2vh;
+  }
+
+  .hero * {
+    color: var(--white);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
+
+  .oss a {
+    font-weight: 600;
+  }
+</style>
+
+<div class="hero">
+  <h1>Kai/解</h1>
+
+  <p>Research and software development</p>
+</div>
+
+<main>
+  <section>
+    <h2>Services</h2>
+
+    <ul>
+      <li><a href="/services">CLI tool development</a></li>
+      <li><a href="/services">??? (Coming Soon)</a></li>
+      <li><a href="/services">??? (Coming Soon)</a></li>
+    </ul>
+  </section>
+
+  <section class="oss">
+    <h2>Open Source</h2>
+
+    <ul>
+      <li>
+        <a href="/projects/#nintei">Nintei/認定</a>: a non-custodial
+        authentication protocol.
+      </li>
+      <li>
+        <a href="/projects/#retuyuuro">Retuyuuro/裂融合</a>: a C++26 web-serving
+        framework.
+      </li>
+    </ul>
+  </section>
+</main>

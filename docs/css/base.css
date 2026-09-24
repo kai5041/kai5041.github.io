@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('/fonts/woff2/NotoSansJP-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white: #F0F0F0FF;
+  --dim-white: #DADADAFF;
+  --black: #0F0F0FFF;
+  --gray: #2A2A2AFF;
+
+  --note: #007FFFFF;
+  --warn: #D6A21EFF;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans, sans-serif;
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+}
+
+main {
+  font-size: 1rem;
+  line-height: 1.4;
+
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5vw;
+
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 2vh;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: block;
+  margin-bottom: 0.5vh;
+}
+
+li * {
+  display: inline;
+}
+
+li::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+li > ul {
+  padding-inline-start: 1.5rem;
+}
+
+.note {
+  margin: 2vh auto;
+  padding: 2vh 2vw;
+
+  background-color: var(--black);
+  color: var(--white);
+
+  width: 90%;
+  border-left: 8px solid var(--note);
+}
+
+.note::before {
+  content: "NOTE";
+  margin-right: 0.5em;
+
+  display: block;
+
+  color: var(--note);
+  font-weight: 700;
+}
+
+.note.warning {
+  border-color: var(--warn);
+}
+
+.note::selection {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.note.warning::before {
+  color: var(--warn);
+}
+
+:lang(ja) .note.warning::before {
+  content: "警告";
+}
+
+@media (max-width: 640px) {
+  .note {
+    width: 95%;
+  }
+}
+
+*::selection {
+  background-color: var(--black);
+  color: var(--white);
+}

@@ -1,0 +1,34 @@
+<header>
+  <nav>
+    <input type="checkbox" id="nav-toggle">
+
+    <label class="nav-burger" for="nav-toggle">
+      <span></span>
+    </label>
+
+    <div class="nav-logo">
+      <a href="/{{ lang }}/">
+        <img src="/assets/png/kai_logo_light.png">
+      </a>
+    </div>
+
+    <div class="nav-right"></div>
+
+    <div class="nav-desktop">
+      <a href="/{{ lang }}/">{{ titles.index | t(lang) }}</a>
+      <a href="/{{ lang }}/services">{{ titles.services | t(lang) }}</a>
+      <a href="/{{ lang }}/projects">{{ titles.projects | t(lang) }}</a>
+      <a href="/{{ lang }}/about">{{ titles.about | t(lang) }}</a>
+      <a href="/{{ lang }}/contact">{{ titles.contact | t(lang) }}</a>
+    </div>
+
+    <div class="nav-menu">
+      <a href="/{{ lang }}/">{{ titles.index | t(lang) }}</a>
+      <a href="/{{ lang }}/services">{{ titles.services | t(lang) }}</a>
+      <a href="/{{ lang }}/projects">{{ titles.projects | t(lang) }}</a>
+      <a href="/{{ lang }}/about">{{ titles.about | t(lang) }}</a>
+      <a href="/{{ lang }}/contact">{{ titles.contact | t(lang) }}</a>
+    </div>
+  </nav>
+</header>
+

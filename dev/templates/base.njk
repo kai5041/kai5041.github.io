@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ titles[title_id] | t(lang) }}</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="icon" type="image/png" href="/assets/png/kai_logo_light.p
+ng">
+  </head>
+
+  <body>
+<script data-goatcounter="https://kai5041.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+    {% include "header.njk" %}
+
+    <p class="note warning">This website is currently under construction. Do not contact us until this notice is removed.</p>
+
+    {{ content | safe }}
+ 
+   {% include "footer.njk" %}
+  </body>
+</html>
+

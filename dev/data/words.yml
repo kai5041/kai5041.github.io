@@ -1,0 +1,29 @@
+email:
+  en: "Email"
+  ja: "電子郵便"
+
+certified_email:
+  en: "PEC (Certified Email)"
+  it: "PEC"
+
+company_name:
+  en: "Company name"
+  it: "Ditta"
+
+vat_id:
+  en: "VAT ID"
+  it: "Partita IVA"
+
+address:
+  en: "Address"
+  it: "Indirizzo"
+
+taxes_included:
+  en: "(Taxes included)"
+  ja: "（税込）"
+  it: "(Tasse incluse)"
+
+currency:
+  en: "EUR"
+  ja: "円"
+
